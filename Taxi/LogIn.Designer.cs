@@ -30,8 +30,6 @@ namespace Taxi
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
-            this.label3 = new System.Windows.Forms.Label();
-            this.cboSysLang = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -43,25 +41,6 @@ namespace Taxi
             this.lblMenaxhimiTaxi = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(177, 175);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Gjuha:";
-            // 
-            // cboSysLang
-            // 
-            this.cboSysLang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboSysLang.FormattingEnabled = true;
-            this.cboSysLang.Location = new System.Drawing.Point(221, 172);
-            this.cboSysLang.Name = "cboSysLang";
-            this.cboSysLang.Size = new System.Drawing.Size(156, 21);
-            this.cboSysLang.TabIndex = 16;
             // 
             // pictureBox1
             // 
@@ -79,7 +58,7 @@ namespace Taxi
             this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLogin.Location = new System.Drawing.Point(180, 226);
+            this.btnLogin.Location = new System.Drawing.Point(161, 212);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 13;
@@ -92,7 +71,7 @@ namespace Taxi
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnClose.Location = new System.Drawing.Point(302, 226);
+            this.btnClose.Location = new System.Drawing.Point(269, 212);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 14;
@@ -138,7 +117,7 @@ namespace Taxi
             // cbShfaqFjalekalimin
             // 
             this.cbShfaqFjalekalimin.AutoSize = true;
-            this.cbShfaqFjalekalimin.Location = new System.Drawing.Point(269, 203);
+            this.cbShfaqFjalekalimin.Location = new System.Drawing.Point(269, 175);
             this.cbShfaqFjalekalimin.Name = "cbShfaqFjalekalimin";
             this.cbShfaqFjalekalimin.Size = new System.Drawing.Size(108, 17);
             this.cbShfaqFjalekalimin.TabIndex = 19;
@@ -160,11 +139,9 @@ namespace Taxi
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(400, 273);
+            this.ClientSize = new System.Drawing.Size(383, 250);
             this.Controls.Add(this.lblMenaxhimiTaxi);
             this.Controls.Add(this.cbShfaqFjalekalimin);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.cboSysLang);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnClose);
@@ -181,9 +158,6 @@ namespace Taxi
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cboSysLang;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnClose;

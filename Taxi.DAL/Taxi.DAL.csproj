@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseConn.cs" />
+    <Compile Include="PjesemarresitDAL.cs" />
+    <Compile Include="RoliDAL.cs" />
     <Compile Include="ShoferiDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
