@@ -71,5 +71,35 @@ namespace Taxi.Shoferi
                 dtpDatelindja.Text = shoferiBO.Datelindja.ToString();
             }
         }
+
+        private void btnPerditeso_Click(object sender, EventArgs e)
+        {
+            shoferiBLL = new ShoferiBLL();
+
+            bool updated = shoferiBLL.UpdateShofer(UpdateShofer());
+            if (updated)
+            {
+                MessageBox.Show("U ndryshua");
+            }
+            else
+            {
+                MessageBox.Show("Ndryshimi deshtoi");
+            }
+        }
+
+        public ShoferiBO UpdateShofer()
+        {
+            char gender;
+            if (rBtnGenderF.Checked)
+            {
+                gender = 'F';
+            }
+            else
+            {
+                gender = 'M';
+            }
+            shoferiBO = new ShoferiBO(txtEmri.Text, txtMbiemri.Text, gender, txtNrTel.Text, txtNrPersonal.Text, txtBiografia.Text, int.Parse(txtViti.Text), "user", DateTime.Now);
+            return shoferiBO;
+        }
     }
 }

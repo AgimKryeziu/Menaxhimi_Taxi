@@ -71,7 +71,7 @@ namespace Taxi.DAL
                 using (DatabaseConn.conn = new SqlConnection(DatabaseConn.conString))
                 {
                     DatabaseConn.conn.Open();
-                    DatabaseConn.cmd = new SqlCommand("usp_GetStaffByID", DatabaseConn.conn);
+                    DatabaseConn.cmd = new SqlCommand("usp_GetShoferByID", DatabaseConn.conn);
                     DatabaseConn.cmd.CommandType = CommandType.StoredProcedure;
 
                     DatabaseConn.cmd.Parameters.AddWithValue("@ShoferiId", id);
@@ -99,6 +99,40 @@ namespace Taxi.DAL
             catch (Exception ex)
             {
                 throw ex;
+            }
+        }
+
+        public bool EditShofer(ShoferiBO shoferi)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(DatabaseConn.conString))
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand("usp_EditShofer", conn);
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@ShoferiId", shoferi.IdPunes);
+                    cmd.Parameters.AddWithValue("@Emri", shoferi.Emri);
+                    cmd.Parameters.AddWithValue("@Mbiemri", shoferi.Mbiemri);
+                    cmd.Parameters.AddWithValue("@Datelindja", shoferi.Datelindja);
+                    cmd.Parameters.AddWithValue("@NrPersonal", shoferi.NrPersonal);
+                    cmd.Parameters.AddWithValue("@NrTelefonit", shoferi.NrTelefonit);
+                    cmd.Parameters.AddWithValue("@Gjinia", shoferi.Gjinia);
+                    cmd.Parameters.AddWithValue("@Biografia", shoferi.Biografia);
+                    cmd.Parameters.AddWithValue("@VitiNisjsPunes", shoferi.VitiNisjesPunes);
+                    cmd.Parameters.AddWithValue("@LUB", 1);
+                    cmd.Parameters.AddWithValue("@LUD", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@LUN", shoferi.LUN);
+
+                    cmd.ExecuteNonQuery();
+
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
             }
         }
     }

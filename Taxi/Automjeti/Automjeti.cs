@@ -16,5 +16,19 @@ namespace Taxi.Automjeti
         {
             InitializeComponent();
         }
+
+        private void btnShtoAutomjet_Click(object sender, EventArgs e)
+        {
+            Taxi.Automjeti.ShtoAutomjet shtoAutomjet = new ShtoAutomjet();
+            shtoAutomjet.Show();
+            btnShtoAutomjet.Visible = true;
+        }
+
+        private void btnEditoAutomjet_Click(object sender, EventArgs e)
+        {
+            Taxi.Automjeti.ShtoAutomjet shtoAutomjet = new ShtoAutomjet();
+            shtoAutomjet.Show();
+            btnEditoAutomjet.Visible = true;
+        }
     }
 }

@@ -41,7 +41,7 @@ namespace Taxi.Shoferi
             this.dgvShoferiList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvShoferiList.Location = new System.Drawing.Point(14, 91);
             this.dgvShoferiList.Name = "dgvShoferiList";
-            this.dgvShoferiList.Size = new System.Drawing.Size(901, 357);
+            this.dgvShoferiList.Size = new System.Drawing.Size(901, 340);
             this.dgvShoferiList.TabIndex = 0;
             this.dgvShoferiList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvShoferiList_CellContentClick);
             // 
@@ -60,7 +60,7 @@ namespace Taxi.Shoferi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(927, 460);
+            this.ClientSize = new System.Drawing.Size(927, 442);
             this.Controls.Add(this.btnShtoShofer);
             this.Controls.Add(this.dgvShoferiList);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

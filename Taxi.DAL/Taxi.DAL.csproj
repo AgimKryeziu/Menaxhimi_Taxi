@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutomjetiDAL.cs" />
     <Compile Include="DatabaseConn.cs" />
+    <Compile Include="DestinacioniDALcs.cs" />
     <Compile Include="PjesemarresitDAL.cs" />
     <Compile Include="RoliDAL.cs" />
     <Compile Include="ShoferiDAL.cs" />

@@ -52,6 +52,12 @@
     <Compile Include="Automjeti\Automjeti.Designer.cs">
       <DependentUpon>Automjeti.cs</DependentUpon>
     </Compile>
+    <Compile Include="Automjeti\ShtoAutomjet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Automjeti\ShtoAutomjet.Designer.cs">
+      <DependentUpon>ShtoAutomjet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Destinacione\Destinacioni.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,8 +96,16 @@
     <Compile Include="Shoferi\ShoferiList.Designer.cs">
       <DependentUpon>ShoferiList.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaxiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaxiDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Automjeti\Automjeti.resx">
       <DependentUpon>Automjeti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automjeti\ShtoAutomjet.resx">
+      <DependentUpon>ShtoAutomjet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Destinacione\Destinacioni.resx">
       <DependentUpon>Destinacioni.cs</DependentUpon>
@@ -129,6 +143,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TaxiDataSet.xsc">
+      <DependentUpon>TaxiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TaxiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TaxiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TaxiDataSet.xss">
+      <DependentUpon>TaxiDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

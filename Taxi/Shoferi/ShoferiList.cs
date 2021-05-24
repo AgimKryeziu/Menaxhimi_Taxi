@@ -32,7 +32,7 @@ namespace Taxi.Shoferi
             ShoferiBLL shoferi = new ShoferiBLL();
             lista = shoferi.ShowShoferat();
             dgvShoferiList.DataSource = lista;
-            //this.dgvShoferiList.Columns["ShoferiId"].Visible = false;
+            dgvShoferiList.Columns["ShoferiId"].Visible = false;
 
             DataGridViewButtonColumn editButtton = new DataGridViewButtonColumn();
             editButtton.Name = "Edit";
@@ -50,13 +50,13 @@ namespace Taxi.Shoferi
             shtoShofer.Show();
         }
 
+
         private void dgvShoferiList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
             if (e.ColumnIndex == 0)
             {
+            
                 ShtoShofer addShofer = new ShtoShofer();
-
                 int shoferiId = Convert.ToInt32(dgvShoferiList.Rows[e.RowIndex].Cells[1].Value.ToString());
                 addShofer.LoadData(shoferiId);
                 addShofer.ShowDialog();
