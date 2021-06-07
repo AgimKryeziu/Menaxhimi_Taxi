@@ -44,7 +44,8 @@
   <ItemGroup>
     <Compile Include="AutomjetiDAL.cs" />
     <Compile Include="DatabaseConn.cs" />
-    <Compile Include="DestinacioniDALcs.cs" />
+    <Compile Include="DestinacioniDAL.cs" />
+    <Compile Include="ModeletDAL.cs" />
     <Compile Include="PjesemarresitDAL.cs" />
     <Compile Include="RoliDAL.cs" />
     <Compile Include="ShoferiDAL.cs" />

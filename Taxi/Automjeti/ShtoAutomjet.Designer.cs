@@ -29,85 +29,65 @@ namespace Taxi.Automjeti
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShtoAutomjet));
             this.txtVitiIProdhimit = new System.Windows.Forms.TextBox();
             this.txtKm = new System.Windows.Forms.TextBox();
-            this.txtEmri = new System.Windows.Forms.TextBox();
             this.txtTarga = new System.Windows.Forms.TextBox();
             this.lblKm = new System.Windows.Forms.Label();
-            this.lblEmri = new System.Windows.Forms.Label();
             this.lblVitiIProdhimit = new System.Windows.Forms.Label();
             this.lblTarga = new System.Windows.Forms.Label();
-            this.btnShto = new System.Windows.Forms.Button();
-            this.btnEdito = new System.Windows.Forms.Button();
             this.gbAktiv = new System.Windows.Forms.GroupBox();
             this.rbNo = new System.Windows.Forms.RadioButton();
             this.rbYes = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblPershkrimi = new System.Windows.Forms.Label();
-            this.txtPershkrimi = new System.Windows.Forms.TextBox();
+            this.btnShtoModel = new System.Windows.Forms.Button();
+            this.cmbModeliId = new System.Windows.Forms.ComboBox();
+            this.lblModeli = new System.Windows.Forms.Label();
+            this.btnEdit = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnShto = new Bunifu.Framework.UI.BunifuFlatButton();
             this.gbAktiv.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtVitiIProdhimit
             // 
             this.txtVitiIProdhimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVitiIProdhimit.Location = new System.Drawing.Point(36, 105);
+            this.txtVitiIProdhimit.Location = new System.Drawing.Point(18, 180);
             this.txtVitiIProdhimit.Name = "txtVitiIProdhimit";
-            this.txtVitiIProdhimit.Size = new System.Drawing.Size(179, 26);
+            this.txtVitiIProdhimit.Size = new System.Drawing.Size(184, 26);
             this.txtVitiIProdhimit.TabIndex = 30;
             // 
             // txtKm
             // 
             this.txtKm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKm.Location = new System.Drawing.Point(37, 189);
+            this.txtKm.Location = new System.Drawing.Point(19, 247);
             this.txtKm.Name = "txtKm";
-            this.txtKm.Size = new System.Drawing.Size(179, 26);
+            this.txtKm.Size = new System.Drawing.Size(183, 26);
             this.txtKm.TabIndex = 31;
-            // 
-            // txtEmri
-            // 
-            this.txtEmri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmri.Location = new System.Drawing.Point(18, 43);
-            this.txtEmri.Name = "txtEmri";
-            this.txtEmri.Size = new System.Drawing.Size(179, 26);
-            this.txtEmri.TabIndex = 29;
             // 
             // txtTarga
             // 
             this.txtTarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTarga.Location = new System.Drawing.Point(32, 43);
+            this.txtTarga.Location = new System.Drawing.Point(19, 43);
             this.txtTarga.Name = "txtTarga";
-            this.txtTarga.Size = new System.Drawing.Size(179, 26);
+            this.txtTarga.Size = new System.Drawing.Size(183, 26);
             this.txtTarga.TabIndex = 28;
             // 
             // lblKm
             // 
             this.lblKm.AutoSize = true;
             this.lblKm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKm.Location = new System.Drawing.Point(33, 153);
+            this.lblKm.Location = new System.Drawing.Point(15, 224);
             this.lblKm.Name = "lblKm";
             this.lblKm.Size = new System.Drawing.Size(80, 20);
             this.lblKm.TabIndex = 23;
             this.lblKm.Text = "Kilometrat";
             // 
-            // lblEmri
-            // 
-            this.lblEmri.AutoSize = true;
-            this.lblEmri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmri.Location = new System.Drawing.Point(15, 17);
-            this.lblEmri.Name = "lblEmri";
-            this.lblEmri.Size = new System.Drawing.Size(41, 20);
-            this.lblEmri.TabIndex = 25;
-            this.lblEmri.Text = "Emri";
-            // 
             // lblVitiIProdhimit
             // 
             this.lblVitiIProdhimit.AutoSize = true;
             this.lblVitiIProdhimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVitiIProdhimit.Location = new System.Drawing.Point(33, 82);
+            this.lblVitiIProdhimit.Location = new System.Drawing.Point(15, 157);
             this.lblVitiIProdhimit.Name = "lblVitiIProdhimit";
             this.lblVitiIProdhimit.Size = new System.Drawing.Size(107, 20);
             this.lblVitiIProdhimit.TabIndex = 26;
@@ -117,44 +97,20 @@ namespace Taxi.Automjeti
             // 
             this.lblTarga.AutoSize = true;
             this.lblTarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTarga.Location = new System.Drawing.Point(28, 20);
+            this.lblTarga.Location = new System.Drawing.Point(15, 20);
             this.lblTarga.Name = "lblTarga";
             this.lblTarga.Size = new System.Drawing.Size(50, 20);
             this.lblTarga.TabIndex = 27;
             this.lblTarga.Text = "Targa";
-            // 
-            // btnShto
-            // 
-            this.btnShto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShto.Location = new System.Drawing.Point(312, 269);
-            this.btnShto.Name = "btnShto";
-            this.btnShto.Size = new System.Drawing.Size(72, 31);
-            this.btnShto.TabIndex = 32;
-            this.btnShto.Text = "Shto";
-            this.btnShto.UseVisualStyleBackColor = true;
-            this.btnShto.Visible = false;
-            // 
-            // btnEdito
-            // 
-            this.btnEdito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdito.Location = new System.Drawing.Point(404, 269);
-            this.btnEdito.Name = "btnEdito";
-            this.btnEdito.Size = new System.Drawing.Size(71, 31);
-            this.btnEdito.TabIndex = 32;
-            this.btnEdito.Text = "Edito";
-            this.btnEdito.UseVisualStyleBackColor = true;
-            this.btnEdito.Visible = false;
             // 
             // gbAktiv
             // 
             this.gbAktiv.Controls.Add(this.rbNo);
             this.gbAktiv.Controls.Add(this.rbYes);
             this.gbAktiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbAktiv.Location = new System.Drawing.Point(37, 221);
+            this.gbAktiv.Location = new System.Drawing.Point(19, 279);
             this.gbAktiv.Name = "gbAktiv";
-            this.gbAktiv.Size = new System.Drawing.Size(120, 47);
+            this.gbAktiv.Size = new System.Drawing.Size(125, 50);
             this.gbAktiv.TabIndex = 33;
             this.gbAktiv.TabStop = false;
             this.gbAktiv.Text = "Aktiv";
@@ -162,18 +118,18 @@ namespace Taxi.Automjeti
             // rbNo
             // 
             this.rbNo.AutoSize = true;
-            this.rbNo.Location = new System.Drawing.Point(56, 17);
+            this.rbNo.Location = new System.Drawing.Point(67, 26);
             this.rbNo.Name = "rbNo";
             this.rbNo.Size = new System.Drawing.Size(47, 24);
             this.rbNo.TabIndex = 0;
-            this.rbNo.TabStop = true;
             this.rbNo.Text = "No";
             this.rbNo.UseVisualStyleBackColor = true;
             // 
             // rbYes
             // 
             this.rbYes.AutoSize = true;
-            this.rbYes.Location = new System.Drawing.Point(7, 18);
+            this.rbYes.Checked = true;
+            this.rbYes.Location = new System.Drawing.Point(6, 26);
             this.rbYes.Name = "rbYes";
             this.rbYes.Size = new System.Drawing.Size(55, 24);
             this.rbYes.TabIndex = 0;
@@ -183,65 +139,143 @@ namespace Taxi.Automjeti
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnShtoModel);
+            this.panel1.Controls.Add(this.cmbModeliId);
             this.panel1.Controls.Add(this.txtKm);
             this.panel1.Controls.Add(this.gbAktiv);
             this.panel1.Controls.Add(this.lblTarga);
             this.panel1.Controls.Add(this.lblVitiIProdhimit);
             this.panel1.Controls.Add(this.txtVitiIProdhimit);
+            this.panel1.Controls.Add(this.lblModeli);
             this.panel1.Controls.Add(this.lblKm);
             this.panel1.Controls.Add(this.txtTarga);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(276, 288);
+            this.panel1.Size = new System.Drawing.Size(256, 342);
             this.panel1.TabIndex = 34;
             // 
-            // panel2
+            // btnShtoModel
             // 
-            this.panel2.Controls.Add(this.txtPershkrimi);
-            this.panel2.Controls.Add(this.lblPershkrimi);
-            this.panel2.Controls.Add(this.txtEmri);
-            this.panel2.Controls.Add(this.lblEmri);
-            this.panel2.Location = new System.Drawing.Point(294, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(213, 230);
-            this.panel2.TabIndex = 35;
+            this.btnShtoModel.BackColor = System.Drawing.SystemColors.Control;
+            this.btnShtoModel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShtoModel.BackgroundImage")));
+            this.btnShtoModel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnShtoModel.ForeColor = System.Drawing.Color.Transparent;
+            this.btnShtoModel.Location = new System.Drawing.Point(207, 114);
+            this.btnShtoModel.Margin = new System.Windows.Forms.Padding(2);
+            this.btnShtoModel.Name = "btnShtoModel";
+            this.btnShtoModel.Size = new System.Drawing.Size(34, 27);
+            this.btnShtoModel.TabIndex = 42;
+            this.btnShtoModel.UseVisualStyleBackColor = false;
+            this.btnShtoModel.Click += new System.EventHandler(this.btnShtoModel_Click);
             // 
-            // lblPershkrimi
+            // cmbModeliId
             // 
-            this.lblPershkrimi.AutoSize = true;
-            this.lblPershkrimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPershkrimi.Location = new System.Drawing.Point(16, 79);
-            this.lblPershkrimi.Name = "lblPershkrimi";
-            this.lblPershkrimi.Size = new System.Drawing.Size(82, 20);
-            this.lblPershkrimi.TabIndex = 25;
-            this.lblPershkrimi.Text = "Pershkrimi";
+            this.cmbModeliId.FormattingEnabled = true;
+            this.cmbModeliId.Location = new System.Drawing.Point(19, 118);
+            this.cmbModeliId.Name = "cmbModeliId";
+            this.cmbModeliId.Size = new System.Drawing.Size(183, 21);
+            this.cmbModeliId.TabIndex = 30;
             // 
-            // txtPershkrimi
+            // lblModeli
             // 
-            this.txtPershkrimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPershkrimi.Location = new System.Drawing.Point(19, 105);
-            this.txtPershkrimi.Multiline = true;
-            this.txtPershkrimi.Name = "txtPershkrimi";
-            this.txtPershkrimi.Size = new System.Drawing.Size(178, 98);
-            this.txtPershkrimi.TabIndex = 29;
+            this.lblModeli.AutoSize = true;
+            this.lblModeli.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModeli.Location = new System.Drawing.Point(15, 95);
+            this.lblModeli.Name = "lblModeli";
+            this.lblModeli.Size = new System.Drawing.Size(55, 20);
+            this.lblModeli.TabIndex = 23;
+            this.lblModeli.Text = "Modeli";
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Active = false;
+            this.btnEdit.Activecolor = System.Drawing.Color.Aqua;
+            this.btnEdit.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEdit.BorderRadius = 0;
+            this.btnEdit.ButtonText = "      Përditso";
+            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEdit.DisabledColor = System.Drawing.Color.Gray;
+            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.Black;
+            this.btnEdit.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnEdit.Iconimage = null;
+            this.btnEdit.Iconimage_right = null;
+            this.btnEdit.Iconimage_right_Selected = null;
+            this.btnEdit.Iconimage_Selected = null;
+            this.btnEdit.IconMarginLeft = 0;
+            this.btnEdit.IconMarginRight = 0;
+            this.btnEdit.IconRightVisible = true;
+            this.btnEdit.IconRightZoom = 0D;
+            this.btnEdit.IconVisible = true;
+            this.btnEdit.IconZoom = 65D;
+            this.btnEdit.IsTab = false;
+            this.btnEdit.Location = new System.Drawing.Point(274, 317);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Normalcolor = System.Drawing.Color.DarkBlue;
+            this.btnEdit.OnHovercolor = System.Drawing.Color.Aqua;
+            this.btnEdit.OnHoverTextColor = System.Drawing.Color.Black;
+            this.btnEdit.selected = false;
+            this.btnEdit.Size = new System.Drawing.Size(83, 37);
+            this.btnEdit.TabIndex = 37;
+            this.btnEdit.Text = "      Përditso";
+            this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEdit.Textcolor = System.Drawing.Color.White;
+            this.btnEdit.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnShto
+            // 
+            this.btnShto.Active = false;
+            this.btnShto.Activecolor = System.Drawing.Color.Lime;
+            this.btnShto.BackColor = System.Drawing.Color.Green;
+            this.btnShto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnShto.BorderRadius = 0;
+            this.btnShto.ButtonText = "        Shto";
+            this.btnShto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShto.DisabledColor = System.Drawing.Color.Gray;
+            this.btnShto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShto.ForeColor = System.Drawing.Color.Black;
+            this.btnShto.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnShto.Iconimage = null;
+            this.btnShto.Iconimage_right = null;
+            this.btnShto.Iconimage_right_Selected = null;
+            this.btnShto.Iconimage_Selected = null;
+            this.btnShto.IconMarginLeft = 0;
+            this.btnShto.IconMarginRight = 0;
+            this.btnShto.IconRightVisible = true;
+            this.btnShto.IconRightZoom = 0D;
+            this.btnShto.IconVisible = true;
+            this.btnShto.IconZoom = 70D;
+            this.btnShto.IsTab = false;
+            this.btnShto.Location = new System.Drawing.Point(274, 281);
+            this.btnShto.Name = "btnShto";
+            this.btnShto.Normalcolor = System.Drawing.Color.Green;
+            this.btnShto.OnHovercolor = System.Drawing.Color.Lime;
+            this.btnShto.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnShto.selected = false;
+            this.btnShto.Size = new System.Drawing.Size(83, 28);
+            this.btnShto.TabIndex = 36;
+            this.btnShto.Text = "        Shto";
+            this.btnShto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnShto.Textcolor = System.Drawing.Color.White;
+            this.btnShto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShto.Click += new System.EventHandler(this.btnShto_Click);
             // 
             // ShtoAutomjet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(526, 323);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnEdito);
+            this.ClientSize = new System.Drawing.Size(369, 359);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnShto);
+            this.Controls.Add(this.panel1);
             this.Name = "ShtoAutomjet";
             this.Text = "Automjeti";
+            this.Load += new System.EventHandler(this.ShtoAutomjet_Load);
             this.gbAktiv.ResumeLayout(false);
             this.gbAktiv.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -250,20 +284,18 @@ namespace Taxi.Automjeti
 
         private System.Windows.Forms.TextBox txtVitiIProdhimit;
         private System.Windows.Forms.TextBox txtKm;
-        private System.Windows.Forms.TextBox txtEmri;
         private System.Windows.Forms.TextBox txtTarga;
         private System.Windows.Forms.Label lblKm;
-        private System.Windows.Forms.Label lblEmri;
         private System.Windows.Forms.Label lblVitiIProdhimit;
         private System.Windows.Forms.Label lblTarga;
-        private System.Windows.Forms.Button btnShto;
-        private System.Windows.Forms.Button btnEdito;
         private System.Windows.Forms.GroupBox gbAktiv;
         private System.Windows.Forms.RadioButton rbNo;
         private System.Windows.Forms.RadioButton rbYes;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtPershkrimi;
-        private System.Windows.Forms.Label lblPershkrimi;
+        private Bunifu.Framework.UI.BunifuFlatButton btnEdit;
+        private Bunifu.Framework.UI.BunifuFlatButton btnShto;
+        private System.Windows.Forms.ComboBox cmbModeliId;
+        private System.Windows.Forms.Label lblModeli;
+        private System.Windows.Forms.Button btnShtoModel;
     }
 }

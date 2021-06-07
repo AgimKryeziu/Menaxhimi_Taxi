@@ -29,8 +29,6 @@ namespace Taxi.Destinacione
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnDestinacioniMeIVizutuar = new System.Windows.Forms.Button();
-            this.btnShtoDestinacion = new System.Windows.Forms.Button();
             this.txtLagjja = new System.Windows.Forms.TextBox();
             this.lblLagjja = new System.Windows.Forms.Label();
             this.txtRruga = new System.Windows.Forms.TextBox();
@@ -39,34 +37,15 @@ namespace Taxi.Destinacione
             this.lblShteti = new System.Windows.Forms.Label();
             this.txtQyteti = new System.Windows.Forms.TextBox();
             this.lblQyteti = new System.Windows.Forms.Label();
+            this.btnShto = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
-            // 
-            // btnDestinacioniMeIVizutuar
-            // 
-            this.btnDestinacioniMeIVizutuar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDestinacioniMeIVizutuar.Location = new System.Drawing.Point(178, 252);
-            this.btnDestinacioniMeIVizutuar.Name = "btnDestinacioniMeIVizutuar";
-            this.btnDestinacioniMeIVizutuar.Size = new System.Drawing.Size(133, 49);
-            this.btnDestinacioniMeIVizutuar.TabIndex = 20;
-            this.btnDestinacioniMeIVizutuar.Text = "Destinacioni me i vizituara";
-            this.btnDestinacioniMeIVizutuar.UseVisualStyleBackColor = true;
-            // 
-            // btnShtoDestinacion
-            // 
-            this.btnShtoDestinacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShtoDestinacion.Location = new System.Drawing.Point(26, 256);
-            this.btnShtoDestinacion.Name = "btnShtoDestinacion";
-            this.btnShtoDestinacion.Size = new System.Drawing.Size(146, 45);
-            this.btnShtoDestinacion.TabIndex = 19;
-            this.btnShtoDestinacion.Text = "Shto Destinacion";
-            this.btnShtoDestinacion.UseVisualStyleBackColor = true;
             // 
             // txtLagjja
             // 
             this.txtLagjja.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLagjja.Location = new System.Drawing.Point(24, 154);
             this.txtLagjja.Name = "txtLagjja";
-            this.txtLagjja.Size = new System.Drawing.Size(285, 26);
+            this.txtLagjja.Size = new System.Drawing.Size(213, 26);
             this.txtLagjja.TabIndex = 17;
             // 
             // lblLagjja
@@ -84,7 +63,7 @@ namespace Taxi.Destinacione
             this.txtRruga.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRruga.Location = new System.Drawing.Point(26, 211);
             this.txtRruga.Name = "txtRruga";
-            this.txtRruga.Size = new System.Drawing.Size(285, 26);
+            this.txtRruga.Size = new System.Drawing.Size(213, 26);
             this.txtRruga.TabIndex = 18;
             // 
             // lblRruga
@@ -102,7 +81,7 @@ namespace Taxi.Destinacione
             this.txtShteti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtShteti.Location = new System.Drawing.Point(25, 40);
             this.txtShteti.Name = "txtShteti";
-            this.txtShteti.Size = new System.Drawing.Size(285, 26);
+            this.txtShteti.Size = new System.Drawing.Size(213, 26);
             this.txtShteti.TabIndex = 13;
             // 
             // lblShteti
@@ -120,7 +99,7 @@ namespace Taxi.Destinacione
             this.txtQyteti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQyteti.Location = new System.Drawing.Point(26, 93);
             this.txtQyteti.Name = "txtQyteti";
-            this.txtQyteti.Size = new System.Drawing.Size(285, 26);
+            this.txtQyteti.Size = new System.Drawing.Size(213, 26);
             this.txtQyteti.TabIndex = 16;
             // 
             // lblQyteti
@@ -133,13 +112,50 @@ namespace Taxi.Destinacione
             this.lblQyteti.TabIndex = 15;
             this.lblQyteti.Text = "Qyteti";
             // 
+            // btnShto
+            // 
+            this.btnShto.Active = false;
+            this.btnShto.Activecolor = System.Drawing.Color.Lime;
+            this.btnShto.BackColor = System.Drawing.Color.Green;
+            this.btnShto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnShto.BorderRadius = 0;
+            this.btnShto.ButtonText = "        Shto";
+            this.btnShto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShto.DisabledColor = System.Drawing.Color.Gray;
+            this.btnShto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShto.ForeColor = System.Drawing.Color.Black;
+            this.btnShto.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnShto.Iconimage = null;
+            this.btnShto.Iconimage_right = null;
+            this.btnShto.Iconimage_right_Selected = null;
+            this.btnShto.Iconimage_Selected = null;
+            this.btnShto.IconMarginLeft = 0;
+            this.btnShto.IconMarginRight = 0;
+            this.btnShto.IconRightVisible = true;
+            this.btnShto.IconRightZoom = 0D;
+            this.btnShto.IconVisible = true;
+            this.btnShto.IconZoom = 70D;
+            this.btnShto.IsTab = false;
+            this.btnShto.Location = new System.Drawing.Point(156, 262);
+            this.btnShto.Name = "btnShto";
+            this.btnShto.Normalcolor = System.Drawing.Color.Green;
+            this.btnShto.OnHovercolor = System.Drawing.Color.Lime;
+            this.btnShto.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnShto.selected = false;
+            this.btnShto.Size = new System.Drawing.Size(83, 28);
+            this.btnShto.TabIndex = 37;
+            this.btnShto.Text = "        Shto";
+            this.btnShto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnShto.Textcolor = System.Drawing.Color.White;
+            this.btnShto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShto.Click += new System.EventHandler(this.btnShto_Click);
+            // 
             // Destinacioni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(338, 321);
-            this.Controls.Add(this.btnDestinacioniMeIVizutuar);
-            this.Controls.Add(this.btnShtoDestinacion);
+            this.ClientSize = new System.Drawing.Size(270, 301);
+            this.Controls.Add(this.btnShto);
             this.Controls.Add(this.txtLagjja);
             this.Controls.Add(this.lblLagjja);
             this.Controls.Add(this.txtRruga);
@@ -156,9 +172,6 @@ namespace Taxi.Destinacione
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnDestinacioniMeIVizutuar;
-        private System.Windows.Forms.Button btnShtoDestinacion;
         private System.Windows.Forms.TextBox txtLagjja;
         private System.Windows.Forms.Label lblLagjja;
         private System.Windows.Forms.TextBox txtRruga;
@@ -167,5 +180,6 @@ namespace Taxi.Destinacione
         private System.Windows.Forms.Label lblShteti;
         private System.Windows.Forms.TextBox txtQyteti;
         private System.Windows.Forms.Label lblQyteti;
+        private Bunifu.Framework.UI.BunifuFlatButton btnShto;
     }
 }

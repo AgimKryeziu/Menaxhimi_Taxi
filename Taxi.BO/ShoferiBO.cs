@@ -8,7 +8,6 @@ namespace Taxi.BO
 {
     public class ShoferiBO : Base
     {
-
         public int IdPunes { get; set; }
         public string Emri { get; set; }
         public string Mbiemri { get; set; }
@@ -43,7 +42,24 @@ namespace Taxi.BO
         }
 
         //Update
-        public ShoferiBO(int idPunes, string emri, string mbiemri,DateTime datlindja, char gjinia, string nrTelefonit, string nrPersonal, string biografia, int vitiNisjesPunes)
+        public ShoferiBO(int idPunes, string emri, string mbiemri,DateTime datlindja, char gjinia, string nrTelefonit, string nrPersonal, string biografia, int vitiNisjesPunes, string LUB, DateTime LUD, int LUN)
+        {
+            IdPunes = idPunes;
+            Emri = emri;
+            Mbiemri = mbiemri;
+            Gjinia = gjinia;
+            Datelindja = datlindja;
+            NrTelefonit = nrTelefonit;
+            NrPersonal = nrPersonal;
+            Biografia = biografia;
+            VitiNisjesPunes = vitiNisjesPunes;
+            this.LUB = LUB;
+            this.LUD = LUD;
+            this.LUN = LUN + 1;
+        }
+
+
+        public ShoferiBO(int idPunes, string emri, string mbiemri, DateTime datlindja, char gjinia, string nrTelefonit, string nrPersonal, string biografia, int vitiNisjesPunes)
         {
             IdPunes = idPunes;
             Emri = emri;

@@ -9,15 +9,15 @@ using Taxi.BO;
 
 namespace Taxi.DAL
 {
-    public class AutomjetiDAL
+    public class ModeletDAL
     {
-        public DataTable GetAllCab()
+        public static DataTable SelectModels()
         {
             try
             {
                 using (DatabaseConn.conn = new SqlConnection(DatabaseConn.conString))
                 {
-                    DatabaseConn.da = new SqlDataAdapter("usp_ShowAutomjetet", DatabaseConn.conn);
+                    DatabaseConn.da = new SqlDataAdapter("usp_SelectModels", DatabaseConn.conn);
                     DataTable dTable = new DataTable();
                     DatabaseConn.da.Fill(dTable);
 
@@ -29,24 +29,21 @@ namespace Taxi.DAL
                 throw ex;
             }
         }
-        
-        public bool InsertAutomjet(AutomjetiBO automjeti)
+
+        public bool InsertModel(ModeletBO modeletBO)
         {
             try
             {
                 using (SqlConnection conn = new SqlConnection(DatabaseConn.conString))
                 {
                     conn.Open();
-                    SqlCommand cmd = new SqlCommand("usp_InsertAutomjetin", conn);
+                    SqlCommand cmd = new SqlCommand("usp_InsertModel", conn);
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
-                    cmd.Parameters.AddWithValue("@Targa", automjeti.Targa);
-                    cmd.Parameters.AddWithValue("@ModeliId", automjeti.Modelet.ModeliId);
-                    cmd.Parameters.AddWithValue("@VitiIProdhimit", automjeti.VitiIProdhimit);
-                    cmd.Parameters.AddWithValue("@Kilometrat", automjeti.Km);
-                    cmd.Parameters.AddWithValue("@Aktiv", automjeti.Aktiv);
-                    cmd.Parameters.AddWithValue("@InsertedBy", automjeti.InsertBy);
-                    cmd.Parameters.AddWithValue("@InsertDate", automjeti.InsertDate);
+                    cmd.Parameters.AddWithValue("@Emri", modeletBO.Emri);
+                    cmd.Parameters.AddWithValue("@Pershkrimi", modeletBO.Pershkrimi);
+                    cmd.Parameters.AddWithValue("@InsertedBy", modeletBO.InsertBy);
+                    cmd.Parameters.AddWithValue("@InsertDate", modeletBO.InsertDate);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -57,5 +54,6 @@ namespace Taxi.DAL
                 return false;
             }
         }
+
     }
 }

@@ -26,7 +26,6 @@ namespace Taxi.Shoferi
        
         private void btnRuaj_Click(object sender, EventArgs e)
         {
-            ShoferiBLL shoferiBLL = new ShoferiBLL();
             bool inserted = shoferiBLL.CreateShofer(InsertShofer());
             if (inserted)
             {
@@ -69,21 +68,25 @@ namespace Taxi.Shoferi
                 txtBiografia.Text = shoferiBO.Biografia;
                 gbGjinia.Text = shoferiBO.Gjinia.ToString();
                 dtpDatelindja.Text = shoferiBO.Datelindja.ToString();
+                txtShoferID.Text = shoferiId.ToString();
             }
         }
 
         private void btnPerditeso_Click(object sender, EventArgs e)
         {
-            shoferiBLL = new ShoferiBLL();
-
+            ShtoShofer addShofer = new ShtoShofer();
+            
             bool updated = shoferiBLL.UpdateShofer(UpdateShofer());
+
             if (updated)
             {
+
                 MessageBox.Show("U ndryshua");
-            }
+                 }
             else
             {
                 MessageBox.Show("Ndryshimi deshtoi");
+
             }
         }
 
@@ -98,8 +101,12 @@ namespace Taxi.Shoferi
             {
                 gender = 'M';
             }
-            shoferiBO = new ShoferiBO(txtEmri.Text, txtMbiemri.Text, gender, txtNrTel.Text, txtNrPersonal.Text, txtBiografia.Text, int.Parse(txtViti.Text), "user", DateTime.Now);
+
+            DateTime datelindja = dtpDatelindja.Value;
+            int id = int.Parse(txtShoferID.Text);
+            shoferiBO = new ShoferiBO(id, txtEmri.Text, txtMbiemri.Text, datelindja, gender, txtNrTel.Text, txtNrPersonal.Text, txtBiografia.Text, int.Parse(txtViti.Text), "user", DateTime.Now, 1);
+           
             return shoferiBO;
         }
-    }
+     }
 }

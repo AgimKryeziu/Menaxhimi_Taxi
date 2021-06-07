@@ -28,11 +28,6 @@ namespace Taxi.BLL
             return shoferiDAL.InsertShofer(shoferi);
         }
 
-        public bool InsertShofer(ShoferiBO shoferi)
-        {
-            return shoferiDAL.InsertShofer(shoferi);
-        }
-
         public ShoferiBO GetItem(int id)
         {
             return shoferiDAL.GetItemById(id);

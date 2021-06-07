@@ -43,7 +43,11 @@
   <ItemGroup>
     <Compile Include="AdresaBLL.cs" />
     <Compile Include="AutomjetiBLL.cs" />
+    <Compile Include="DestinacionetBLL.cs" />
+    <Compile Include="ModeletBLL.cs" />
+    <Compile Include="PjesemarresiBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoliBLL.cs" />
     <Compile Include="ShoferiBLL.cs" />
   </ItemGroup>
   <ItemGroup>

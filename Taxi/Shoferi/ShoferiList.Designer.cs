@@ -63,9 +63,8 @@ namespace Taxi.Shoferi
             this.ClientSize = new System.Drawing.Size(927, 442);
             this.Controls.Add(this.btnShtoShofer);
             this.Controls.Add(this.dgvShoferiList);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ShoferiList";
-            this.Text = "ShoferiList";
             this.Load += new System.EventHandler(this.ShoferiList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvShoferiList)).EndInit();
             this.ResumeLayout(false);

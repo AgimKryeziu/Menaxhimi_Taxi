@@ -19,12 +19,14 @@ namespace Taxi.BO
 
         }
 
-        public AdresaBO(string shteti, string qyteti, string lagjja, string rruga)
+        public AdresaBO(string shteti, string qyteti, string lagjja, string rruga, string insertBy, DateTime insertDate)
         {
             Shteti = shteti;
             Qyteti = qyteti;
             Lagjja = lagjja;
             Rruga = rruga;
+            InsertBy = insertBy;
+            InsertDate = insertDate;
         }
     }
 }

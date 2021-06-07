@@ -31,14 +31,16 @@ namespace Taxi.BO
         {
         }
 
-        public AutomjetiBO(int automjetiId, ModeletBO modelet, string targa, int vitiIProdhimit, bool aktiv, double km)
+        // Add
+        public AutomjetiBO(ModeletBO modelet, string targa, int vitiIProdhimit, bool aktiv, double km, string insertBy, DateTime insertDate)
         {
-            AutomjetiId = automjetiId;
             Modelet = modelet;
             Targa = targa;
             VitiIProdhimit = vitiIProdhimit;
             Aktiv = aktiv;
             Km = km;
+            InsertBy = insertBy;
+            InsertDate = insertDate;
         }
     }
 }

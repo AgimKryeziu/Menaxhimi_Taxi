@@ -5,11 +5,40 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Taxi.BO;
 
 namespace Taxi.DAL
 {
-    class RoliDAL
+    public class RoliDAL
     {
+        public bool InsertRole (RoletBO roletBO)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(DatabaseConn.conString))
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand("usp_InsertRole", conn);
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@Pershkrimi", roletBO.Pershkrimi);
+                    cmd.Parameters.AddWithValue("@InsertBy", roletBO.InsertBy);
+                    cmd.Parameters.AddWithValue("@InsertDate", roletBO.InsertDate);
+
+                    cmd.ExecuteNonQuery();
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                DatabaseConn.conn.Close();
+            }
+        }
+
         public static int GetRoleId(string username, string password)
         {
             try

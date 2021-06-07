@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Taxi.BLL;
 
 namespace Taxi.Automjeti
 {
@@ -17,18 +18,34 @@ namespace Taxi.Automjeti
             InitializeComponent();
         }
 
-        private void btnShtoAutomjet_Click(object sender, EventArgs e)
+
+        public static DataTable lista;
+
+
+        private void Automjeti_Load(object sender, EventArgs e)
         {
-            Taxi.Automjeti.ShtoAutomjet shtoAutomjet = new ShtoAutomjet();
-            shtoAutomjet.Show();
-            btnShtoAutomjet.Visible = true;
+            PopulateAutomjetiList();
         }
 
-        private void btnEditoAutomjet_Click(object sender, EventArgs e)
+        public void PopulateAutomjetiList()
+        {
+            AutomjetiBLL shoferi = new AutomjetiBLL();
+            lista = shoferi.ShowAllCab();
+            dgvAutomjeti.DataSource = lista;
+            dgvAutomjeti.Columns["AutomjetiId"].Visible = false;
+        }
+
+
+        private void btnShto_Click(object sender, EventArgs e)
         {
             Taxi.Automjeti.ShtoAutomjet shtoAutomjet = new ShtoAutomjet();
             shtoAutomjet.Show();
-            btnEditoAutomjet.Visible = true;
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            Taxi.Automjeti.ShtoAutomjet shtoAutomjet = new ShtoAutomjet();
+            shtoAutomjet.Show();
         }
     }
 }

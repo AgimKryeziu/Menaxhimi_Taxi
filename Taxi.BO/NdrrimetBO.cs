@@ -21,7 +21,7 @@ namespace Taxi.BO
 
         }
 
-        public NdrrimetBO(int nderrimiId, ShoferiBO shoferi, AutomjetiBO automjeti, DateTime fillimiINderrimit, DateTime mbarimiINDerrimit, DateTime kohaEHyrjes, DateTime kohaEDaljes)
+        public NdrrimetBO(int nderrimiId, ShoferiBO shoferi, AutomjetiBO automjeti, DateTime fillimiINderrimit, DateTime mbarimiINDerrimit, DateTime kohaEHyrjes, DateTime kohaEDaljes, string insertBy, DateTime insertDate)
         {
             NderrimiId = nderrimiId;
             Shoferi = shoferi;
@@ -30,7 +30,8 @@ namespace Taxi.BO
             MbarimiINDerrimit = mbarimiINDerrimit;
             KohaEHyrjes = kohaEHyrjes;
             KohaEDaljes = kohaEDaljes;
+            InsertBy = insertBy;
+            InsertDate = insertDate;
         }
-
     }
 }

@@ -16,12 +16,18 @@ namespace Taxi.BO
         {
 
         }
-
-        public ModeletBO(int modeliId, string emri, string pershkrimi)
+        public ModeletBO(int modeliID, string emri)
         {
-            ModeliId = modeliId;
+            ModeliId = modeliID;
+            Emri = emri;
+        }
+
+        public ModeletBO(string emri, string pershkrimi, string insertBy, DateTime insertDate)
+        {
             Emri = emri;
             Pershkrimi = pershkrimi;
+            InsertBy = insertBy;
+            InsertDate = insertDate;
         }
     }
 }

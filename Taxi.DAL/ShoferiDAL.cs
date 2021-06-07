@@ -89,12 +89,11 @@ namespace Taxi.DAL
                     string Gjinia = Convert.ToString(ds.Tables[0].Rows[0]["Gjinia"]);
                     string Biografia = Convert.ToString(ds.Tables[0].Rows[0]["Biografia"]);
                     string VitiNisjesPunes = Convert.ToString(ds.Tables[0].Rows[0]["VitiNisjesPunes"]);
-
+                    
                     shoferiBO = new ShoferiBO(Convert.ToInt32(ShoferiId), Emri, Mbiemri, Convert.ToDateTime(Datelindja), Convert.ToChar(Gjinia), NrPersonal, NrPersonal, Biografia, Convert.ToInt32(VitiNisjesPunes));
                     return shoferiBO;
 
                 }
-
             }
             catch (Exception ex)
             {
@@ -121,7 +120,7 @@ namespace Taxi.DAL
                     cmd.Parameters.AddWithValue("@Gjinia", shoferi.Gjinia);
                     cmd.Parameters.AddWithValue("@Biografia", shoferi.Biografia);
                     cmd.Parameters.AddWithValue("@VitiNisjsPunes", shoferi.VitiNisjesPunes);
-                    cmd.Parameters.AddWithValue("@LUB", 1);
+                    cmd.Parameters.AddWithValue("@LUB", shoferi.LUB);
                     cmd.Parameters.AddWithValue("@LUD", DateTime.Now);
                     cmd.Parameters.AddWithValue("@LUN", shoferi.LUN);
 

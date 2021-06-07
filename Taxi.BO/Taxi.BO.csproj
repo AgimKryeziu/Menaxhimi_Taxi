@@ -44,7 +44,7 @@
     <Compile Include="AdresaBO.cs" />
     <Compile Include="AutomjetiBO.cs" />
     <Compile Include="Base.cs" />
-    <Compile Include="DestinacionetBO.cs" />
+    <Compile Include="DestinacioniBO.cs" />
     <Compile Include="ModeletBO.cs" />
     <Compile Include="NdrrimetBO.cs" />
     <Compile Include="PjesemarresitBO.cs" />

@@ -13,7 +13,7 @@ namespace Taxi.BO
         public PjesemarresitBO Pjesemarresit { get; set; }
         public string KohaNisjes { get; set; }
         public string Vendtakimi { get; set; }
-        public DestinacionetBO Destinacioni { get; set; }
+        public DestinacioniBO Destinacioni { get; set; }
         public DateTime KohaEMberritjes { get; set; }
         public bool Anulohet { get; set; }
        

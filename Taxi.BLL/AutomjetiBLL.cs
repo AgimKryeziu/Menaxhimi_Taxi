@@ -11,12 +11,16 @@ namespace Taxi.BLL
 {
     public class AutomjetiBLL
     {
-        AutomjetiDAL automjetiDAL = new AutomjetiDAL();
-
+        AutomjetiDAL automjetiDAL;
+        public AutomjetiBLL()
+        {
+            automjetiDAL = new AutomjetiDAL();
+        }
         public DataTable ShowAllCab()
         {
             return automjetiDAL.GetAllCab();
         }
+
         public bool InsertAutomjet(AutomjetiBO automjeti)
         {
             return automjetiDAL.InsertAutomjet(automjeti);

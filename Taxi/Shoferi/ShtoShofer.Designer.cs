@@ -50,6 +50,7 @@ namespace Taxi.Shoferi
             this.gbGjinia = new System.Windows.Forms.GroupBox();
             this.btnAnulo = new System.Windows.Forms.Button();
             this.btnPerditeso = new System.Windows.Forms.Button();
+            this.txtShoferID = new System.Windows.Forms.TextBox();
             this.gbGjinia.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -215,6 +216,7 @@ namespace Taxi.Shoferi
             // rBtnGenderM
             // 
             this.rBtnGenderM.AutoSize = true;
+            this.rBtnGenderM.Checked = true;
             this.rBtnGenderM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rBtnGenderM.Location = new System.Drawing.Point(23, 28);
             this.rBtnGenderM.Name = "rBtnGenderM";
@@ -256,11 +258,20 @@ namespace Taxi.Shoferi
             this.btnPerditeso.UseVisualStyleBackColor = true;
             this.btnPerditeso.Click += new System.EventHandler(this.btnPerditeso_Click);
             // 
+            // txtShoferID
+            // 
+            this.txtShoferID.Location = new System.Drawing.Point(314, 162);
+            this.txtShoferID.Name = "txtShoferID";
+            this.txtShoferID.Size = new System.Drawing.Size(46, 20);
+            this.txtShoferID.TabIndex = 40;
+            this.txtShoferID.Visible = false;
+            // 
             // ShtoShofer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(786, 351);
+            this.Controls.Add(this.txtShoferID);
             this.Controls.Add(this.btnPerditeso);
             this.Controls.Add(this.gbGjinia);
             this.Controls.Add(this.lblVitiINisjesPuses);
@@ -312,5 +323,6 @@ namespace Taxi.Shoferi
         private System.Windows.Forms.GroupBox gbGjinia;
         private System.Windows.Forms.Button btnAnulo;
         private System.Windows.Forms.Button btnPerditeso;
+        private System.Windows.Forms.TextBox txtShoferID;
     }
 }
