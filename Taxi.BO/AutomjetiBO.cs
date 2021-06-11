@@ -42,5 +42,31 @@ namespace Taxi.BO
             InsertBy = insertBy;
             InsertDate = insertDate;
         }
+
+        // Update
+        public AutomjetiBO(int automjetiId, ModeletBO modelet, string targa, int vitiIProdhimit, bool aktiv, double km, string LUB, DateTime LUD, int LUN)
+        {
+            AutomjetiId = automjetiId;
+            Modelet = modelet;
+            Targa = targa;
+            VitiIProdhimit = vitiIProdhimit;
+            Aktiv = aktiv;
+            Km = km;
+            this.LUB = LUB;
+            this.LUD = LUD;
+            this.LUN = LUN;
+        }
+
+
+        public AutomjetiBO(int automjetiId, ModeletBO modeletBO, string targa, int vitiIProdhimit, bool aktiv, double km)
+        {
+            AutomjetiId = automjetiId;
+            Modelet = modeletBO;
+            Targa = targa;
+            VitiIProdhimit = vitiIProdhimit;
+            Aktiv = aktiv;
+            Km = km;
+        }
+
     }
 }

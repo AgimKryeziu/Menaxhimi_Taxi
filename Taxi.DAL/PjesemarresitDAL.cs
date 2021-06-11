@@ -46,8 +46,6 @@ namespace Taxi.DAL
             {
                 return gjendja;
             }
-
-            
         }
 
         public DataTable GetAllAdmin()

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Taxi.BLL;
 using Taxi.DAL;
+using Taxi.BO;
 
 namespace Taxi
 {
@@ -22,6 +23,7 @@ namespace Taxi
             InitializeComponent();
         }
 
+        Base obj = new Base();
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -31,10 +33,11 @@ namespace Taxi
         private void btnLogin_Click(object sender, EventArgs e)
         {
             MainMenu mainMenu = new MainMenu();
-          
+            
             if (PjesemarresiBLL.CheckLogin(txtUserName.Text, txtPassword.Text))
             {
                 mainMenu.Show();
+                obj.SaveUsername = txtUserName.Text;
             }
             else if(txtUserName.Text == "" && txtPassword.Text == "")
             {

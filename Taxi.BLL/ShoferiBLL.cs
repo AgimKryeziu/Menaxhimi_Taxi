@@ -37,5 +37,10 @@ namespace Taxi.BLL
         {
             return shoferiDAL.EditShofer(shoferi);
         }
+
+        public bool DeleteShofer(int id)
+        {
+            return shoferiDAL.DeleteItem(id);
+        }
     }
 }

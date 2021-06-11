@@ -20,8 +20,7 @@ namespace Taxi.DAL
                     conn.Open();
                     SqlCommand cmd = new SqlCommand("usp_InsertDestinacion", conn);
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
-
-                    cmd.Parameters.AddWithValue("@AdresaId", destinacionet.Adresa.AdresaId);
+                    
                     cmd.Parameters.AddWithValue("@Shteti", destinacionet.Adresa.Shteti);
                     cmd.Parameters.AddWithValue("@Qyteti", destinacionet.Adresa.Qyteti);
                     cmd.Parameters.AddWithValue("@Lagjja", destinacionet.Adresa.Lagjja);

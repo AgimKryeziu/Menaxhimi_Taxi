@@ -56,7 +56,7 @@ namespace Taxi
         private void btnAutomjetet_Click(object sender, EventArgs e)
         {
             SidePanel.Top = btnAutomjetet.Top;
-            a.Show();
+            ca.Show();
             s.Hide();
             sho.Hide();
             d.Hide();

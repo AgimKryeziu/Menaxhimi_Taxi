@@ -80,9 +80,8 @@ namespace Taxi.Shoferi
 
             if (updated)
             {
-
                 MessageBox.Show("U ndryshua");
-                 }
+            }
             else
             {
                 MessageBox.Show("Ndryshimi deshtoi");
@@ -108,5 +107,5 @@ namespace Taxi.Shoferi
            
             return shoferiBO;
         }
-     }
+    }
 }

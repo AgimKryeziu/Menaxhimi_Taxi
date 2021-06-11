@@ -5,7 +5,6 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Data;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Taxi.BLL;
@@ -22,7 +21,8 @@ namespace Taxi.Automjeti
             InitializeComponent();
             automjetiBLL = new AutomjetiBLL();
         }
-
+        AutomjetiBO automjetiBO;
+        ModeletBO modeletBO;
         private void btnShto_Click(object sender, EventArgs e)
         {
             bool aktiv;
@@ -35,9 +35,9 @@ namespace Taxi.Automjeti
                 aktiv = false;
             }
 
-            ModeletBO modeletBO = new ModeletBO(cmbModeliId.SelectedIndex + 1, cmbModeliId.Text);
+            modeletBO = new ModeletBO(cmbModeliId.SelectedIndex + 1, cmbModeliId.Text);
 
-            AutomjetiBO automjetiBO = new AutomjetiBO(modeletBO, txtTarga.Text, int.Parse(txtVitiIProdhimit.Text), aktiv, double.Parse(txtKm.Text), "User", DateTime.Now);
+            automjetiBO = new AutomjetiBO(modeletBO, txtTarga.Text, int.Parse(txtVitiIProdhimit.Text), aktiv, double.Parse(txtKm.Text), "User", DateTime.Now);
             bool inserted = automjetiBLL.InsertAutomjet(automjetiBO);
             if (inserted)
             {
@@ -48,6 +48,21 @@ namespace Taxi.Automjeti
                 MessageBox.Show("Regjistrimi deshtoi.");
             }
 
+        }
+
+        public void LoadData(int automjetiId)
+        {
+            automjetiBO = automjetiBLL.GetItem(automjetiId);
+            
+
+            if (!string.IsNullOrEmpty(automjetiBO.AutomjetiId.ToString()))
+            {
+                txtAutomjetiId.Text = automjetiId.ToString();
+                txtTarga.Text = automjetiBO.Targa;
+                cmbModeliId.Text = automjetiBO.Modelet.ModeliId.ToString();
+                txtKm.Text = automjetiBO.Km.ToString();
+                txtVitiIProdhimit.Text = automjetiBO.VitiIProdhimit.ToString();
+            }
         }
 
         private void btnShtoModel_Click(object sender, EventArgs e)
@@ -63,6 +78,43 @@ namespace Taxi.Automjeti
             cmbModeliId.DataSource = dt;
             cmbModeliId.DisplayMember = dt.Columns[1].ColumnName;
             cmbModeliId.ValueMember = dt.Columns[0].ColumnName;
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            ShtoAutomjet addAutomjet = new ShtoAutomjet();
+
+            bool updated = automjetiBLL.UpdateAutomjet(UpdateAutomjet());
+
+            if (updated)
+            {
+
+                MessageBox.Show("U ndryshua");
+            }
+            else
+            {
+                MessageBox.Show("Ndryshimi deshtoi");
+
+            }
+        }
+
+        public AutomjetiBO UpdateAutomjet()
+        {
+            bool aktiv;
+            if (rbYes.Checked)
+            {
+                aktiv = true;
+            }
+            else
+            {
+                aktiv = false;
+            }
+
+            int id = int.Parse(txtAutomjetiId.Text);
+            modeletBO = new ModeletBO(cmbModeliId.SelectedIndex + 1, cmbModeliId.Text);
+            automjetiBO = new AutomjetiBO(id, modeletBO, txtTarga.Text, int.Parse(txtVitiIProdhimit.Text), aktiv, double.Parse(txtKm.Text), "user", DateTime.Now, 1);
+
+            return automjetiBO;
         }
     }
 }

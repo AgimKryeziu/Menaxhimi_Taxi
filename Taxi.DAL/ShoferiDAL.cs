@@ -134,5 +134,28 @@ namespace Taxi.DAL
                 return false;
             }
         }
+
+        public bool DeleteItem(int id)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(DatabaseConn.conString))
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand("usp_DeleteShofer", conn);
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@ShoferiId", id);
+
+                    cmd.ExecuteNonQuery();
+                }
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

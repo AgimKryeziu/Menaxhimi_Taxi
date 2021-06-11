@@ -136,7 +136,7 @@ namespace Taxi.Destinacione
             this.btnShto.IconVisible = true;
             this.btnShto.IconZoom = 70D;
             this.btnShto.IsTab = false;
-            this.btnShto.Location = new System.Drawing.Point(156, 262);
+            this.btnShto.Location = new System.Drawing.Point(156, 261);
             this.btnShto.Name = "btnShto";
             this.btnShto.Normalcolor = System.Drawing.Color.Green;
             this.btnShto.OnHovercolor = System.Drawing.Color.Lime;

@@ -53,9 +53,9 @@ namespace Taxi
             // 
             this.panel1.BackColor = System.Drawing.Color.CadetBlue;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(334, 0);
+            this.panel1.Location = new System.Drawing.Point(250, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 38);
+            this.panel1.Size = new System.Drawing.Size(891, 38);
             this.panel1.TabIndex = 9;
             // 
             // panel2
@@ -100,7 +100,7 @@ namespace Taxi
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(334, 707);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(250, 701);
             this.bunifuGradientPanel1.TabIndex = 8;
             // 
             // btnShkyçu
@@ -126,14 +126,14 @@ namespace Taxi
             this.btnShkyçu.IconVisible = true;
             this.btnShkyçu.IconZoom = 50D;
             this.btnShkyçu.IsTab = false;
-            this.btnShkyçu.Location = new System.Drawing.Point(13, 624);
+            this.btnShkyçu.Location = new System.Drawing.Point(13, 618);
             this.btnShkyçu.Margin = new System.Windows.Forms.Padding(5);
             this.btnShkyçu.Name = "btnShkyçu";
             this.btnShkyçu.Normalcolor = System.Drawing.Color.Transparent;
             this.btnShkyçu.OnHovercolor = System.Drawing.Color.DarkBlue;
             this.btnShkyçu.OnHoverTextColor = System.Drawing.Color.White;
             this.btnShkyçu.selected = false;
-            this.btnShkyçu.Size = new System.Drawing.Size(301, 68);
+            this.btnShkyçu.Size = new System.Drawing.Size(208, 68);
             this.btnShkyçu.TabIndex = 8;
             this.btnShkyçu.Text = "                  Shkyçu";
             this.btnShkyçu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -172,7 +172,7 @@ namespace Taxi
             this.btnLogOut.IconVisible = true;
             this.btnLogOut.IconZoom = 50D;
             this.btnLogOut.IsTab = false;
-            this.btnLogOut.Location = new System.Drawing.Point(5, 841);
+            this.btnLogOut.Location = new System.Drawing.Point(5, 835);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(5);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Normalcolor = System.Drawing.Color.Transparent;
@@ -215,7 +215,7 @@ namespace Taxi
             this.btnAdminat.OnHovercolor = System.Drawing.Color.DarkBlue;
             this.btnAdminat.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAdminat.selected = false;
-            this.btnAdminat.Size = new System.Drawing.Size(315, 70);
+            this.btnAdminat.Size = new System.Drawing.Size(216, 70);
             this.btnAdminat.TabIndex = 3;
             this.btnAdminat.Text = "                  Adminat";
             this.btnAdminat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -252,7 +252,7 @@ namespace Taxi
             this.btnSherbimet.OnHovercolor = System.Drawing.Color.DarkBlue;
             this.btnSherbimet.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSherbimet.selected = false;
-            this.btnSherbimet.Size = new System.Drawing.Size(309, 70);
+            this.btnSherbimet.Size = new System.Drawing.Size(216, 70);
             this.btnSherbimet.TabIndex = 3;
             this.btnSherbimet.Text = "                  Sherbimet";
             this.btnSherbimet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -289,7 +289,7 @@ namespace Taxi
             this.btnDestinacionet.OnHovercolor = System.Drawing.Color.DarkBlue;
             this.btnDestinacionet.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDestinacionet.selected = false;
-            this.btnDestinacionet.Size = new System.Drawing.Size(315, 78);
+            this.btnDestinacionet.Size = new System.Drawing.Size(216, 78);
             this.btnDestinacionet.TabIndex = 4;
             this.btnDestinacionet.Text = "                  Destinacionet";
             this.btnDestinacionet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -326,7 +326,7 @@ namespace Taxi
             this.btnShoferet.OnHovercolor = System.Drawing.Color.DarkBlue;
             this.btnShoferet.OnHoverTextColor = System.Drawing.Color.White;
             this.btnShoferet.selected = false;
-            this.btnShoferet.Size = new System.Drawing.Size(301, 70);
+            this.btnShoferet.Size = new System.Drawing.Size(208, 70);
             this.btnShoferet.TabIndex = 2;
             this.btnShoferet.Text = "                  Shoferet";
             this.btnShoferet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -363,7 +363,7 @@ namespace Taxi
             this.btnAutomjetet.OnHovercolor = System.Drawing.Color.DarkBlue;
             this.btnAutomjetet.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAutomjetet.selected = false;
-            this.btnAutomjetet.Size = new System.Drawing.Size(309, 64);
+            this.btnAutomjetet.Size = new System.Drawing.Size(238, 64);
             this.btnAutomjetet.TabIndex = 1;
             this.btnAutomjetet.Text = "                  Automjetet";
             this.btnAutomjetet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -421,7 +421,7 @@ namespace Taxi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1218, 707);
+            this.ClientSize = new System.Drawing.Size(1141, 701);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.bunifuGradientPanel1);

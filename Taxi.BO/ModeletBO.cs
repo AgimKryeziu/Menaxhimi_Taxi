@@ -12,9 +12,9 @@ namespace Taxi.BO
         public string Emri { get; set; }
         public string Pershkrimi { get; set; }
 
-        public ModeletBO()
+        public ModeletBO(int modeliID)
         {
-
+            ModeliId = modeliID;
         }
         public ModeletBO(int modeliID, string emri)
         {

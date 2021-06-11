@@ -8,6 +8,8 @@ namespace Taxi.BO
 {
     public class Base
     {
+        public string SaveUsername { get; set; }
+
         public string InsertBy { get; set; } // ruhet emri i perdoruesit qe e shton rreshtin
         public DateTime InsertDate { get; set; } // ruhet data kur eshte krijuar rekordi i ri
         public string LUB { get; set; } // Last update by - ruhet emri i perdoruesit qe e ka edituar rekordin

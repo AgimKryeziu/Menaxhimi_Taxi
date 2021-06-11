@@ -14,13 +14,14 @@ namespace Taxi.BO
         public char Gjinia { get; set; }
         public DateTime Datelindja { get; set; }
         public string NrTelefonit { get; set; }
-
+        
         public string NrPersonal { get; set; } //e validon masi ti bon CRUD-at
         
         public string Biografia { get; set; }
         public int VitiNisjesPunes { get; set; }
 
 
+     
 
         public ShoferiBO()
         {
