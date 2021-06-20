@@ -10,7 +10,7 @@ namespace Taxi.BO
     {
 
         public int DestinacioniId { get; set; }
-        public AdresaBO Adresa { get; set; }
+        public AdresaBO Adresa { get; set; } // Kompzcion
 
 
         public DestinacioniBO()

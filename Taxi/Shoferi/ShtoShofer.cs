@@ -37,7 +37,7 @@ namespace Taxi.Shoferi
             }
         }
 
-        public ShoferiBO InsertShofer()
+        public ShoferiBO InsertShofer  ()
         {
             char gender;
             if (rBtnGenderF.Checked)
@@ -74,7 +74,6 @@ namespace Taxi.Shoferi
 
         private void btnPerditeso_Click(object sender, EventArgs e)
         {
-            ShtoShofer addShofer = new ShtoShofer();
             
             bool updated = shoferiBLL.UpdateShofer(UpdateShofer());
 

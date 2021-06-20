@@ -11,6 +11,25 @@ namespace Taxi.DAL
 {
     public class RoliDAL
     {
+        public static DataTable SelectRoles()
+        {
+            try
+            {
+                using (DatabaseConn.conn = new SqlConnection(DatabaseConn.conString))
+                {
+                    DatabaseConn.da = new SqlDataAdapter("usp_SelectRoles", DatabaseConn.conn);
+                    DataTable dTable = new DataTable();
+                    DatabaseConn.da.Fill(dTable);
+
+                    return dTable;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public bool InsertRole (RoletBO roletBO)
         {
             try
@@ -22,7 +41,7 @@ namespace Taxi.DAL
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
                     cmd.Parameters.AddWithValue("@Pershkrimi", roletBO.Pershkrimi);
-                    cmd.Parameters.AddWithValue("@InsertBy", roletBO.InsertBy);
+                    cmd.Parameters.AddWithValue("@InsertedBy", roletBO.InsertBy);
                     cmd.Parameters.AddWithValue("@InsertDate", roletBO.InsertDate);
 
                     cmd.ExecuteNonQuery();

@@ -46,6 +46,7 @@
     <Compile Include="DatabaseConn.cs" />
     <Compile Include="DestinacioniDAL.cs" />
     <Compile Include="ModeletDAL.cs" />
+    <Compile Include="NderrimetDAL.cs" />
     <Compile Include="PjesemarresitDAL.cs" />
     <Compile Include="RoliDAL.cs" />
     <Compile Include="ShoferiDAL.cs" />

@@ -46,7 +46,7 @@
     <Compile Include="Base.cs" />
     <Compile Include="DestinacioniBO.cs" />
     <Compile Include="ModeletBO.cs" />
-    <Compile Include="NdrrimetBO.cs" />
+    <Compile Include="NderrimetBO.cs" />
     <Compile Include="PjesemarresitBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoletBO.cs" />

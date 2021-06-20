@@ -79,7 +79,6 @@ namespace Taxi
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(183, 20);
             this.txtUserName.TabIndex = 9;
-            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             // 
             // label2
             // 

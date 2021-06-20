@@ -48,7 +48,6 @@ namespace Taxi.Shoferi
             this.rBtnGenderF = new System.Windows.Forms.RadioButton();
             this.rBtnGenderM = new System.Windows.Forms.RadioButton();
             this.gbGjinia = new System.Windows.Forms.GroupBox();
-            this.btnAnulo = new System.Windows.Forms.Button();
             this.btnPerditeso = new System.Windows.Forms.Button();
             this.txtShoferID = new System.Windows.Forms.TextBox();
             this.gbGjinia.SuspendLayout();
@@ -67,7 +66,7 @@ namespace Taxi.Shoferi
             // dtpDatelindja
             // 
             this.dtpDatelindja.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpDatelindja.Location = new System.Drawing.Point(464, 41);
+            this.dtpDatelindja.Location = new System.Drawing.Point(447, 36);
             this.dtpDatelindja.Name = "dtpDatelindja";
             this.dtpDatelindja.Size = new System.Drawing.Size(267, 26);
             this.dtpDatelindja.TabIndex = 2;
@@ -75,9 +74,9 @@ namespace Taxi.Shoferi
             // btnRuaj
             // 
             this.btnRuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRuaj.Location = new System.Drawing.Point(495, 299);
+            this.btnRuaj.Location = new System.Drawing.Point(541, 299);
             this.btnRuaj.Name = "btnRuaj";
-            this.btnRuaj.Size = new System.Drawing.Size(64, 34);
+            this.btnRuaj.Size = new System.Drawing.Size(85, 34);
             this.btnRuaj.TabIndex = 8;
             this.btnRuaj.Text = "Ruaj";
             this.btnRuaj.UseVisualStyleBackColor = true;
@@ -156,7 +155,7 @@ namespace Taxi.Shoferi
             // 
             this.lblDatelindja.AutoSize = true;
             this.lblDatelindja.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDatelindja.Location = new System.Drawing.Point(466, 9);
+            this.lblDatelindja.Location = new System.Drawing.Point(443, 9);
             this.lblDatelindja.Name = "lblDatelindja";
             this.lblDatelindja.Size = new System.Drawing.Size(80, 20);
             this.lblDatelindja.TabIndex = 17;
@@ -165,7 +164,7 @@ namespace Taxi.Shoferi
             // txtBiografia
             // 
             this.txtBiografia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBiografia.Location = new System.Drawing.Point(20, 219);
+            this.txtBiografia.Location = new System.Drawing.Point(28, 219);
             this.txtBiografia.Multiline = true;
             this.txtBiografia.Name = "txtBiografia";
             this.txtBiografia.Size = new System.Drawing.Size(456, 114);
@@ -185,7 +184,7 @@ namespace Taxi.Shoferi
             // 
             this.lblBiografia.AutoSize = true;
             this.lblBiografia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBiografia.Location = new System.Drawing.Point(31, 185);
+            this.lblBiografia.Location = new System.Drawing.Point(24, 184);
             this.lblBiografia.Name = "lblBiografia";
             this.lblBiografia.Size = new System.Drawing.Size(72, 20);
             this.lblBiografia.TabIndex = 21;
@@ -237,22 +236,12 @@ namespace Taxi.Shoferi
             this.gbGjinia.TabStop = false;
             this.gbGjinia.Text = "Gjinia";
             // 
-            // btnAnulo
-            // 
-            this.btnAnulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnulo.Location = new System.Drawing.Point(565, 299);
-            this.btnAnulo.Name = "btnAnulo";
-            this.btnAnulo.Size = new System.Drawing.Size(62, 34);
-            this.btnAnulo.TabIndex = 9;
-            this.btnAnulo.Text = "Anulo";
-            this.btnAnulo.UseVisualStyleBackColor = true;
-            // 
             // btnPerditeso
             // 
             this.btnPerditeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPerditeso.Location = new System.Drawing.Point(633, 299);
             this.btnPerditeso.Name = "btnPerditeso";
-            this.btnPerditeso.Size = new System.Drawing.Size(87, 34);
+            this.btnPerditeso.Size = new System.Drawing.Size(106, 34);
             this.btnPerditeso.TabIndex = 39;
             this.btnPerditeso.Text = "Perditeso";
             this.btnPerditeso.UseVisualStyleBackColor = true;
@@ -276,7 +265,6 @@ namespace Taxi.Shoferi
             this.Controls.Add(this.gbGjinia);
             this.Controls.Add(this.lblVitiINisjesPuses);
             this.Controls.Add(this.dtpDatelindja);
-            this.Controls.Add(this.btnAnulo);
             this.Controls.Add(this.btnRuaj);
             this.Controls.Add(this.txtViti);
             this.Controls.Add(this.txtNrTel);
@@ -321,7 +309,6 @@ namespace Taxi.Shoferi
         private System.Windows.Forms.RadioButton rBtnGenderF;
         private System.Windows.Forms.RadioButton rBtnGenderM;
         private System.Windows.Forms.GroupBox gbGjinia;
-        private System.Windows.Forms.Button btnAnulo;
         private System.Windows.Forms.Button btnPerditeso;
         private System.Windows.Forms.TextBox txtShoferID;
     }

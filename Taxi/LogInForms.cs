@@ -32,12 +32,13 @@ namespace Taxi
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            MainMenu mainMenu = new MainMenu();
-            
+                       
             if (PjesemarresiBLL.CheckLogin(txtUserName.Text, txtPassword.Text))
             {
+                Main mainMenu = new Main();
                 mainMenu.Show();
                 obj.SaveUsername = txtUserName.Text;
+                this.Visible = false;
             }
             else if(txtUserName.Text == "" && txtPassword.Text == "")
             {
@@ -59,11 +60,6 @@ namespace Taxi
             {
                 txtPassword.UseSystemPasswordChar = true;
             }
-        }
-
-        private void txtUserName_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

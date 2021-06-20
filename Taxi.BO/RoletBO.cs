@@ -16,11 +16,24 @@ namespace Taxi.BO
 
         }
 
+        //Add
         public RoletBO(string pershkrimi, string insertBy, DateTime insertDate)
         {
             Pershkrimi = pershkrimi;
             InsertBy = insertBy;
             InsertDate = insertDate;
+        }
+
+
+        public RoletBO(int roliId, string pershkrimi)
+        {
+            RoliId = roliId;
+            Pershkrimi = pershkrimi;
+        }
+
+        public RoletBO(int roliId)
+        {
+            RoliId = roliId;
         }
     }
 }

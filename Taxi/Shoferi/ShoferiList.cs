@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Taxi.DAL;
 using Taxi.BLL;
-using Sho = Taxi.Shoferi;
 using Taxi.BO;
 
 namespace Taxi.Shoferi
@@ -91,7 +90,7 @@ namespace Taxi.Shoferi
         private void btnShtoShofer_Click(object sender, EventArgs e)
         {
             ShtoShofer shtoShofer = new ShtoShofer();
-            shtoShofer.Show();
+            shtoShofer.ShowDialog();
 
         }
 
@@ -154,6 +153,11 @@ namespace Taxi.Shoferi
             {
                 MessageBox.Show(ex.Message.ToString());
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

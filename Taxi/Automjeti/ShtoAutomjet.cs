@@ -23,7 +23,8 @@ namespace Taxi.Automjeti
         }
         AutomjetiBO automjetiBO;
         ModeletBO modeletBO;
-        private void btnShto_Click(object sender, EventArgs e)
+
+        private void btnRuaj_Click(object sender, EventArgs e)
         {
             bool aktiv;
             if (rbYes.Checked)
@@ -47,7 +48,24 @@ namespace Taxi.Automjeti
             {
                 MessageBox.Show("Regjistrimi deshtoi.");
             }
+        }
 
+        private void btnPerditeso_Click(object sender, EventArgs e)
+        {
+            btnRuaj.Visible = false;
+
+            bool updated = automjetiBLL.UpdateAutomjet(UpdateAutomjet());
+
+            if (updated)
+            {
+
+                MessageBox.Show("U ndryshua");
+            }
+            else
+            {
+                MessageBox.Show("Ndryshimi deshtoi");
+
+            }
         }
 
         public void LoadData(int automjetiId)
@@ -80,24 +98,6 @@ namespace Taxi.Automjeti
             cmbModeliId.ValueMember = dt.Columns[0].ColumnName;
         }
 
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-            ShtoAutomjet addAutomjet = new ShtoAutomjet();
-
-            bool updated = automjetiBLL.UpdateAutomjet(UpdateAutomjet());
-
-            if (updated)
-            {
-
-                MessageBox.Show("U ndryshua");
-            }
-            else
-            {
-                MessageBox.Show("Ndryshimi deshtoi");
-
-            }
-        }
-
         public AutomjetiBO UpdateAutomjet()
         {
             bool aktiv;
@@ -116,5 +116,7 @@ namespace Taxi.Automjeti
 
             return automjetiBO;
         }
+
+       
     }
 }

@@ -14,12 +14,14 @@ namespace Taxi.Automjeti
 {
     public partial class Modelet : Form
     {
+        ModeletBLL modeletBLL;
+
         public Modelet()
         {
             InitializeComponent();
+            modeletBLL = new ModeletBLL();
         }
 
-        ModeletBLL modeletBLL;
 
         private void btnShto_Click(object sender, EventArgs e)
         {

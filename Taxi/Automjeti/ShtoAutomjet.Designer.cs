@@ -43,9 +43,9 @@ namespace Taxi.Automjeti
             this.btnShtoModel = new System.Windows.Forms.Button();
             this.cmbModeliId = new System.Windows.Forms.ComboBox();
             this.lblModeli = new System.Windows.Forms.Label();
-            this.btnShto = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txtAutomjetiId = new System.Windows.Forms.TextBox();
-            this.btnEdit = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnRuaj = new System.Windows.Forms.Button();
+            this.btnPerditeso = new System.Windows.Forms.Button();
             this.gbAktiv.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -187,98 +187,44 @@ namespace Taxi.Automjeti
             this.lblModeli.TabIndex = 23;
             this.lblModeli.Text = "Modeli";
             // 
-            // btnShto
-            // 
-            this.btnShto.Active = false;
-            this.btnShto.Activecolor = System.Drawing.Color.Lime;
-            this.btnShto.BackColor = System.Drawing.Color.Green;
-            this.btnShto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnShto.BorderRadius = 0;
-            this.btnShto.ButtonText = "        Shto";
-            this.btnShto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnShto.DisabledColor = System.Drawing.Color.Gray;
-            this.btnShto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShto.ForeColor = System.Drawing.Color.Black;
-            this.btnShto.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnShto.Iconimage = null;
-            this.btnShto.Iconimage_right = null;
-            this.btnShto.Iconimage_right_Selected = null;
-            this.btnShto.Iconimage_Selected = null;
-            this.btnShto.IconMarginLeft = 0;
-            this.btnShto.IconMarginRight = 0;
-            this.btnShto.IconRightVisible = true;
-            this.btnShto.IconRightZoom = 0D;
-            this.btnShto.IconVisible = true;
-            this.btnShto.IconZoom = 70D;
-            this.btnShto.IsTab = false;
-            this.btnShto.Location = new System.Drawing.Point(258, 280);
-            this.btnShto.Name = "btnShto";
-            this.btnShto.Normalcolor = System.Drawing.Color.Green;
-            this.btnShto.OnHovercolor = System.Drawing.Color.Lime;
-            this.btnShto.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnShto.selected = false;
-            this.btnShto.Size = new System.Drawing.Size(83, 31);
-            this.btnShto.TabIndex = 36;
-            this.btnShto.Text = "        Shto";
-            this.btnShto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShto.Textcolor = System.Drawing.Color.White;
-            this.btnShto.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShto.Click += new System.EventHandler(this.btnShto_Click);
-            // 
             // txtAutomjetiId
             // 
             this.txtAutomjetiId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAutomjetiId.Location = new System.Drawing.Point(283, 26);
+            this.txtAutomjetiId.Location = new System.Drawing.Point(314, 29);
             this.txtAutomjetiId.Name = "txtAutomjetiId";
             this.txtAutomjetiId.Size = new System.Drawing.Size(30, 26);
             this.txtAutomjetiId.TabIndex = 28;
             this.txtAutomjetiId.Visible = false;
             // 
-            // btnEdit
+            // btnRuaj
             // 
-            this.btnEdit.Active = false;
-            this.btnEdit.Activecolor = System.Drawing.Color.Aqua;
-            this.btnEdit.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEdit.BorderRadius = 0;
-            this.btnEdit.ButtonText = "      Përditso";
-            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.DisabledColor = System.Drawing.Color.Gray;
-            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.ForeColor = System.Drawing.Color.Black;
-            this.btnEdit.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnEdit.Iconimage = null;
-            this.btnEdit.Iconimage_right = null;
-            this.btnEdit.Iconimage_right_Selected = null;
-            this.btnEdit.Iconimage_Selected = null;
-            this.btnEdit.IconMarginLeft = 0;
-            this.btnEdit.IconMarginRight = 0;
-            this.btnEdit.IconRightVisible = true;
-            this.btnEdit.IconRightZoom = 0D;
-            this.btnEdit.IconVisible = true;
-            this.btnEdit.IconZoom = 65D;
-            this.btnEdit.IsTab = false;
-            this.btnEdit.Location = new System.Drawing.Point(258, 317);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Normalcolor = System.Drawing.Color.DarkBlue;
-            this.btnEdit.OnHovercolor = System.Drawing.Color.Aqua;
-            this.btnEdit.OnHoverTextColor = System.Drawing.Color.Black;
-            this.btnEdit.selected = false;
-            this.btnEdit.Size = new System.Drawing.Size(83, 37);
-            this.btnEdit.TabIndex = 37;
-            this.btnEdit.Text = "      Përditso";
-            this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Textcolor = System.Drawing.Color.White;
-            this.btnEdit.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            this.btnRuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRuaj.Location = new System.Drawing.Point(267, 284);
+            this.btnRuaj.Name = "btnRuaj";
+            this.btnRuaj.Size = new System.Drawing.Size(93, 29);
+            this.btnRuaj.TabIndex = 38;
+            this.btnRuaj.Text = "Ruaj";
+            this.btnRuaj.UseVisualStyleBackColor = true;
+            this.btnRuaj.Click += new System.EventHandler(this.btnRuaj_Click);
+            // 
+            // btnPerditeso
+            // 
+            this.btnPerditeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerditeso.Location = new System.Drawing.Point(266, 327);
+            this.btnPerditeso.Name = "btnPerditeso";
+            this.btnPerditeso.Size = new System.Drawing.Size(93, 31);
+            this.btnPerditeso.TabIndex = 38;
+            this.btnPerditeso.Text = "Perditeso";
+            this.btnPerditeso.UseVisualStyleBackColor = true;
+            this.btnPerditeso.Click += new System.EventHandler(this.btnPerditeso_Click);
             // 
             // ShtoAutomjet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(354, 372);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnShto);
+            this.ClientSize = new System.Drawing.Size(371, 370);
+            this.Controls.Add(this.btnPerditeso);
+            this.Controls.Add(this.btnRuaj);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtAutomjetiId);
             this.Name = "ShtoAutomjet";
@@ -305,11 +251,11 @@ namespace Taxi.Automjeti
         private System.Windows.Forms.RadioButton rbNo;
         private System.Windows.Forms.RadioButton rbYes;
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuFlatButton btnShto;
         private System.Windows.Forms.ComboBox cmbModeliId;
         private System.Windows.Forms.Label lblModeli;
         private System.Windows.Forms.Button btnShtoModel;
         private System.Windows.Forms.TextBox txtAutomjetiId;
-        private Bunifu.Framework.UI.BunifuFlatButton btnEdit;
+        private System.Windows.Forms.Button btnRuaj;
+        private System.Windows.Forms.Button btnPerditeso;
     }
 }

@@ -23,8 +23,15 @@ namespace Taxi.BO
 
      
 
-        public ShoferiBO()
+        public ShoferiBO(int shoferiId)
         {
+            IdPunes = shoferiId;
+        }
+
+        public ShoferiBO(int idPunes, string emri)
+        {
+            IdPunes = idPunes;
+            Emri = emri;
         }
 
         //Add

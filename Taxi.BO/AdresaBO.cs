@@ -19,6 +19,7 @@ namespace Taxi.BO
 
         }
 
+        //Add
         public AdresaBO(string shteti, string qyteti, string lagjja, string rruga, string insertBy, DateTime insertDate)
         {
             Shteti = shteti;

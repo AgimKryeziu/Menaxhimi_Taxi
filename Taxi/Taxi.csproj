@@ -12,13 +12,15 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>.\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -153,6 +155,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administratori\ShtoAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administratori\ShtoAdmin.Designer.cs">
+      <DependentUpon>ShtoAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administratori\ShtoRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administratori\ShtoRol.Designer.cs">
+      <DependentUpon>ShtoRol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Automjeti\Automjeti.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,11 +197,28 @@
     <Compile Include="LogInForms.Designer.cs">
       <DependentUpon>LogInForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainMenu.cs">
+    <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainMenu.Designer.cs">
-      <DependentUpon>MainMenu.cs</DependentUpon>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nderrime\NderrimetList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nderrime\NderrimetList.Designer.cs">
+      <DependentUpon>NderrimetList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nderrime\ShtoNderrime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nderrime\ShtoNderrime.Designer.cs">
+      <DependentUpon>ShtoNderrime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Sherbime\Sherbimi.cs">
       <SubType>Form</SubType>
@@ -197,6 +228,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sherbime\ShtoSherbim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sherbime\ShtoSherbim.Designer.cs">
+      <DependentUpon>ShtoSherbim.cs</DependentUpon>
+    </Compile>
     <Compile Include="Shoferi\ShtoShofer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,17 +246,23 @@
     <Compile Include="Shoferi\ShoferiList.Designer.cs">
       <DependentUpon>ShoferiList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Administratori\Administratori.cs">
+    <Compile Include="Administratori\AdminList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administratori\Administratori.Designer.cs">
-      <DependentUpon>Administratori.cs</DependentUpon>
+    <Compile Include="Administratori\AdminList.Designer.cs">
+      <DependentUpon>AdminList.cs</DependentUpon>
     </Compile>
     <Compile Include="TaxiDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TaxiDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Administratori\ShtoAdmin.resx">
+      <DependentUpon>ShtoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administratori\ShtoRol.resx">
+      <DependentUpon>ShtoRol.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Automjeti\Automjeti.resx">
       <DependentUpon>Automjeti.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,21 +278,25 @@
     <EmbeddedResource Include="LogInForms.resx">
       <DependentUpon>LogInForms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainMenu.resx">
-      <DependentUpon>MainMenu.cs</DependentUpon>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nderrime\NderrimetList.resx">
+      <DependentUpon>NderrimetList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nderrime\ShtoNderrime.resx">
+      <DependentUpon>ShtoNderrime.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Sherbime\Sherbimi.resx">
       <DependentUpon>Sherbimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sherbime\ShtoSherbim.resx">
+      <DependentUpon>ShtoSherbim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Shoferi\ShtoShofer.resx">
       <DependentUpon>ShtoShofer.cs</DependentUpon>
@@ -257,8 +304,8 @@
     <EmbeddedResource Include="Shoferi\ShoferiList.resx">
       <DependentUpon>ShoferiList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Administratori\Administratori.resx">
-      <DependentUpon>Administratori.cs</DependentUpon>
+    <EmbeddedResource Include="Administratori\AdminList.resx">
+      <DependentUpon>AdminList.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -300,16 +347,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\viber_image_2021-04-25_23-32-45.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cab.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\cab.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Service.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

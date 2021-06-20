@@ -28,7 +28,19 @@ namespace Taxi.BLL
             return pjesemarresitDAL.InsertAdmin(pjesemarresitBO);
         }
 
+        public PjesemarresitBO GetItem(int id)
+        {
+            return pjesemarresitDAL.GetItemById(id);
+        }
 
+        public bool UpdateAdmin(PjesemarresitBO pjesemarresitBO)
+        {
+            return pjesemarresitDAL.EditAdmin(pjesemarresitBO);
+        }
+        public bool DeleteAdmin(int id)
+        {
+            return pjesemarresitDAL.DeleteItem(id);
+        }
 
         public static bool CheckLogin(string username, string password)
         {

@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Taxi.BO
 {
+    // Trashegimi
     public class AutomjetiBO : Base 
     {
         public int AutomjetiId { get; set; }
-        public ModeletBO Modelet { get; set; }
+        public ModeletBO Modelet { get; set; } // Kompzcion
         public string Targa { get; set; }
         public int VitiIProdhimit { get; set; }
         public bool Aktiv { get; set; }
@@ -27,8 +28,15 @@ namespace Taxi.BO
             }
         }
 
-        public AutomjetiBO()
+        public AutomjetiBO(int automjetiId)
         {
+            AutomjetiId = automjetiId;
+        }
+
+        public AutomjetiBO(int automjetiId, ModeletBO modelet)
+        {
+            AutomjetiId = automjetiId;
+            Modelet = modelet;
         }
 
         // Add
@@ -54,7 +62,7 @@ namespace Taxi.BO
             Km = km;
             this.LUB = LUB;
             this.LUD = LUD;
-            this.LUN = LUN;
+            this.LUN = LUN + 1;
         }
 
 
@@ -67,6 +75,5 @@ namespace Taxi.BO
             Aktiv = aktiv;
             Km = km;
         }
-
     }
 }

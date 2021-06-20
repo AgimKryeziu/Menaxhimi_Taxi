@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Taxi.Sherbime
 {
-    public partial class Sherbimi : Form
+    public partial class ShtoSherbim : Form
     {
-        public Sherbimi()
+        public ShtoSherbim()
         {
             InitializeComponent();
         }
 
-        private void bntShto_Click(object sender, EventArgs e)
+        private void btnShtoDestimacion_Click(object sender, EventArgs e)
         {
-            Sherbime.ShtoSherbim shtoSherbim = new ShtoSherbim();
-            shtoSherbim.ShowDialog();
+            Destinacione.Destinacioni destinacioni = new Destinacione.Destinacioni();
+            destinacioni.Show();
         }
     }
 }

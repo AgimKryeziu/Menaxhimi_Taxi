@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,13 +9,22 @@ using Taxi.DAL;
 
 namespace Taxi.BLL
 {
-    class RoliBLL
+    public class RoliBLL
     {
         RoliDAL roliDAL;
+        public RoliBLL()
+        {
+            roliDAL = new RoliDAL();
+        }
 
-        public bool CreateShofer(RoletBO roletBO)
+        public bool CreateRole(RoletBO roletBO)
         {
             return roliDAL.InsertRole(roletBO);
+        }
+
+        public static DataTable SelectRoles()
+        {
+            return RoliDAL.SelectRoles();
         }
     }
 }

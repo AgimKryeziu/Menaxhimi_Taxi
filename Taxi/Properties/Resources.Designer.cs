@@ -63,16 +63,6 @@ namespace Taxi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cab {
-            get {
-                object obj = ResourceManager.GetObject("cab", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap cab1 {
             get {
                 object obj = ResourceManager.GetObject("cab1", resourceCulture);
@@ -83,19 +73,9 @@ namespace Taxi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Service {
+        internal static System.Drawing.Bitmap cab2 {
             get {
-                object obj = ResourceManager.GetObject("Service", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap viber_image_2021_04_25_23_32_45 {
-            get {
-                object obj = ResourceManager.GetObject("viber_image_2021-04-25_23-32-45", resourceCulture);
+                object obj = ResourceManager.GetObject("cab2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -32,8 +32,8 @@ namespace Taxi.Shoferi
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShoferiList));
             this.dgvShoferiList = new System.Windows.Forms.DataGridView();
             this.btnShtoShofer = new System.Windows.Forms.Button();
-            this.exportToExcel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.exportToExcel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShoferiList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,8 +42,9 @@ namespace Taxi.Shoferi
             this.dgvShoferiList.AllowUserToAddRows = false;
             this.dgvShoferiList.AllowUserToDeleteRows = false;
             this.dgvShoferiList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvShoferiList.Location = new System.Drawing.Point(14, 91);
+            this.dgvShoferiList.Location = new System.Drawing.Point(14, 97);
             this.dgvShoferiList.Name = "dgvShoferiList";
+            this.dgvShoferiList.ReadOnly = true;
             this.dgvShoferiList.Size = new System.Drawing.Size(929, 340);
             this.dgvShoferiList.TabIndex = 0;
             this.dgvShoferiList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvShoferiList_CellContentClick);
@@ -51,39 +52,40 @@ namespace Taxi.Shoferi
             // btnShtoShofer
             // 
             this.btnShtoShofer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShtoShofer.Location = new System.Drawing.Point(850, 43);
+            this.btnShtoShofer.Location = new System.Drawing.Point(840, 45);
             this.btnShtoShofer.Name = "btnShtoShofer";
             this.btnShtoShofer.Size = new System.Drawing.Size(93, 33);
             this.btnShtoShofer.TabIndex = 37;
-            this.btnShtoShofer.Text = "Add";
+            this.btnShtoShofer.Text = "Shto";
             this.btnShtoShofer.UseVisualStyleBackColor = true;
             this.btnShtoShofer.Click += new System.EventHandler(this.btnShtoShofer_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(19, 81);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Eksporto";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // exportToExcel
             // 
             this.exportToExcel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exportToExcel.BackgroundImage")));
             this.exportToExcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.exportToExcel.Location = new System.Drawing.Point(12, 3);
+            this.exportToExcel.Location = new System.Drawing.Point(17, 12);
             this.exportToExcel.Name = "exportToExcel";
             this.exportToExcel.Size = new System.Drawing.Size(51, 66);
             this.exportToExcel.TabIndex = 38;
             this.exportToExcel.UseVisualStyleBackColor = true;
             this.exportToExcel.Click += new System.EventHandler(this.btnEksportoExcel_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 72);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
-            this.label1.TabIndex = 39;
-            this.label1.Text = "Eksporto";
-            // 
             // ShoferiList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(955, 442);
+            this.ClientSize = new System.Drawing.Size(955, 458);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.exportToExcel);
             this.Controls.Add(this.btnShtoShofer);

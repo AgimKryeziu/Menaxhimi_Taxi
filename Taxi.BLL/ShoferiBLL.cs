@@ -42,5 +42,10 @@ namespace Taxi.BLL
         {
             return shoferiDAL.DeleteItem(id);
         }
+
+        public static DataTable SelectDrivers()
+        {
+            return ShoferiDAL.SelectDrivers();
+        }
     }
 }
