@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Taxi.BLL;
 using Taxi.BO;
-using Taxi.DAL;
 
 namespace Taxi.Administratori
 {
@@ -45,8 +38,8 @@ namespace Taxi.Administratori
         }
         private void btnShto_Click(object sender, EventArgs e)
         {
-            roletBO = new RoletBO(cmbPershkrimiId.SelectedIndex + 1, cmbPershkrimiId.Text);
-            pjesemarresitBO = new PjesemarresitBO(roletBO, txtEmri.Text, txtMbiemri.Text, txtNrTel.Text, txtEmail.Text, txtNofka.Text, txtFjalekalimi.Text, "user", DateTime.Now);
+            roletBO = new RoletBO(int.Parse(cmbPershkrimiId.SelectedValue.ToString()), cmbPershkrimiId.Text);
+            pjesemarresitBO = new PjesemarresitBO(roletBO, txtEmri.Text, txtMbiemri.Text, txtNrTel.Text, txtEmail.Text, txtNofka.Text, txtFjalekalimi.Text, Base.SaveUsername, DateTime.Now);
             bool inserted = pjesemarresiBLL.CreateAdmin(pjesemarresitBO);
             if (inserted)
             {
@@ -76,18 +69,18 @@ namespace Taxi.Administratori
 
         public PjesemarresitBO UpdateAdmin()
         {
-            
+
             int id = int.Parse(txtAdminId.Text);
 
             roletBO = new RoletBO(cmbPershkrimiId.SelectedIndex + 1, cmbPershkrimiId.Text);
-            pjesemarresitBO = new PjesemarresitBO(id, roletBO, txtEmri.Text, txtMbiemri.Text, txtNrTel.Text, txtEmail.Text, txtNofka.Text, txtFjalekalimi.Text, "user", DateTime.Now, 1);
+            pjesemarresitBO = new PjesemarresitBO(id, roletBO, txtEmri.Text, txtMbiemri.Text, txtNrTel.Text, txtEmail.Text, txtNofka.Text, txtFjalekalimi.Text, Base.SaveUsername, DateTime.Now, 1);
 
             return pjesemarresitBO;
         }
 
         private void ShtoAdmin_Load(object sender, EventArgs e)
         {
-            
+
             DataTable dt = new DataTable();
             dt = RoliBLL.SelectRoles();
             cmbPershkrimiId.DataSource = dt;

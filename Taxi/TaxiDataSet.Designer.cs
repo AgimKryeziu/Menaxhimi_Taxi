@@ -15849,47 +15849,47 @@ SELECT ShoferiId, Emri, Mbiemri, Datelindja, NrPersonal, NrTelefonit, Gjinia, Bi
             }
             if (((this._adresatTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._adresatTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection a" +
                         "tring.");
             }
             if (((this._automjetetTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._automjetetTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection a" +
                         "tring.");
             }
             if (((this._destinacionetTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._destinacionetTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection a" +
                         "tring.");
             }
             if (((this._modeletTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._modeletTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection a" +
                         "tring.");
             }
             if (((this._nderrimetTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._nderrimetTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection a" +
                         "tring.");
             }
             if (((this._pJESEMARRESITTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._pJESEMARRESITTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection a" +
                         "tring.");
             }
             if (((this._rOLETTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._rOLETTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection a" +
                         "tring.");
             }
             if (((this._sherbimetTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._sherbimetTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection a" +
                         "tring.");
             }
             if (((this._shoferetTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._shoferetTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection a" +
                         "tring.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
@@ -16145,7 +16145,7 @@ SELECT ShoferiId, Emri, Mbiemri, Datelindja, NrPersonal, NrTelefonit, Gjinia, Bi
         }
         
         /// <summary>
-        ///Used to sort self-referenced table's rows
+        ///Used to sort self-referenced table'a rows
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private class SelfReferenceComparer : object, global::System.Collections.Generic.IComparer<global::System.Data.DataRow> {

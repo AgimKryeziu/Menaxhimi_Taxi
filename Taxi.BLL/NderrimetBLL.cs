@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Taxi.DAL;
+﻿using System.Data;
 using Taxi.BO;
-using System.Data;
+using Taxi.DAL;
 
 namespace Taxi.BLL
 {
@@ -31,6 +26,21 @@ namespace Taxi.BLL
         public NderrimetBO GetItem(int id)
         {
             return nderrimetDAL.GetItemById(id);
+        }
+
+        public bool UpdateNderrim(NderrimetBO nderrimetBO)
+        {
+            return nderrimetDAL.EditNderrim(nderrimetBO);
+        }
+
+        public bool DeleteNderrimin(int id)
+        {
+            return nderrimetDAL.DeleteItem(id);
+        }
+
+        public static DataTable SelectNderrimet()
+        {
+            return NderrimetDAL.SelectNderrimet();
         }
     }
 }

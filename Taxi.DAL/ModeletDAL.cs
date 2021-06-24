@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Taxi.BO;
 
 namespace Taxi.DAL
@@ -30,7 +26,7 @@ namespace Taxi.DAL
             }
         }
 
-        public bool InsertModel(ModeletBO modeletBO)
+        public bool InsertModelet(ModeletBO modeletBO)
         {
             try
             {

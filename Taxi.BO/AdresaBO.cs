@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Taxi.BO
 {
@@ -19,6 +15,12 @@ namespace Taxi.BO
 
         }
 
+        public AdresaBO(int adresaId, string shteti)
+        {
+            AdresaId = adresaId;
+            Shteti = shteti;
+        }
+
         //Add
         public AdresaBO(string shteti, string qyteti, string lagjja, string rruga, string insertBy, DateTime insertDate)
         {
@@ -29,5 +31,6 @@ namespace Taxi.BO
             InsertBy = insertBy;
             InsertDate = insertDate;
         }
+
     }
 }

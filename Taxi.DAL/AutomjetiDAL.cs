@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Taxi.BO;
 
 namespace Taxi.DAL
@@ -29,7 +25,7 @@ namespace Taxi.DAL
                 throw ex;
             }
         }
-        
+
         public bool InsertAutomjet(AutomjetiBO automjeti)
         {
             try
@@ -52,7 +48,7 @@ namespace Taxi.DAL
                 }
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
@@ -82,7 +78,7 @@ namespace Taxi.DAL
                     string targa = Convert.ToString(ds.Tables[0].Rows[0]["Targa"]);
                     string modeliId = Convert.ToString(ds.Tables[0].Rows[0]["ModeliId"]);
                     string vitiIProdhimit = Convert.ToString(ds.Tables[0].Rows[0]["VitiIProdhimit"]);
-                    string aktiv = Convert.ToString(ds.Tables[0].Rows[0]["Aktiv"]); 
+                    string aktiv = Convert.ToString(ds.Tables[0].Rows[0]["Aktiv"]);
                     string kilometrat = Convert.ToString(ds.Tables[0].Rows[0]["Kilometrat"]);
 
                     modeletBO = new ModeletBO(Int32.Parse(modeliId));
@@ -123,7 +119,7 @@ namespace Taxi.DAL
                 }
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
@@ -145,6 +141,25 @@ namespace Taxi.DAL
                 }
                 return true;
 
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public static DataTable SelectCab()
+        {
+            try
+            {
+                using (DatabaseConn.conn = new SqlConnection(DatabaseConn.conString))
+                {
+                    DatabaseConn.da = new SqlDataAdapter("usp_SelectCab", DatabaseConn.conn);
+                    DataTable dTable = new DataTable();
+                    DatabaseConn.da.Fill(dTable);
+
+                    return dTable;
+                }
             }
             catch (Exception ex)
             {

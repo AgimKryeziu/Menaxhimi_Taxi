@@ -36,7 +36,7 @@ namespace Taxi.Nderrime
             // 
             // btnShtoShofer
             // 
-            this.btnShtoShofer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShtoShofer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShtoShofer.Location = new System.Drawing.Point(676, 46);
             this.btnShtoShofer.Name = "btnShtoShofer";
             this.btnShtoShofer.Size = new System.Drawing.Size(93, 33);

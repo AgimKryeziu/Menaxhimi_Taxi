@@ -1,15 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Taxi.DAL;
 using Taxi.BLL;
-using Taxi.BO;
 
 namespace Taxi.Shoferi
 {
@@ -54,7 +46,7 @@ namespace Taxi.Shoferi
 
             deleteButton.Width = 60;
             dgvShoferiList.Columns.Add(deleteButton);
-        }   
+        }
 
         private void dgvShoferiList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -140,7 +132,7 @@ namespace Taxi.Shoferi
                 }
                 catch (System.Exception ex)
                 {
-                    MessageBox.Show(ex.Message); 
+                    MessageBox.Show(ex.Message);
                 }
                 finally
                 {

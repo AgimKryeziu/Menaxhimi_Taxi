@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Taxi.BO
 {
@@ -22,6 +18,7 @@ namespace Taxi.BO
             Emri = emri;
         }
 
+        //Add
         public ModeletBO(string emri, string pershkrimi, string insertBy, DateTime insertDate)
         {
             Emri = emri;

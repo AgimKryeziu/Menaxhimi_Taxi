@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Taxi.BLL;
 
@@ -60,7 +54,7 @@ namespace Taxi.Automjeti
             Taxi.Automjeti.ShtoAutomjet shtoAutomjet = new ShtoAutomjet();
             shtoAutomjet.ShowDialog();
         }
-       
+
         private void dgvAutomjeti_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             automjetiBLL = new AutomjetiBLL();

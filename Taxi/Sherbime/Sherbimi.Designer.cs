@@ -44,10 +44,11 @@ namespace Taxi.Sherbime
             this.dgvSherbimet.ReadOnly = true;
             this.dgvSherbimet.Size = new System.Drawing.Size(954, 299);
             this.dgvSherbimet.TabIndex = 34;
+            this.dgvSherbimet.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSherbimet_CellContentClick);
             // 
             // bntShto
             // 
-            this.bntShto.Location = new System.Drawing.Point(857, 83);
+            this.bntShto.Location = new System.Drawing.Point(870, 74);
             this.bntShto.Name = "bntShto";
             this.bntShto.Size = new System.Drawing.Size(96, 30);
             this.bntShto.TabIndex = 35;
@@ -59,11 +60,12 @@ namespace Taxi.Sherbime
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 440);
+            this.ClientSize = new System.Drawing.Size(981, 434);
             this.Controls.Add(this.bntShto);
             this.Controls.Add(this.dgvSherbimet);
             this.Name = "Sherbimi";
             this.Text = "Sherbimet";
+            this.Load += new System.EventHandler(this.Sherbimi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSherbimet)).EndInit();
             this.ResumeLayout(false);
 

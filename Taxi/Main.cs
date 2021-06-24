@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Taxi
@@ -17,7 +10,7 @@ namespace Taxi
             InitializeComponent();
         }
 
-        Stafi.Admin s = new Stafi.Admin();
+        Stafi.Admin ad = new Stafi.Admin();
         Shoferi.ShoferiList sho = new Shoferi.ShoferiList();
         Automjeti.Automjeti a = new Automjeti.Automjeti();
         Nderrime.NderrimetList n = new Nderrime.NderrimetList();
@@ -27,12 +20,12 @@ namespace Taxi
         {
             SidePanel.Top = btnAdminat.Top;
 
-            s.TopLevel = false;
-            s.Parent = pnlContent;
-            s.Dock = DockStyle.Fill;
-            s.Show();
+            ad.TopLevel = false;
+            ad.Parent = pnlContent;
+            ad.Dock = DockStyle.Fill;
+            ad.Show();
 
-          //  s.ShowDialog();
+            //  s.ShowDialog();
             //sho.Hide();
             //a.Hide();
             //n.Hide();
@@ -41,7 +34,6 @@ namespace Taxi
 
         private void btnShoferet_Click(object sender, EventArgs e)
         {
-
             SidePanel.Top = btnShoferet.Top;
             sho.ShowDialog();
             //s.Hide();
@@ -85,7 +77,7 @@ namespace Taxi
             SidePanel.Top = btnShkyçu.Top;
 
             this.Hide();
-            s.Close();
+            ad.Close();
             sh.Close();
             a.Close();
             n.Hide();
@@ -101,6 +93,6 @@ namespace Taxi
             logInForms.Visible = true;
         }
 
-        
+
     }
 }

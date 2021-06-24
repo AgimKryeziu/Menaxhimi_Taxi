@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Taxi.BO;
 
 namespace Taxi.DAL
@@ -40,10 +36,10 @@ namespace Taxi.DAL
                     SqlCommand cmd = new SqlCommand("usp_InsertNderrim", conn);
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
-                    cmd.Parameters.AddWithValue("@Targa", nderrimetBO.Shoferi.IdPunes);
-                    cmd.Parameters.AddWithValue("@ModeliId", nderrimetBO.Automjeti.AutomjetiId);
-                    cmd.Parameters.AddWithValue("@VitiIProdhimit", nderrimetBO.FillimiINderrimit);
-                    cmd.Parameters.AddWithValue("@Kilometrat", nderrimetBO.MbarimiINDerrimit);
+                    cmd.Parameters.AddWithValue("@ShoferiId", nderrimetBO.Shoferi.IdPunes);
+                    cmd.Parameters.AddWithValue("@AutomjetiId", nderrimetBO.Automjeti.AutomjetiId);
+                    cmd.Parameters.AddWithValue("@FillimiNderrimit", nderrimetBO.FillimiINderrimit);
+                    cmd.Parameters.AddWithValue("@MbarimiINderrimit", nderrimetBO.MbarimiINDerrimit);
                     cmd.Parameters.AddWithValue("@InsertedBy", nderrimetBO.InsertBy);
                     cmd.Parameters.AddWithValue("@InsertDate", nderrimetBO.InsertDate);
 
@@ -51,7 +47,7 @@ namespace Taxi.DAL
                 }
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
@@ -100,5 +96,76 @@ namespace Taxi.DAL
             }
         }
 
+        public bool EditNderrim(NderrimetBO nderrimetBO)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(DatabaseConn.conString))
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand("usp_EditNderrim", conn);
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@NderrimiId", nderrimetBO.Shoferi.IdPunes);
+                    cmd.Parameters.AddWithValue("@ShoferiId", nderrimetBO.Shoferi.IdPunes);
+                    cmd.Parameters.AddWithValue("@AutomjetiId", nderrimetBO.Automjeti.AutomjetiId);
+                    cmd.Parameters.AddWithValue("@FillimiNderrimit", nderrimetBO.FillimiINderrimit);
+                    cmd.Parameters.AddWithValue("@MbarimiINderrimit", nderrimetBO.MbarimiINDerrimit);
+                    cmd.Parameters.AddWithValue("@LUB", nderrimetBO.LUB);
+                    cmd.Parameters.AddWithValue("@LUD", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@LUN", nderrimetBO.LUN);
+
+                    cmd.ExecuteNonQuery();
+
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public bool DeleteItem(int id)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(DatabaseConn.conString))
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand("usp_DeleteNderrim", conn);
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@NderrimiId", id);
+
+                    cmd.ExecuteNonQuery();
+                }
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public static DataTable SelectNderrimet()
+        {
+            try
+            {
+                using (DatabaseConn.conn = new SqlConnection(DatabaseConn.conString))
+                {
+                    DatabaseConn.da = new SqlDataAdapter("usp_SelectNderrimet", DatabaseConn.conn);
+                    DataTable dTable = new DataTable();
+                    DatabaseConn.da.Fill(dTable);
+
+                    return dTable;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

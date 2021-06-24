@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Taxi.DAL;
+﻿using System.Data;
 using Taxi.BO;
-using System.Data;
+using Taxi.DAL;
 
 namespace Taxi.BLL
 {

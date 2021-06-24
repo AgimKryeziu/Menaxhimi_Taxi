@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Taxi.BLL;
-using Taxi.DAL;
 using Taxi.BO;
 
 namespace Taxi
@@ -16,14 +8,12 @@ namespace Taxi
     public partial class LogInForms : Form
     {
 
-        public static bool albFlag { get; set; } = true;
 
         public LogInForms()
         {
             InitializeComponent();
         }
 
-        Base obj = new Base();
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -32,15 +22,15 @@ namespace Taxi
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-                       
+
             if (PjesemarresiBLL.CheckLogin(txtUserName.Text, txtPassword.Text))
             {
                 Main mainMenu = new Main();
                 mainMenu.Show();
-                obj.SaveUsername = txtUserName.Text;
+                Base.SaveUsername = txtUserName.Text;
                 this.Visible = false;
             }
-            else if(txtUserName.Text == "" && txtPassword.Text == "")
+            else if (txtUserName.Text == "" && txtPassword.Text == "")
             {
                 MessageBox.Show("Please write Username or Password!");
             }

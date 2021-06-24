@@ -37,25 +37,25 @@ namespace Taxi.Administratori
             // lblPershkrimi
             // 
             this.lblPershkrimi.AutoSize = true;
-            this.lblPershkrimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPershkrimi.Location = new System.Drawing.Point(22, 52);
+            this.lblPershkrimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPershkrimi.Location = new System.Drawing.Point(13, 28);
             this.lblPershkrimi.Name = "lblPershkrimi";
-            this.lblPershkrimi.Size = new System.Drawing.Size(126, 20);
+            this.lblPershkrimi.Size = new System.Drawing.Size(107, 16);
             this.lblPershkrimi.TabIndex = 0;
             this.lblPershkrimi.Text = "Pershkrimi i rolit: ";
             // 
             // txtPershkrimi
             // 
-            this.txtPershkrimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPershkrimi.Location = new System.Drawing.Point(154, 52);
+            this.txtPershkrimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPershkrimi.Location = new System.Drawing.Point(145, 28);
             this.txtPershkrimi.Name = "txtPershkrimi";
-            this.txtPershkrimi.Size = new System.Drawing.Size(158, 26);
+            this.txtPershkrimi.Size = new System.Drawing.Size(158, 22);
             this.txtPershkrimi.TabIndex = 1;
             // 
             // btnShto
             // 
-            this.btnShto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShto.Location = new System.Drawing.Point(331, 49);
+            this.btnShto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShto.Location = new System.Drawing.Point(322, 25);
             this.btnShto.Name = "btnShto";
             this.btnShto.Size = new System.Drawing.Size(92, 32);
             this.btnShto.TabIndex = 2;
@@ -67,7 +67,7 @@ namespace Taxi.Administratori
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 114);
+            this.ClientSize = new System.Drawing.Size(450, 98);
             this.Controls.Add(this.btnShto);
             this.Controls.Add(this.txtPershkrimi);
             this.Controls.Add(this.lblPershkrimi);

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data;
 using Taxi.BO;
 using Taxi.DAL;
 
@@ -21,6 +17,11 @@ namespace Taxi.BLL
         public bool CreateDestinacion(DestinacioniBO destinacioniBO)
         {
             return destinacionetDAL.InsertDestinacion(destinacioniBO);
+        }
+
+        public static DataTable SelectDestinacionet()
+        {
+            return DestinacioniDAL.SelectDestinacionet();
         }
     }
 }

@@ -45,19 +45,19 @@ namespace Taxi.Nderrime
             // lblShoferi
             // 
             this.lblShoferi.AutoSize = true;
-            this.lblShoferi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShoferi.Location = new System.Drawing.Point(36, 31);
+            this.lblShoferi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShoferi.Location = new System.Drawing.Point(20, 19);
             this.lblShoferi.Name = "lblShoferi";
-            this.lblShoferi.Size = new System.Drawing.Size(60, 20);
+            this.lblShoferi.Size = new System.Drawing.Size(50, 16);
             this.lblShoferi.TabIndex = 0;
             this.lblShoferi.Text = "Shoferi";
             // 
             // bntRuaj
             // 
-            this.bntRuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntRuaj.Location = new System.Drawing.Point(26, 321);
+            this.bntRuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntRuaj.Location = new System.Drawing.Point(24, 309);
             this.bntRuaj.Name = "bntRuaj";
-            this.bntRuaj.Size = new System.Drawing.Size(104, 36);
+            this.bntRuaj.Size = new System.Drawing.Size(92, 36);
             this.bntRuaj.TabIndex = 2;
             this.bntRuaj.Text = "Ruaj";
             this.bntRuaj.UseVisualStyleBackColor = true;
@@ -66,56 +66,59 @@ namespace Taxi.Nderrime
             // lblAutomjeti
             // 
             this.lblAutomjeti.AutoSize = true;
-            this.lblAutomjeti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAutomjeti.Location = new System.Drawing.Point(36, 92);
+            this.lblAutomjeti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAutomjeti.Location = new System.Drawing.Point(20, 80);
             this.lblAutomjeti.Name = "lblAutomjeti";
-            this.lblAutomjeti.Size = new System.Drawing.Size(76, 20);
+            this.lblAutomjeti.Size = new System.Drawing.Size(63, 16);
             this.lblAutomjeti.TabIndex = 0;
             this.lblAutomjeti.Text = "Automjeti";
             // 
             // btnPerditeso
             // 
-            this.btnPerditeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPerditeso.Location = new System.Drawing.Point(155, 321);
+            this.btnPerditeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerditeso.Location = new System.Drawing.Point(128, 309);
             this.btnPerditeso.Name = "btnPerditeso";
-            this.btnPerditeso.Size = new System.Drawing.Size(105, 36);
+            this.btnPerditeso.Size = new System.Drawing.Size(92, 36);
             this.btnPerditeso.TabIndex = 2;
             this.btnPerditeso.Text = "Perditeso";
             this.btnPerditeso.UseVisualStyleBackColor = true;
+            this.btnPerditeso.Click += new System.EventHandler(this.btnPerditeso_Click);
             // 
             // cmbAutomjetiId
             // 
+            this.cmbAutomjetiId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbAutomjetiId.FormattingEnabled = true;
-            this.cmbAutomjetiId.Location = new System.Drawing.Point(41, 115);
+            this.cmbAutomjetiId.Location = new System.Drawing.Point(25, 103);
             this.cmbAutomjetiId.Name = "cmbAutomjetiId";
-            this.cmbAutomjetiId.Size = new System.Drawing.Size(195, 21);
+            this.cmbAutomjetiId.Size = new System.Drawing.Size(195, 24);
             this.cmbAutomjetiId.TabIndex = 43;
             // 
             // cmbShoferiId
             // 
+            this.cmbShoferiId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbShoferiId.FormattingEnabled = true;
-            this.cmbShoferiId.Location = new System.Drawing.Point(39, 54);
+            this.cmbShoferiId.Location = new System.Drawing.Point(23, 42);
             this.cmbShoferiId.Name = "cmbShoferiId";
-            this.cmbShoferiId.Size = new System.Drawing.Size(197, 21);
+            this.cmbShoferiId.Size = new System.Drawing.Size(197, 24);
             this.cmbShoferiId.TabIndex = 45;
             // 
             // lblFilimiNdrimit
             // 
             this.lblFilimiNdrimit.AutoSize = true;
-            this.lblFilimiNdrimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilimiNdrimit.Location = new System.Drawing.Point(37, 173);
+            this.lblFilimiNdrimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFilimiNdrimit.Location = new System.Drawing.Point(21, 161);
             this.lblFilimiNdrimit.Name = "lblFilimiNdrimit";
-            this.lblFilimiNdrimit.Size = new System.Drawing.Size(114, 20);
+            this.lblFilimiNdrimit.Size = new System.Drawing.Size(97, 16);
             this.lblFilimiNdrimit.TabIndex = 0;
             this.lblFilimiNdrimit.Text = "Fillimi  i ndrrimit";
             // 
             // lblMbarimiNdrrimit
             // 
             this.lblMbarimiNdrrimit.AutoSize = true;
-            this.lblMbarimiNdrrimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMbarimiNdrrimit.Location = new System.Drawing.Point(37, 251);
+            this.lblMbarimiNdrrimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMbarimiNdrrimit.Location = new System.Drawing.Point(21, 239);
             this.lblMbarimiNdrrimit.Name = "lblMbarimiNdrrimit";
-            this.lblMbarimiNdrrimit.Size = new System.Drawing.Size(127, 20);
+            this.lblMbarimiNdrrimit.Size = new System.Drawing.Size(108, 16);
             this.lblMbarimiNdrrimit.TabIndex = 0;
             this.lblMbarimiNdrrimit.Text = "Mbarimi i ndrrimit";
             // 
@@ -124,7 +127,7 @@ namespace Taxi.Nderrime
             this.dtpFillimiINderrimit.CustomFormat = "MMMMdd, yyyy  |  hh:mm";
             this.dtpFillimiINderrimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFillimiINderrimit.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFillimiINderrimit.Location = new System.Drawing.Point(41, 196);
+            this.dtpFillimiINderrimit.Location = new System.Drawing.Point(25, 184);
             this.dtpFillimiINderrimit.Name = "dtpFillimiINderrimit";
             this.dtpFillimiINderrimit.ShowUpDown = true;
             this.dtpFillimiINderrimit.Size = new System.Drawing.Size(195, 22);
@@ -136,7 +139,7 @@ namespace Taxi.Nderrime
             this.dtpMbarimiINderrimir.CustomFormat = "MMMMdd, yyyy  |  hh:mm";
             this.dtpMbarimiINderrimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpMbarimiINderrimir.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpMbarimiINderrimir.Location = new System.Drawing.Point(41, 274);
+            this.dtpMbarimiINderrimir.Location = new System.Drawing.Point(25, 262);
             this.dtpMbarimiINderrimir.Name = "dtpMbarimiINderrimir";
             this.dtpMbarimiINderrimir.ShowUpDown = true;
             this.dtpMbarimiINderrimir.Size = new System.Drawing.Size(195, 22);
@@ -144,16 +147,18 @@ namespace Taxi.Nderrime
             // 
             // txtNderrimiId
             // 
-            this.txtNderrimiId.Location = new System.Drawing.Point(254, 54);
+            this.txtNderrimiId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNderrimiId.Location = new System.Drawing.Point(224, 12);
             this.txtNderrimiId.Name = "txtNderrimiId";
-            this.txtNderrimiId.Size = new System.Drawing.Size(19, 20);
+            this.txtNderrimiId.Size = new System.Drawing.Size(19, 22);
             this.txtNderrimiId.TabIndex = 48;
+            this.txtNderrimiId.Visible = false;
             // 
             // ShtoNderrime
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(301, 369);
+            this.ClientSize = new System.Drawing.Size(255, 369);
             this.Controls.Add(this.txtNderrimiId);
             this.Controls.Add(this.dtpMbarimiINderrimir);
             this.Controls.Add(this.dtpFillimiINderrimit);

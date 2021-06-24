@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Taxi.BO
 {
     public class Base
     {
-        public string SaveUsername { get; set; }
+        public static string SaveUsername { get; set; }
 
         public string InsertBy { get; set; } // ruhet emri i perdoruesit qe e shton rreshtin
         public DateTime InsertDate { get; set; } // ruhet data kur eshte krijuar rekordi i ri

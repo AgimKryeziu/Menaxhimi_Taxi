@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Taxi.BO;
 
 namespace Taxi.DAL
@@ -14,7 +9,7 @@ namespace Taxi.DAL
     {
         public static bool CheckLogInConfig(string username, string password)
         {
-            bool gjendja =false ;
+            bool gjendja = false;
             try
             {
                 using (DatabaseConn.conn = new SqlConnection(DatabaseConn.conString))
@@ -24,19 +19,19 @@ namespace Taxi.DAL
                     DatabaseConn.da = new SqlDataAdapter("usp_LoginRole", DatabaseConn.conn);
                     DatabaseConn.da.Fill(dt);
                     string IdRecord = "";
-                    string passwordi = ""; 
-                 
+                    string passwordi = "";
+
                     for (int i = 0; i < dt.Rows.Count; i++)
                     {
-                     IdRecord = dt.Rows[i][0].ToString();
-                     passwordi = dt.Rows[i][0].ToString();
+                        IdRecord = dt.Rows[i][0].ToString();
+                        passwordi = dt.Rows[i][0].ToString();
                         if (IdRecord.Equals(username) && passwordi.Equals(password))
                         {
-                          gjendja = true;
-                           
+                            gjendja = true;
+
                         }
                     }
-                   
+
                 }
                 return gjendja;
             }
@@ -151,7 +146,7 @@ namespace Taxi.DAL
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
                     cmd.Parameters.AddWithValue("@PmId", pjesemarresitBO.PmId);
-                  
+
                     cmd.Parameters.AddWithValue("@LUB", pjesemarresitBO.LUB);
                     cmd.Parameters.AddWithValue("@LUD", DateTime.Now);
                     cmd.Parameters.AddWithValue("@LUN", pjesemarresitBO.LUN);
@@ -189,5 +184,5 @@ namespace Taxi.DAL
                 throw ex;
             }
         }
-    } 
+    }
 }

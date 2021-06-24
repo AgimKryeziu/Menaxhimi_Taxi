@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Taxi.BO
 {
     // Trashegimi
-    public class AutomjetiBO : Base 
+    public class AutomjetiBO : Base
     {
         public int AutomjetiId { get; set; }
-        public ModeletBO Modelet { get; set; } // Kompzcion
+        public ModeletBO Modelet { get; set; } //Kompozicon
         public string Targa { get; set; }
         public int VitiIProdhimit { get; set; }
         public bool Aktiv { get; set; }
@@ -33,10 +29,10 @@ namespace Taxi.BO
             AutomjetiId = automjetiId;
         }
 
-        public AutomjetiBO(int automjetiId, ModeletBO modelet)
+        public AutomjetiBO(int automjetiId, ModeletBO modeletBO)
         {
             AutomjetiId = automjetiId;
-            Modelet = modelet;
+            Modelet = modeletBO;
         }
 
         // Add

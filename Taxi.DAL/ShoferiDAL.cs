@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Configuration;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
 using Taxi.BO;
 
 namespace Taxi.DAL
@@ -89,7 +84,7 @@ namespace Taxi.DAL
                     string Gjinia = Convert.ToString(ds.Tables[0].Rows[0]["Gjinia"]);
                     string Biografia = Convert.ToString(ds.Tables[0].Rows[0]["Biografia"]);
                     string VitiNisjesPunes = Convert.ToString(ds.Tables[0].Rows[0]["VitiNisjesPunes"]);
-                    
+
                     shoferiBO = new ShoferiBO(Convert.ToInt32(ShoferiId), Emri, Mbiemri, Convert.ToDateTime(Datelindja), Convert.ToChar(Gjinia), NrPersonal, NrPersonal, Biografia, Convert.ToInt32(VitiNisjesPunes));
                     return shoferiBO;
 

@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Taxi.BO;
 
 namespace Taxi.DAL
@@ -20,7 +17,7 @@ namespace Taxi.DAL
                     conn.Open();
                     SqlCommand cmd = new SqlCommand("usp_InsertDestinacion", conn);
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                    
+
                     cmd.Parameters.AddWithValue("@Shteti", destinacionet.Adresa.Shteti);
                     cmd.Parameters.AddWithValue("@Qyteti", destinacionet.Adresa.Qyteti);
                     cmd.Parameters.AddWithValue("@Lagjja", destinacionet.Adresa.Lagjja);
@@ -31,6 +28,25 @@ namespace Taxi.DAL
                     cmd.ExecuteNonQuery();
                 }
                 return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public static DataTable SelectDestinacionet()
+        {
+            try
+            {
+                using (DatabaseConn.conn = new SqlConnection(DatabaseConn.conString))
+                {
+                    DatabaseConn.da = new SqlDataAdapter("usp_SelectDestinacionet", DatabaseConn.conn);
+                    DataTable dTable = new DataTable();
+                    DatabaseConn.da.Fill(dTable);
+
+                    return dTable;
+                }
             }
             catch (Exception ex)
             {

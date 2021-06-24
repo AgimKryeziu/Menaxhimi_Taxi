@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Taxi.BLL;
 using Taxi.BO;
@@ -36,9 +30,9 @@ namespace Taxi.Automjeti
                 aktiv = false;
             }
 
-            modeletBO = new ModeletBO(cmbModeliId.SelectedIndex + 1, cmbModeliId.Text);
+            modeletBO = new ModeletBO(int.Parse(cmbModeliId.SelectedValue.ToString()), cmbModeliId.Text);
 
-            automjetiBO = new AutomjetiBO(modeletBO, txtTarga.Text, int.Parse(txtVitiIProdhimit.Text), aktiv, double.Parse(txtKm.Text), "User", DateTime.Now);
+            automjetiBO = new AutomjetiBO(modeletBO, txtTarga.Text, int.Parse(txtVitiIProdhimit.Text), aktiv, double.Parse(txtKm.Text), Base.SaveUsername, DateTime.Now);
             bool inserted = automjetiBLL.InsertAutomjet(automjetiBO);
             if (inserted)
             {
@@ -71,7 +65,7 @@ namespace Taxi.Automjeti
         public void LoadData(int automjetiId)
         {
             automjetiBO = automjetiBLL.GetItem(automjetiId);
-            
+
 
             if (!string.IsNullOrEmpty(automjetiBO.AutomjetiId.ToString()))
             {
@@ -112,11 +106,11 @@ namespace Taxi.Automjeti
 
             int id = int.Parse(txtAutomjetiId.Text);
             modeletBO = new ModeletBO(cmbModeliId.SelectedIndex + 1, cmbModeliId.Text);
-            automjetiBO = new AutomjetiBO(id, modeletBO, txtTarga.Text, int.Parse(txtVitiIProdhimit.Text), aktiv, double.Parse(txtKm.Text), "user", DateTime.Now, 1);
+            automjetiBO = new AutomjetiBO(id, modeletBO, txtTarga.Text, int.Parse(txtVitiIProdhimit.Text), aktiv, double.Parse(txtKm.Text), Base.SaveUsername, DateTime.Now, 1);
 
             return automjetiBO;
         }
 
-       
+
     }
 }

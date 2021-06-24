@@ -54,167 +54,169 @@ namespace Taxi.Administratori
             // 
             // cmbPershkrimiId
             // 
+            this.cmbPershkrimiId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPershkrimiId.FormattingEnabled = true;
             this.cmbPershkrimiId.Location = new System.Drawing.Point(472, 130);
             this.cmbPershkrimiId.Name = "cmbPershkrimiId";
-            this.cmbPershkrimiId.Size = new System.Drawing.Size(178, 21);
+            this.cmbPershkrimiId.Size = new System.Drawing.Size(178, 24);
             this.cmbPershkrimiId.TabIndex = 5;
             // 
             // lblPershkrimi
             // 
             this.lblPershkrimi.AutoSize = true;
-            this.lblPershkrimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPershkrimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPershkrimi.Location = new System.Drawing.Point(469, 107);
             this.lblPershkrimi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPershkrimi.Name = "lblPershkrimi";
-            this.lblPershkrimi.Size = new System.Drawing.Size(38, 18);
+            this.lblPershkrimi.Size = new System.Drawing.Size(35, 16);
             this.lblPershkrimi.TabIndex = 138;
             this.lblPershkrimi.Text = "Roli:";
             // 
             // dtpDateRregj
             // 
+            this.dtpDateRregj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDateRregj.Location = new System.Drawing.Point(472, 56);
             this.dtpDateRregj.Margin = new System.Windows.Forms.Padding(2);
             this.dtpDateRregj.MinDate = new System.DateTime(2019, 4, 1, 0, 0, 0, 0);
             this.dtpDateRregj.Name = "dtpDateRregj";
-            this.dtpDateRregj.Size = new System.Drawing.Size(178, 20);
+            this.dtpDateRregj.Size = new System.Drawing.Size(151, 22);
             this.dtpDateRregj.TabIndex = 4;
             // 
             // txtFjalekalimi
             // 
-            this.txtFjalekalimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFjalekalimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFjalekalimi.Location = new System.Drawing.Point(266, 220);
             this.txtFjalekalimi.Margin = new System.Windows.Forms.Padding(2);
             this.txtFjalekalimi.Name = "txtFjalekalimi";
-            this.txtFjalekalimi.Size = new System.Drawing.Size(178, 23);
+            this.txtFjalekalimi.Size = new System.Drawing.Size(178, 22);
             this.txtFjalekalimi.TabIndex = 7;
             // 
             // txtNofka
             // 
-            this.txtNofka.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNofka.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNofka.Location = new System.Drawing.Point(30, 218);
             this.txtNofka.Margin = new System.Windows.Forms.Padding(2);
             this.txtNofka.Name = "txtNofka";
-            this.txtNofka.Size = new System.Drawing.Size(178, 24);
+            this.txtNofka.Size = new System.Drawing.Size(178, 22);
             this.txtNofka.TabIndex = 6;
             // 
             // txtEmail
             // 
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(266, 127);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(178, 24);
+            this.txtEmail.Size = new System.Drawing.Size(178, 22);
             this.txtEmail.TabIndex = 3;
             // 
             // txtNrTel
             // 
-            this.txtNrTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNrTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNrTel.Location = new System.Drawing.Point(30, 130);
             this.txtNrTel.Margin = new System.Windows.Forms.Padding(2);
             this.txtNrTel.Name = "txtNrTel";
-            this.txtNrTel.Size = new System.Drawing.Size(178, 24);
+            this.txtNrTel.Size = new System.Drawing.Size(178, 22);
             this.txtNrTel.TabIndex = 2;
             // 
             // txtMbiemri
             // 
-            this.txtMbiemri.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMbiemri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMbiemri.Location = new System.Drawing.Point(266, 52);
             this.txtMbiemri.Margin = new System.Windows.Forms.Padding(2);
             this.txtMbiemri.Name = "txtMbiemri";
-            this.txtMbiemri.Size = new System.Drawing.Size(178, 24);
+            this.txtMbiemri.Size = new System.Drawing.Size(178, 22);
             this.txtMbiemri.TabIndex = 1;
             // 
             // txtEmri
             // 
-            this.txtEmri.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmri.Location = new System.Drawing.Point(30, 52);
             this.txtEmri.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmri.Name = "txtEmri";
-            this.txtEmri.Size = new System.Drawing.Size(178, 24);
+            this.txtEmri.Size = new System.Drawing.Size(178, 22);
             this.txtEmri.TabIndex = 0;
             // 
             // lblFjalekalimi
             // 
             this.lblFjalekalimi.AutoSize = true;
-            this.lblFjalekalimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFjalekalimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFjalekalimi.Location = new System.Drawing.Point(263, 198);
             this.lblFjalekalimi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFjalekalimi.Name = "lblFjalekalimi";
-            this.lblFjalekalimi.Size = new System.Drawing.Size(81, 18);
+            this.lblFjalekalimi.Size = new System.Drawing.Size(76, 16);
             this.lblFjalekalimi.TabIndex = 135;
             this.lblFjalekalimi.Text = "Fjalekalimi:";
             // 
             // lblNofka
             // 
             this.lblNofka.AutoSize = true;
-            this.lblNofka.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNofka.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNofka.Location = new System.Drawing.Point(27, 198);
             this.lblNofka.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNofka.Name = "lblNofka";
-            this.lblNofka.Size = new System.Drawing.Size(52, 18);
+            this.lblNofka.Size = new System.Drawing.Size(47, 16);
             this.lblNofka.TabIndex = 134;
             this.lblNofka.Text = "Nofka:";
             // 
             // lblDataRegj
             // 
             this.lblDataRegj.AutoSize = true;
-            this.lblDataRegj.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataRegj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDataRegj.Location = new System.Drawing.Point(469, 32);
             this.lblDataRegj.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDataRegj.Name = "lblDataRegj";
-            this.lblDataRegj.Size = new System.Drawing.Size(126, 18);
+            this.lblDataRegj.Size = new System.Drawing.Size(114, 16);
             this.lblDataRegj.TabIndex = 133;
             this.lblDataRegj.Text = "Data e regjistrimit:";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.Location = new System.Drawing.Point(263, 98);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(99, 18);
+            this.lblEmail.Size = new System.Drawing.Size(92, 16);
             this.lblEmail.TabIndex = 132;
             this.lblEmail.Text = "Email Adresa:";
             // 
             // lblNrTel
             // 
             this.lblNrTel.AutoSize = true;
-            this.lblNrTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNrTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNrTel.Location = new System.Drawing.Point(27, 107);
             this.lblNrTel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNrTel.Name = "lblNrTel";
-            this.lblNrTel.Size = new System.Drawing.Size(119, 18);
+            this.lblNrTel.Size = new System.Drawing.Size(107, 16);
             this.lblNrTel.TabIndex = 131;
             this.lblNrTel.Text = "Numri i Telefonit:";
             // 
             // lblMbiemri
             // 
             this.lblMbiemri.AutoSize = true;
-            this.lblMbiemri.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMbiemri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMbiemri.Location = new System.Drawing.Point(263, 32);
             this.lblMbiemri.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMbiemri.Name = "lblMbiemri";
-            this.lblMbiemri.Size = new System.Drawing.Size(65, 18);
+            this.lblMbiemri.Size = new System.Drawing.Size(59, 16);
             this.lblMbiemri.TabIndex = 137;
             this.lblMbiemri.Text = "Mbiemri:";
             // 
             // lblEmri
             // 
             this.lblEmri.AutoSize = true;
-            this.lblEmri.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmri.Location = new System.Drawing.Point(27, 32);
             this.lblEmri.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmri.Name = "lblEmri";
-            this.lblEmri.Size = new System.Drawing.Size(43, 18);
+            this.lblEmri.Size = new System.Drawing.Size(38, 16);
             this.lblEmri.TabIndex = 136;
             this.lblEmri.Text = "Emri:";
             // 
             // btnShto
             // 
-            this.btnShto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShto.Location = new System.Drawing.Point(502, 194);
+            this.btnShto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShto.Location = new System.Drawing.Point(463, 207);
             this.btnShto.Name = "btnShto";
             this.btnShto.Size = new System.Drawing.Size(93, 29);
             this.btnShto.TabIndex = 8;
@@ -224,10 +226,10 @@ namespace Taxi.Administratori
             // 
             // btnPerditeso
             // 
-            this.btnPerditeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPerditeso.Location = new System.Drawing.Point(502, 242);
+            this.btnPerditeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerditeso.Location = new System.Drawing.Point(562, 205);
             this.btnPerditeso.Name = "btnPerditeso";
-            this.btnPerditeso.Size = new System.Drawing.Size(93, 31);
+            this.btnPerditeso.Size = new System.Drawing.Size(88, 31);
             this.btnPerditeso.TabIndex = 9;
             this.btnPerditeso.Text = "Perditeso";
             this.btnPerditeso.UseVisualStyleBackColor = true;
@@ -235,9 +237,10 @@ namespace Taxi.Administratori
             // 
             // txtAdminId
             // 
+            this.txtAdminId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAdminId.Location = new System.Drawing.Point(12, 12);
             this.txtAdminId.Name = "txtAdminId";
-            this.txtAdminId.Size = new System.Drawing.Size(18, 20);
+            this.txtAdminId.Size = new System.Drawing.Size(18, 22);
             this.txtAdminId.TabIndex = 139;
             this.txtAdminId.Visible = false;
             // 
@@ -246,6 +249,7 @@ namespace Taxi.Administratori
             this.btnShtoRol.BackColor = System.Drawing.SystemColors.Control;
             this.btnShtoRol.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShtoRol.BackgroundImage")));
             this.btnShtoRol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnShtoRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShtoRol.ForeColor = System.Drawing.Color.Transparent;
             this.btnShtoRol.Location = new System.Drawing.Point(655, 127);
             this.btnShtoRol.Margin = new System.Windows.Forms.Padding(2);
@@ -259,7 +263,7 @@ namespace Taxi.Administratori
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 285);
+            this.ClientSize = new System.Drawing.Size(698, 263);
             this.Controls.Add(this.btnShtoRol);
             this.Controls.Add(this.txtAdminId);
             this.Controls.Add(this.btnPerditeso);

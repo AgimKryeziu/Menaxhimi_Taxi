@@ -1,21 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Taxi.DAL;
 using Taxi.BLL;
-using Taxi.BO;
 
 namespace Taxi.Nderrime
 {
     public partial class NderrimetList : Form
     {
-        
+
         NderrimetBLL nderrimetBLL;
         public static int nderrimiId;
         public static DataTable lista;
@@ -85,7 +77,7 @@ namespace Taxi.Nderrime
                 nderrimiId = Convert.ToInt32(dgvNdrrimet.Rows[e.RowIndex].Cells[0].Value.ToString());
                 if (DialogResult.OK == MessageBox.Show("A jeni i sigurt qe deshironi te fshini kete item"))
                 {
-                    bool deleted = true;// nderrimetBLL.DeleteNderrimin(nderrimiId);
+                    bool deleted = nderrimetBLL.DeleteNderrimin(nderrimiId);
                     if (deleted)
                     {
                         MessageBox.Show("Te dhenat jane fshir me sukses");
@@ -100,6 +92,6 @@ namespace Taxi.Nderrime
 
         }
 
-       
+
     }
 }

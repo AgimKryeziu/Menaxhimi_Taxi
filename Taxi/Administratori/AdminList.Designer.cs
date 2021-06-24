@@ -50,8 +50,8 @@ namespace Taxi.Stafi
             // 
             // btnShto
             // 
-            this.btnShto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShto.Location = new System.Drawing.Point(787, 35);
+            this.btnShto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShto.Location = new System.Drawing.Point(818, 35);
             this.btnShto.Name = "btnShto";
             this.btnShto.Size = new System.Drawing.Size(93, 33);
             this.btnShto.TabIndex = 119;

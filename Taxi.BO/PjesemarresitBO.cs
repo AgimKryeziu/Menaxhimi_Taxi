@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Taxi.BO
 {
@@ -10,7 +6,7 @@ namespace Taxi.BO
     {
         public int PmId { get; set; }
         // Kompzcion
-        public RoletBO RoletBO { get; set; }
+        public RoletBO RoletBO { get; set; } // Kompozicon
         public string Emri { get; set; }
         public string Mbiemri { get; set; }
         public string NrTelefonit { get; set; }

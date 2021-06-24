@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Taxi.DAL;
-using Taxi.BLL;
+﻿using System.Data;
 using Taxi.BO;
+using Taxi.DAL;
 
 namespace Taxi.BLL
 {
@@ -24,9 +18,9 @@ namespace Taxi.BLL
             return ModeletDAL.SelectModels();
         }
 
-        public bool InsertModelt(ModeletBO modeletBO)
+        public bool InsertModelet(ModeletBO modeletBO)
         {
-            return modeletDAL.InsertModel(modeletBO);
+            return modeletDAL.InsertModelet(modeletBO);
         }
 
     }

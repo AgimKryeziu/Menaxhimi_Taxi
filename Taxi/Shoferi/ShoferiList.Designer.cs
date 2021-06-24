@@ -42,7 +42,7 @@ namespace Taxi.Shoferi
             this.dgvShoferiList.AllowUserToAddRows = false;
             this.dgvShoferiList.AllowUserToDeleteRows = false;
             this.dgvShoferiList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvShoferiList.Location = new System.Drawing.Point(14, 97);
+            this.dgvShoferiList.Location = new System.Drawing.Point(12, 106);
             this.dgvShoferiList.Name = "dgvShoferiList";
             this.dgvShoferiList.ReadOnly = true;
             this.dgvShoferiList.Size = new System.Drawing.Size(929, 340);
@@ -51,7 +51,7 @@ namespace Taxi.Shoferi
             // 
             // btnShtoShofer
             // 
-            this.btnShtoShofer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShtoShofer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShtoShofer.Location = new System.Drawing.Point(840, 45);
             this.btnShtoShofer.Name = "btnShtoShofer";
             this.btnShtoShofer.Size = new System.Drawing.Size(93, 33);
@@ -63,9 +63,10 @@ namespace Taxi.Shoferi
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(19, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.Size = new System.Drawing.Size(62, 16);
             this.label1.TabIndex = 39;
             this.label1.Text = "Eksporto";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -74,6 +75,7 @@ namespace Taxi.Shoferi
             // 
             this.exportToExcel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exportToExcel.BackgroundImage")));
             this.exportToExcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exportToExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exportToExcel.Location = new System.Drawing.Point(17, 12);
             this.exportToExcel.Name = "exportToExcel";
             this.exportToExcel.Size = new System.Drawing.Size(51, 66);

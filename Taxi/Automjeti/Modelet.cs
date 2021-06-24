@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Taxi.BLL;
 using Taxi.BO;
@@ -23,10 +16,19 @@ namespace Taxi.Automjeti
         }
 
 
-        private void btnShto_Click(object sender, EventArgs e)
+
+        private void btnRuaj_Click(object sender, EventArgs e)
         {
-            ModeletBO modeletBO = new ModeletBO(txtEmri.Text, txtPershkrimi.Text, "User", DateTime.Now);
-            modeletBLL.InsertModelt(modeletBO);
+            ModeletBO modeletBO = new ModeletBO(txtEmri.Text, txtPershkrimi.Text, Base.SaveUsername, DateTime.Now);
+            bool inserted = modeletBLL.InsertModelet(modeletBO);
+            if (inserted)
+            {
+                MessageBox.Show("Te dhenat u shtuan me sukses.");
+            }
+            else
+            {
+                MessageBox.Show("Regjistrimi deshtoi.");
+            }
         }
     }
 }

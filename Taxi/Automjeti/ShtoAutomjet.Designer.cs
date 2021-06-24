@@ -52,55 +52,55 @@ namespace Taxi.Automjeti
             // 
             // txtVitiIProdhimit
             // 
-            this.txtVitiIProdhimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVitiIProdhimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVitiIProdhimit.Location = new System.Drawing.Point(18, 180);
             this.txtVitiIProdhimit.Name = "txtVitiIProdhimit";
-            this.txtVitiIProdhimit.Size = new System.Drawing.Size(184, 26);
+            this.txtVitiIProdhimit.Size = new System.Drawing.Size(184, 22);
             this.txtVitiIProdhimit.TabIndex = 30;
             // 
             // txtKm
             // 
-            this.txtKm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKm.Location = new System.Drawing.Point(19, 247);
             this.txtKm.Name = "txtKm";
-            this.txtKm.Size = new System.Drawing.Size(183, 26);
+            this.txtKm.Size = new System.Drawing.Size(183, 22);
             this.txtKm.TabIndex = 31;
             // 
             // txtTarga
             // 
-            this.txtTarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTarga.Location = new System.Drawing.Point(19, 43);
             this.txtTarga.Name = "txtTarga";
-            this.txtTarga.Size = new System.Drawing.Size(183, 26);
+            this.txtTarga.Size = new System.Drawing.Size(183, 22);
             this.txtTarga.TabIndex = 28;
             // 
             // lblKm
             // 
             this.lblKm.AutoSize = true;
-            this.lblKm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKm.Location = new System.Drawing.Point(15, 224);
             this.lblKm.Name = "lblKm";
-            this.lblKm.Size = new System.Drawing.Size(80, 20);
+            this.lblKm.Size = new System.Drawing.Size(67, 16);
             this.lblKm.TabIndex = 23;
             this.lblKm.Text = "Kilometrat";
             // 
             // lblVitiIProdhimit
             // 
             this.lblVitiIProdhimit.AutoSize = true;
-            this.lblVitiIProdhimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVitiIProdhimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVitiIProdhimit.Location = new System.Drawing.Point(15, 157);
             this.lblVitiIProdhimit.Name = "lblVitiIProdhimit";
-            this.lblVitiIProdhimit.Size = new System.Drawing.Size(107, 20);
+            this.lblVitiIProdhimit.Size = new System.Drawing.Size(90, 16);
             this.lblVitiIProdhimit.TabIndex = 26;
             this.lblVitiIProdhimit.Text = "Viti i prodhimit";
             // 
             // lblTarga
             // 
             this.lblTarga.AutoSize = true;
-            this.lblTarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTarga.Location = new System.Drawing.Point(15, 20);
             this.lblTarga.Name = "lblTarga";
-            this.lblTarga.Size = new System.Drawing.Size(50, 20);
+            this.lblTarga.Size = new System.Drawing.Size(45, 16);
             this.lblTarga.TabIndex = 27;
             this.lblTarga.Text = "Targa";
             // 
@@ -108,7 +108,7 @@ namespace Taxi.Automjeti
             // 
             this.gbAktiv.Controls.Add(this.rbNo);
             this.gbAktiv.Controls.Add(this.rbYes);
-            this.gbAktiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbAktiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbAktiv.Location = new System.Drawing.Point(19, 279);
             this.gbAktiv.Name = "gbAktiv";
             this.gbAktiv.Size = new System.Drawing.Size(125, 50);
@@ -119,9 +119,10 @@ namespace Taxi.Automjeti
             // rbNo
             // 
             this.rbNo.AutoSize = true;
+            this.rbNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbNo.Location = new System.Drawing.Point(67, 26);
             this.rbNo.Name = "rbNo";
-            this.rbNo.Size = new System.Drawing.Size(47, 24);
+            this.rbNo.Size = new System.Drawing.Size(44, 20);
             this.rbNo.TabIndex = 0;
             this.rbNo.Text = "No";
             this.rbNo.UseVisualStyleBackColor = true;
@@ -130,9 +131,10 @@ namespace Taxi.Automjeti
             // 
             this.rbYes.AutoSize = true;
             this.rbYes.Checked = true;
+            this.rbYes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbYes.Location = new System.Drawing.Point(6, 26);
             this.rbYes.Name = "rbYes";
-            this.rbYes.Size = new System.Drawing.Size(55, 24);
+            this.rbYes.Size = new System.Drawing.Size(50, 20);
             this.rbYes.TabIndex = 0;
             this.rbYes.TabStop = true;
             this.rbYes.Text = "Yes";
@@ -143,6 +145,7 @@ namespace Taxi.Automjeti
             this.panel1.Controls.Add(this.btnShtoModel);
             this.panel1.Controls.Add(this.cmbModeliId);
             this.panel1.Controls.Add(this.txtKm);
+            this.panel1.Controls.Add(this.txtAutomjetiId);
             this.panel1.Controls.Add(this.gbAktiv);
             this.panel1.Controls.Add(this.lblTarga);
             this.panel1.Controls.Add(this.lblVitiIProdhimit);
@@ -150,6 +153,7 @@ namespace Taxi.Automjeti
             this.panel1.Controls.Add(this.lblModeli);
             this.panel1.Controls.Add(this.lblKm);
             this.panel1.Controls.Add(this.txtTarga);
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(240, 342);
@@ -160,6 +164,7 @@ namespace Taxi.Automjeti
             this.btnShtoModel.BackColor = System.Drawing.SystemColors.Control;
             this.btnShtoModel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShtoModel.BackgroundImage")));
             this.btnShtoModel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnShtoModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShtoModel.ForeColor = System.Drawing.Color.Transparent;
             this.btnShtoModel.Location = new System.Drawing.Point(207, 114);
             this.btnShtoModel.Margin = new System.Windows.Forms.Padding(2);
@@ -171,34 +176,35 @@ namespace Taxi.Automjeti
             // 
             // cmbModeliId
             // 
+            this.cmbModeliId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbModeliId.FormattingEnabled = true;
             this.cmbModeliId.Location = new System.Drawing.Point(19, 118);
             this.cmbModeliId.Name = "cmbModeliId";
-            this.cmbModeliId.Size = new System.Drawing.Size(183, 21);
+            this.cmbModeliId.Size = new System.Drawing.Size(183, 24);
             this.cmbModeliId.TabIndex = 30;
             // 
             // lblModeli
             // 
             this.lblModeli.AutoSize = true;
-            this.lblModeli.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModeli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModeli.Location = new System.Drawing.Point(15, 95);
             this.lblModeli.Name = "lblModeli";
-            this.lblModeli.Size = new System.Drawing.Size(55, 20);
+            this.lblModeli.Size = new System.Drawing.Size(49, 16);
             this.lblModeli.TabIndex = 23;
             this.lblModeli.Text = "Modeli";
             // 
             // txtAutomjetiId
             // 
-            this.txtAutomjetiId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAutomjetiId.Location = new System.Drawing.Point(314, 29);
+            this.txtAutomjetiId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAutomjetiId.Location = new System.Drawing.Point(203, 14);
             this.txtAutomjetiId.Name = "txtAutomjetiId";
-            this.txtAutomjetiId.Size = new System.Drawing.Size(30, 26);
+            this.txtAutomjetiId.Size = new System.Drawing.Size(30, 22);
             this.txtAutomjetiId.TabIndex = 28;
             this.txtAutomjetiId.Visible = false;
             // 
             // btnRuaj
             // 
-            this.btnRuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRuaj.Location = new System.Drawing.Point(267, 284);
             this.btnRuaj.Name = "btnRuaj";
             this.btnRuaj.Size = new System.Drawing.Size(93, 29);
@@ -209,7 +215,7 @@ namespace Taxi.Automjeti
             // 
             // btnPerditeso
             // 
-            this.btnPerditeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerditeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPerditeso.Location = new System.Drawing.Point(266, 327);
             this.btnPerditeso.Name = "btnPerditeso";
             this.btnPerditeso.Size = new System.Drawing.Size(93, 31);
@@ -226,7 +232,6 @@ namespace Taxi.Automjeti
             this.Controls.Add(this.btnPerditeso);
             this.Controls.Add(this.btnRuaj);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtAutomjetiId);
             this.Name = "ShtoAutomjet";
             this.Text = "Automjeti";
             this.Load += new System.EventHandler(this.ShtoAutomjet_Load);
@@ -235,7 +240,6 @@ namespace Taxi.Automjeti
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

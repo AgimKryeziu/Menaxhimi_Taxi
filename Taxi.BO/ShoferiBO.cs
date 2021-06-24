@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Taxi.BO
 {
@@ -14,14 +10,14 @@ namespace Taxi.BO
         public char Gjinia { get; set; }
         public DateTime Datelindja { get; set; }
         public string NrTelefonit { get; set; }
-        
+
         public string NrPersonal { get; set; } //e validon masi ti bon CRUD-at
-        
+
         public string Biografia { get; set; }
         public int VitiNisjesPunes { get; set; }
 
 
-     
+
 
         public ShoferiBO(int shoferiId)
         {
@@ -50,7 +46,7 @@ namespace Taxi.BO
         }
 
         //Update
-        public ShoferiBO(int idPunes, string emri, string mbiemri,DateTime datlindja, char gjinia, string nrTelefonit, string nrPersonal, string biografia, int vitiNisjesPunes, string LUB, DateTime LUD, int LUN)
+        public ShoferiBO(int idPunes, string emri, string mbiemri, DateTime datlindja, char gjinia, string nrTelefonit, string nrPersonal, string biografia, int vitiNisjesPunes, string LUB, DateTime LUD, int LUN)
         {
             IdPunes = idPunes;
             Emri = emri;

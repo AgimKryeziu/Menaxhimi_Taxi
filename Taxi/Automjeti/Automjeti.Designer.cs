@@ -52,9 +52,10 @@ namespace Taxi.Automjeti
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(14, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.Size = new System.Drawing.Size(62, 16);
             this.label1.TabIndex = 41;
             this.label1.Text = "Eksporto";
             // 
@@ -62,6 +63,7 @@ namespace Taxi.Automjeti
             // 
             this.exportToExcel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exportToExcel.BackgroundImage")));
             this.exportToExcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exportToExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exportToExcel.Location = new System.Drawing.Point(12, 12);
             this.exportToExcel.Name = "exportToExcel";
             this.exportToExcel.Size = new System.Drawing.Size(51, 66);
@@ -71,6 +73,7 @@ namespace Taxi.Automjeti
             // 
             // btnShtoAutomjet
             // 
+            this.btnShtoAutomjet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShtoAutomjet.Location = new System.Drawing.Point(482, 65);
             this.btnShtoAutomjet.Name = "btnShtoAutomjet";
             this.btnShtoAutomjet.Size = new System.Drawing.Size(84, 29);

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Taxi.BLL;
 using Taxi.BO;
@@ -23,7 +16,7 @@ namespace Taxi.Shoferi
             shoferiBLL = new ShoferiBLL();
         }
 
-       
+
         private void btnRuaj_Click(object sender, EventArgs e)
         {
             bool inserted = shoferiBLL.CreateShofer(InsertShofer());
@@ -37,7 +30,7 @@ namespace Taxi.Shoferi
             }
         }
 
-        public ShoferiBO InsertShofer  ()
+        public ShoferiBO InsertShofer()
         {
             char gender;
             if (rBtnGenderF.Checked)
@@ -49,7 +42,7 @@ namespace Taxi.Shoferi
                 gender = 'M';
             }
 
-            shoferiBO = new ShoferiBO(txtEmri.Text, txtMbiemri.Text, gender, txtNrTel.Text, txtNrPersonal.Text, txtBiografia.Text, int.Parse(txtViti.Text), "user", DateTime.Now);
+            shoferiBO = new ShoferiBO(txtEmri.Text, txtMbiemri.Text, gender, txtNrTel.Text, txtNrPersonal.Text, txtBiografia.Text, int.Parse(txtViti.Text), Base.SaveUsername, DateTime.Now);
             return shoferiBO;
         }
 
@@ -74,7 +67,7 @@ namespace Taxi.Shoferi
 
         private void btnPerditeso_Click(object sender, EventArgs e)
         {
-            
+
             bool updated = shoferiBLL.UpdateShofer(UpdateShofer());
 
             if (updated)
@@ -102,8 +95,8 @@ namespace Taxi.Shoferi
 
             DateTime datelindja = dtpDatelindja.Value;
             int id = int.Parse(txtShoferID.Text);
-            shoferiBO = new ShoferiBO(id, txtEmri.Text, txtMbiemri.Text, datelindja, gender, txtNrTel.Text, txtNrPersonal.Text, txtBiografia.Text, int.Parse(txtViti.Text), "user", DateTime.Now, 1);
-           
+            shoferiBO = new ShoferiBO(id, txtEmri.Text, txtMbiemri.Text, datelindja, gender, txtNrTel.Text, txtNrPersonal.Text, txtBiografia.Text, int.Parse(txtViti.Text), Base.SaveUsername, DateTime.Now, 1);
+
             return shoferiBO;
         }
     }

@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Taxi.BO;
 using Taxi.BLL;
+using Taxi.BO;
 
 namespace Taxi.Administratori
 {
@@ -24,7 +17,7 @@ namespace Taxi.Administratori
 
         private void btnShto_Click_1(object sender, EventArgs e)
         {
-            roletBO = new RoletBO(txtPershkrimi.Text, "User", DateTime.Now);
+            roletBO = new RoletBO(txtPershkrimi.Text, Base.SaveUsername, DateTime.Now);
             bool inserted = roletBLL.CreateRole(roletBO);
             if (inserted)
             {
