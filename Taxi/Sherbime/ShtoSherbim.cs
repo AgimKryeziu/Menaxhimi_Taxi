@@ -15,7 +15,7 @@ namespace Taxi.Sherbime
         ShoferiBO shoferiBO;
         AdresaBO adresaBO;
         SherbimetBLL sherbimetBLL;
-
+        public static bool isShto = false;
 
         public ShtoSherbim()
         {
@@ -124,26 +124,20 @@ namespace Taxi.Sherbime
 
         private void ShtoSherbim_Load(object sender, EventArgs e)
         {
-            try
-            {
-                DataTable dt = new DataTable();
-                dt = NderrimetBLL.SelectNderrimet();
-                cmbNdrrimiId.DataSource = dt;
-                cmbNdrrimiId.DisplayMember = dt.Columns[1].ColumnName;
-                cmbNdrrimiId.ValueMember = dt.Columns[0].ColumnName;
+            btnRuaj.Enabled = isShto;
+            btnPerditeso.Enabled = !isShto;
 
-                DataTable dt1 = new DataTable();
-                dt1 = DestinacionetBLL.SelectDestinacionet();
-                cmbDestinacioniId.DataSource = dt1;
-                cmbDestinacioniId.DisplayMember = dt1.Columns[1].ColumnName;
-                cmbDestinacioniId.ValueMember = dt1.Columns[0].ColumnName;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            
-            }
-            
+            DataTable dt = new DataTable();
+            dt = NderrimetBLL.SelectNderrimet();
+            cmbNdrrimiId.DataSource = dt;
+            cmbNdrrimiId.DisplayMember = dt.Columns[1].ColumnName;
+            cmbNdrrimiId.ValueMember = dt.Columns[0].ColumnName;
+
+            DataTable dt1 = new DataTable();
+            dt1 = DestinacionetBLL.SelectDestinacionet();
+            cmbDestinacioniId.DataSource = dt1;
+            cmbDestinacioniId.DisplayMember = dt1.Columns[1].ColumnName;
+            cmbDestinacioniId.ValueMember = dt1.Columns[0].ColumnName;
         }
     }
 }

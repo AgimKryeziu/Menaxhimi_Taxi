@@ -29,45 +29,52 @@ namespace Taxi.Nderrime
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NderrimetList));
             this.btnShtoShofer = new System.Windows.Forms.Button();
             this.dgvNdrrimet = new System.Windows.Forms.DataGridView();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNdrrimet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnShtoShofer
             // 
-            this.btnShtoShofer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShtoShofer.Location = new System.Drawing.Point(676, 46);
+            resources.ApplyResources(this.btnShtoShofer, "btnShtoShofer");
             this.btnShtoShofer.Name = "btnShtoShofer";
-            this.btnShtoShofer.Size = new System.Drawing.Size(93, 33);
-            this.btnShtoShofer.TabIndex = 39;
-            this.btnShtoShofer.Text = "Shto";
             this.btnShtoShofer.UseVisualStyleBackColor = true;
             this.btnShtoShofer.Click += new System.EventHandler(this.btnShtoShofer_Click);
             // 
             // dgvNdrrimet
             // 
+            resources.ApplyResources(this.dgvNdrrimet, "dgvNdrrimet");
             this.dgvNdrrimet.AllowUserToAddRows = false;
             this.dgvNdrrimet.AllowUserToDeleteRows = false;
             this.dgvNdrrimet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNdrrimet.Location = new System.Drawing.Point(12, 96);
             this.dgvNdrrimet.Name = "dgvNdrrimet";
             this.dgvNdrrimet.ReadOnly = true;
-            this.dgvNdrrimet.Size = new System.Drawing.Size(757, 218);
-            this.dgvNdrrimet.TabIndex = 38;
             this.dgvNdrrimet.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNdrrimet_CellContentClick);
+            // 
+            // bunifuImageButton1
+            // 
+            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
             // 
             // NderrimetList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 346);
+            this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.btnShtoShofer);
             this.Controls.Add(this.dgvNdrrimet);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NderrimetList";
-            this.Text = "NderrimetList";
             this.Load += new System.EventHandler(this.NderrimetList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNdrrimet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -76,5 +83,6 @@ namespace Taxi.Nderrime
 
         private System.Windows.Forms.Button btnShtoShofer;
         private System.Windows.Forms.DataGridView dgvNdrrimet;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }
 }

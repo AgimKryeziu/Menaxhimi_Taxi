@@ -7,36 +7,59 @@ namespace Taxi
 {
     public partial class LogInForms : Form
     {
-
-
         public LogInForms()
         {
             InitializeComponent();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        public static bool albFlag { get; set; } = true;
+        private void btnAlbLang_Click(object sender, EventArgs e)
         {
-            this.Close();
+            var changeLang = new ChangeLang();
+            changeLang.UpdateConfig("language", "sq");
+            albFlag = true;
+            Application.Restart();
         }
-        public static string UserInUse { get; set; }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnEngLang_Click(object sender, EventArgs e)
         {
+            var changeLang = new ChangeLang();
+            changeLang.UpdateConfig("language", "en");
+            albFlag = false;
+            Application.Restart();
+        }
 
+        private void btnKyçu_Click(object sender, EventArgs e)
+        {
             if (PjesemarresiBLL.CheckLogin(txtUserName.Text, txtPassword.Text))
             {
                 Main mainMenu = new Main();
-                mainMenu.Show();
+                if (albFlag = true) 
+                {
+                    var changeLang = new ChangeLang();
+                    changeLang.UpdateConfig("language", "sq");
+                    mainMenu.Show();
+                }
+                else
+                {
+                    var changeLang = new ChangeLang();
+                    changeLang.UpdateConfig("language", "en");
+                    mainMenu.Show();
+                }
+
                 Base.SaveUsername = txtUserName.Text;
                 this.Visible = false;
             }
-            else if (txtUserName.Text == "" && txtPassword.Text == "")
-            {
-                MessageBox.Show("Please write Username or Password!");
-            }
             else
             {
-                MessageBox.Show("Username or Password is incorect, please try again!");
+                if (albFlag)
+                {
+                    MessageBox.Show("Kredenciale te gabuara, ju lutem provoni perseri!");
+                }
+                else
+                {
+                    MessageBox.Show("Username or Password is incorect, please try again!");
+                }
             }
         }
 
@@ -50,6 +73,18 @@ namespace Taxi
             {
                 txtPassword.UseSystemPasswordChar = true;
             }
+        }
+
+        private void btnCloseLoginForm_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        
+
+        private void LogInForms_Load(object sender, EventArgs e)
+        {
+            albFlag = true;
         }
     }
 }

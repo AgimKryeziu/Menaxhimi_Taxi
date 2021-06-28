@@ -171,5 +171,24 @@ namespace Taxi.DAL
                 throw ex;
             }
         }
+
+        public DataTable TopShoferi()
+        {
+            try
+            {
+                using (DatabaseConn.conn = new SqlConnection(DatabaseConn.conString))
+                {
+                    DatabaseConn.da = new SqlDataAdapter("usp_GetDriver", DatabaseConn.conn);
+                    DataTable dTable = new DataTable();
+                    DatabaseConn.da.Fill(dTable);
+
+                    return dTable;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

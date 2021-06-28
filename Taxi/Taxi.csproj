@@ -145,7 +145,9 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -193,6 +195,19 @@
     <Compile Include="Destinacione\Destinacioni.Designer.cs">
       <DependentUpon>Destinacioni.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shoferi\ShtoShofer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shoferi\ShtoShofer.Designer.cs">
+      <DependentUpon>ShtoShofer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistikat\Statistika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistikat\Statistika.Designer.cs">
+      <DependentUpon>Statistika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
     <Compile Include="LogInForms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -236,12 +251,6 @@
     <Compile Include="Sherbime\ShtoSherbim.Designer.cs">
       <DependentUpon>ShtoSherbim.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shoferi\ShtoShofer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Shoferi\ShtoShofer.Designer.cs">
-      <DependentUpon>ShtoShofer.cs</DependentUpon>
-    </Compile>
     <Compile Include="Shoferi\ShoferiList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,23 +268,77 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TaxiDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Administratori\AdminList.en.resx">
+      <DependentUpon>AdminList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administratori\ShtoAdmin.en.resx">
+      <DependentUpon>ShtoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Administratori\ShtoAdmin.resx">
       <DependentUpon>ShtoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administratori\ShtoRol.en.resx">
+      <DependentUpon>ShtoRol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Administratori\ShtoRol.resx">
       <DependentUpon>ShtoRol.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Automjeti\Automjeti.en.resx">
+      <DependentUpon>Automjeti.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Automjeti\Automjeti.resx">
       <DependentUpon>Automjeti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Automjeti\Modelet.en.resx">
+      <DependentUpon>Modelet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Automjeti\Modelet.resx">
       <DependentUpon>Modelet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Automjeti\ShtoAutomjet.en.resx">
+      <DependentUpon>ShtoAutomjet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Automjeti\ShtoAutomjet.resx">
       <DependentUpon>ShtoAutomjet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Destinacione\Destinacioni.en.resx">
+      <DependentUpon>Destinacioni.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Destinacione\Destinacioni.resx">
       <DependentUpon>Destinacioni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInForms.en.resx">
+      <DependentUpon>LogInForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.en.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nderrime\NderrimetList.en.resx">
+      <DependentUpon>NderrimetList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nderrime\ShtoNderrime.en.resx">
+      <DependentUpon>ShtoNderrime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sherbime\Sherbimi.en.resx">
+      <DependentUpon>Sherbimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sherbime\ShtoSherbim.en.resx">
+      <DependentUpon>ShtoSherbim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shoferi\ShoferiList.en.resx">
+      <DependentUpon>ShoferiList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shoferi\ShtoShofer.en.resx">
+      <DependentUpon>ShtoShofer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shoferi\ShtoShofer.resx">
+      <DependentUpon>ShtoShofer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistikat\Statistika.en.resx">
+      <DependentUpon>Statistika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistikat\Statistika.resx">
+      <DependentUpon>Statistika.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogInForms.resx">
       <DependentUpon>LogInForms.cs</DependentUpon>
@@ -299,9 +362,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sherbime\ShtoSherbim.resx">
       <DependentUpon>ShtoSherbim.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Shoferi\ShtoShofer.resx">
-      <DependentUpon>ShtoShofer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Shoferi\ShoferiList.resx">
       <DependentUpon>ShoferiList.cs</DependentUpon>

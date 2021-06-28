@@ -8,10 +8,11 @@ namespace Taxi.Administratori
 {
     public partial class ShtoAdmin : Form
     {
-
+        bool albFlag = LogInForms.albFlag;
         PjesemarresitBO pjesemarresitBO;
         PjesemarresiBLL pjesemarresiBLL;
         RoletBO roletBO;
+        public static bool isShto = false;
 
         public ShtoAdmin()
         {
@@ -80,6 +81,8 @@ namespace Taxi.Administratori
 
         private void ShtoAdmin_Load(object sender, EventArgs e)
         {
+            btnShto.Enabled = isShto;
+            btnPerditeso.Enabled = !isShto;
 
             DataTable dt = new DataTable();
             dt = RoliBLL.SelectRoles();
@@ -91,7 +94,21 @@ namespace Taxi.Administratori
         private void btnShtoRol_Click(object sender, EventArgs e)
         {
             ShtoRol shtoRol = new ShtoRol();
-            shtoRol.Show();
+            if (albFlag)
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "sq");
+
+                shtoRol.Show();
+            }
+            else
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "en");
+
+                shtoRol.Show();
+            }
+            
         }
     }
 }

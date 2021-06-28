@@ -45,217 +45,147 @@ namespace Taxi.Sherbime
             this.rBtnPo = new System.Windows.Forms.RadioButton();
             this.btnRuaj = new System.Windows.Forms.Button();
             this.btnPerditeso = new System.Windows.Forms.Button();
-            this.btnShtoDestimacion = new System.Windows.Forms.Button();
             this.txtSherbimiId = new System.Windows.Forms.TextBox();
             this.dtpKohaEMberritjes = new System.Windows.Forms.DateTimePicker();
             this.dtpKohaENisjes = new System.Windows.Forms.DateTimePicker();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnShtoDestimacion = new System.Windows.Forms.Button();
             this.gbAnulohet.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDestinacionet
             // 
-            this.lblDestinacionet.AutoSize = true;
-            this.lblDestinacionet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDestinacionet.Location = new System.Drawing.Point(20, 100);
+            resources.ApplyResources(this.lblDestinacionet, "lblDestinacionet");
             this.lblDestinacionet.Name = "lblDestinacionet";
-            this.lblDestinacionet.Size = new System.Drawing.Size(90, 16);
-            this.lblDestinacionet.TabIndex = 57;
-            this.lblDestinacionet.Text = "Destinacionet";
             // 
             // txtDistanca
             // 
-            this.txtDistanca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDistanca.Location = new System.Drawing.Point(243, 119);
+            resources.ApplyResources(this.txtDistanca, "txtDistanca");
             this.txtDistanca.Name = "txtDistanca";
-            this.txtDistanca.Size = new System.Drawing.Size(175, 22);
-            this.txtDistanca.TabIndex = 4;
             // 
             // lblDistanca
             // 
-            this.lblDistanca.AutoSize = true;
-            this.lblDistanca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDistanca.Location = new System.Drawing.Point(240, 100);
+            resources.ApplyResources(this.lblDistanca, "lblDistanca");
             this.lblDistanca.Name = "lblDistanca";
-            this.lblDistanca.Size = new System.Drawing.Size(61, 16);
-            this.lblDistanca.TabIndex = 49;
-            this.lblDistanca.Text = "Distanca";
             // 
             // lblKohaENisjes
             // 
-            this.lblKohaENisjes.AutoSize = true;
-            this.lblKohaENisjes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKohaENisjes.Location = new System.Drawing.Point(240, 18);
+            resources.ApplyResources(this.lblKohaENisjes, "lblKohaENisjes");
             this.lblKohaENisjes.Name = "lblKohaENisjes";
-            this.lblKohaENisjes.Size = new System.Drawing.Size(88, 16);
-            this.lblKohaENisjes.TabIndex = 48;
-            this.lblKohaENisjes.Text = "Koha e nisjes";
             // 
             // lblVendTakimi
             // 
-            this.lblVendTakimi.AutoSize = true;
-            this.lblVendTakimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVendTakimi.Location = new System.Drawing.Point(468, 18);
+            resources.ApplyResources(this.lblVendTakimi, "lblVendTakimi");
             this.lblVendTakimi.Name = "lblVendTakimi";
-            this.lblVendTakimi.Size = new System.Drawing.Size(75, 16);
-            this.lblVendTakimi.TabIndex = 46;
-            this.lblVendTakimi.Text = "Vendtakimi";
             // 
             // cmbDestinacioniId
             // 
-            this.cmbDestinacioniId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.cmbDestinacioniId, "cmbDestinacioniId");
             this.cmbDestinacioniId.FormattingEnabled = true;
-            this.cmbDestinacioniId.Location = new System.Drawing.Point(23, 119);
             this.cmbDestinacioniId.Name = "cmbDestinacioniId";
-            this.cmbDestinacioniId.Size = new System.Drawing.Size(177, 24);
-            this.cmbDestinacioniId.TabIndex = 3;
             // 
             // txtVendTakimi
             // 
-            this.txtVendTakimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVendTakimi.Location = new System.Drawing.Point(471, 37);
+            resources.ApplyResources(this.txtVendTakimi, "txtVendTakimi");
             this.txtVendTakimi.Name = "txtVendTakimi";
-            this.txtVendTakimi.Size = new System.Drawing.Size(174, 22);
-            this.txtVendTakimi.TabIndex = 2;
             // 
             // cmbNdrrimiId
             // 
-            this.cmbNdrrimiId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.cmbNdrrimiId, "cmbNdrrimiId");
             this.cmbNdrrimiId.FormattingEnabled = true;
-            this.cmbNdrrimiId.Location = new System.Drawing.Point(23, 41);
             this.cmbNdrrimiId.Name = "cmbNdrrimiId";
-            this.cmbNdrrimiId.Size = new System.Drawing.Size(177, 24);
-            this.cmbNdrrimiId.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 18);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 16);
-            this.label1.TabIndex = 57;
-            this.label1.Text = "Nderrimi";
             // 
             // lblKohaEMberritjes
             // 
-            this.lblKohaEMberritjes.AutoSize = true;
-            this.lblKohaEMberritjes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKohaEMberritjes.Location = new System.Drawing.Point(468, 100);
+            resources.ApplyResources(this.lblKohaEMberritjes, "lblKohaEMberritjes");
             this.lblKohaEMberritjes.Name = "lblKohaEMberritjes";
-            this.lblKohaEMberritjes.Size = new System.Drawing.Size(112, 16);
-            this.lblKohaEMberritjes.TabIndex = 48;
-            this.lblKohaEMberritjes.Text = "Koha e mberritjes";
             // 
             // gbAnulohet
             // 
+            resources.ApplyResources(this.gbAnulohet, "gbAnulohet");
             this.gbAnulohet.Controls.Add(this.rBtnJo);
             this.gbAnulohet.Controls.Add(this.rBtnPo);
-            this.gbAnulohet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbAnulohet.Location = new System.Drawing.Point(23, 163);
             this.gbAnulohet.Name = "gbAnulohet";
-            this.gbAnulohet.Size = new System.Drawing.Size(118, 49);
-            this.gbAnulohet.TabIndex = 66;
             this.gbAnulohet.TabStop = false;
-            this.gbAnulohet.Text = "Anulohet";
             // 
             // rBtnJo
             // 
-            this.rBtnJo.AutoSize = true;
+            resources.ApplyResources(this.rBtnJo, "rBtnJo");
             this.rBtnJo.Checked = true;
-            this.rBtnJo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBtnJo.Location = new System.Drawing.Point(23, 28);
             this.rBtnJo.Name = "rBtnJo";
-            this.rBtnJo.Size = new System.Drawing.Size(41, 20);
-            this.rBtnJo.TabIndex = 0;
             this.rBtnJo.TabStop = true;
-            this.rBtnJo.Text = "Jo";
             this.rBtnJo.UseVisualStyleBackColor = true;
             // 
             // rBtnPo
             // 
-            this.rBtnPo.AutoSize = true;
-            this.rBtnPo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBtnPo.Location = new System.Drawing.Point(66, 28);
+            resources.ApplyResources(this.rBtnPo, "rBtnPo");
             this.rBtnPo.Name = "rBtnPo";
-            this.rBtnPo.Size = new System.Drawing.Size(43, 20);
-            this.rBtnPo.TabIndex = 1;
             this.rBtnPo.TabStop = true;
-            this.rBtnPo.Text = "Po";
             this.rBtnPo.UseVisualStyleBackColor = true;
             // 
             // btnRuaj
             // 
-            this.btnRuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRuaj.Location = new System.Drawing.Point(427, 183);
+            resources.ApplyResources(this.btnRuaj, "btnRuaj");
             this.btnRuaj.Name = "btnRuaj";
-            this.btnRuaj.Size = new System.Drawing.Size(87, 29);
-            this.btnRuaj.TabIndex = 6;
-            this.btnRuaj.Text = "Ruaj";
             this.btnRuaj.UseVisualStyleBackColor = true;
             this.btnRuaj.Click += new System.EventHandler(this.btnRuaj_Click);
             // 
             // btnPerditeso
             // 
-            this.btnPerditeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPerditeso.Location = new System.Drawing.Point(531, 183);
+            resources.ApplyResources(this.btnPerditeso, "btnPerditeso");
             this.btnPerditeso.Name = "btnPerditeso";
-            this.btnPerditeso.Size = new System.Drawing.Size(99, 29);
-            this.btnPerditeso.TabIndex = 7;
-            this.btnPerditeso.Text = "Perditeso";
             this.btnPerditeso.UseVisualStyleBackColor = true;
             this.btnPerditeso.Click += new System.EventHandler(this.btnPerditeso_Click);
             // 
-            // btnShtoDestimacion
-            // 
-            this.btnShtoDestimacion.BackColor = System.Drawing.SystemColors.Control;
-            this.btnShtoDestimacion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShtoDestimacion.BackgroundImage")));
-            this.btnShtoDestimacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnShtoDestimacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShtoDestimacion.ForeColor = System.Drawing.Color.Transparent;
-            this.btnShtoDestimacion.Location = new System.Drawing.Point(205, 119);
-            this.btnShtoDestimacion.Margin = new System.Windows.Forms.Padding(2);
-            this.btnShtoDestimacion.Name = "btnShtoDestimacion";
-            this.btnShtoDestimacion.Size = new System.Drawing.Size(26, 27);
-            this.btnShtoDestimacion.TabIndex = 68;
-            this.btnShtoDestimacion.UseVisualStyleBackColor = false;
-            this.btnShtoDestimacion.Click += new System.EventHandler(this.btnShtoDestimacion_Click);
-            // 
             // txtSherbimiId
             // 
-            this.txtSherbimiId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSherbimiId.Location = new System.Drawing.Point(168, 183);
+            resources.ApplyResources(this.txtSherbimiId, "txtSherbimiId");
             this.txtSherbimiId.Name = "txtSherbimiId";
-            this.txtSherbimiId.Size = new System.Drawing.Size(23, 22);
-            this.txtSherbimiId.TabIndex = 4;
             // 
             // dtpKohaEMberritjes
             // 
-            this.dtpKohaEMberritjes.CustomFormat = "MMMMdd, yyyy  |  hh:mm";
-            this.dtpKohaEMberritjes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.dtpKohaEMberritjes, "dtpKohaEMberritjes");
             this.dtpKohaEMberritjes.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpKohaEMberritjes.Location = new System.Drawing.Point(471, 119);
             this.dtpKohaEMberritjes.Name = "dtpKohaEMberritjes";
             this.dtpKohaEMberritjes.ShowUpDown = true;
-            this.dtpKohaEMberritjes.Size = new System.Drawing.Size(195, 22);
-            this.dtpKohaEMberritjes.TabIndex = 69;
             // 
             // dtpKohaENisjes
             // 
-            this.dtpKohaENisjes.CustomFormat = "MMMMdd, yyyy  |  hh:mm";
-            this.dtpKohaENisjes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.dtpKohaENisjes, "dtpKohaENisjes");
             this.dtpKohaENisjes.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpKohaENisjes.Location = new System.Drawing.Point(243, 39);
             this.dtpKohaENisjes.Name = "dtpKohaENisjes";
             this.dtpKohaENisjes.ShowUpDown = true;
-            this.dtpKohaENisjes.Size = new System.Drawing.Size(195, 22);
-            this.dtpKohaENisjes.TabIndex = 70;
             this.dtpKohaENisjes.Value = new System.DateTime(2021, 6, 19, 19, 51, 0, 0);
+            // 
+            // bunifuImageButton1
+            // 
+            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            // 
+            // btnShtoDestimacion
+            // 
+            resources.ApplyResources(this.btnShtoDestimacion, "btnShtoDestimacion");
+            this.btnShtoDestimacion.BackColor = System.Drawing.SystemColors.Control;
+            this.btnShtoDestimacion.ForeColor = System.Drawing.Color.Transparent;
+            this.btnShtoDestimacion.Name = "btnShtoDestimacion";
+            this.btnShtoDestimacion.UseVisualStyleBackColor = false;
+            this.btnShtoDestimacion.Click += new System.EventHandler(this.btnShtoDestimacion_Click);
             // 
             // ShtoSherbim
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 232);
+            this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.dtpKohaEMberritjes);
             this.Controls.Add(this.dtpKohaENisjes);
             this.Controls.Add(this.btnShtoDestimacion);
@@ -274,10 +204,10 @@ namespace Taxi.Sherbime
             this.Controls.Add(this.lblKohaENisjes);
             this.Controls.Add(this.lblVendTakimi);
             this.Name = "ShtoSherbim";
-            this.Text = "ShtoDestinacion";
             this.Load += new System.EventHandler(this.ShtoSherbim_Load);
             this.gbAnulohet.ResumeLayout(false);
             this.gbAnulohet.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,5 +234,6 @@ namespace Taxi.Sherbime
         private System.Windows.Forms.TextBox txtSherbimiId;
         private System.Windows.Forms.DateTimePicker dtpKohaEMberritjes;
         private System.Windows.Forms.DateTimePicker dtpKohaENisjes;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }
 }

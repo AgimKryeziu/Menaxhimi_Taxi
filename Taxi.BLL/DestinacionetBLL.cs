@@ -23,5 +23,10 @@ namespace Taxi.BLL
         {
             return DestinacioniDAL.SelectDestinacionet();
         }
+
+        public DataTable DestinacioniReport()
+        {
+            return destinacionetDAL.DestinacioniReport();
+        }
     }
 }

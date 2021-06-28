@@ -9,6 +9,7 @@ namespace Taxi.Administratori
     {
         RoletBO roletBO;
         RoliBLL roletBLL;
+        bool albFlag = LogInForms.albFlag;
         public ShtoRol()
         {
             InitializeComponent();

@@ -29,48 +29,54 @@ namespace Taxi.Stafi
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.dgvAdmin = new System.Windows.Forms.DataGridView();
             this.btnShto = new System.Windows.Forms.Button();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAdmin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvAdmin
             // 
+            resources.ApplyResources(this.dgvAdmin, "dgvAdmin");
             this.dgvAdmin.AllowUserToAddRows = false;
             this.dgvAdmin.AllowUserToDeleteRows = false;
             this.dgvAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAdmin.Location = new System.Drawing.Point(11, 73);
-            this.dgvAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.dgvAdmin.Name = "dgvAdmin";
             this.dgvAdmin.ReadOnly = true;
             this.dgvAdmin.RowTemplate.Height = 24;
-            this.dgvAdmin.Size = new System.Drawing.Size(900, 300);
-            this.dgvAdmin.TabIndex = 118;
             this.dgvAdmin.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAdmin_CellContentClick);
             // 
             // btnShto
             // 
-            this.btnShto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShto.Location = new System.Drawing.Point(818, 35);
+            resources.ApplyResources(this.btnShto, "btnShto");
             this.btnShto.Name = "btnShto";
-            this.btnShto.Size = new System.Drawing.Size(93, 33);
-            this.btnShto.TabIndex = 119;
-            this.btnShto.Text = "Shto";
             this.btnShto.UseVisualStyleBackColor = true;
             this.btnShto.Click += new System.EventHandler(this.btnShto_Click_1);
             // 
+            // bunifuImageButton1
+            // 
+            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            // 
             // Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(947, 381);
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ControlBox = false;
+            this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.btnShto);
             this.Controls.Add(this.dgvAdmin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin";
-            this.Text = "Admin";
             this.Load += new System.EventHandler(this.Admin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAdmin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -78,5 +84,6 @@ namespace Taxi.Stafi
         #endregion
         private System.Windows.Forms.DataGridView dgvAdmin;
         private System.Windows.Forms.Button btnShto;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }
 }

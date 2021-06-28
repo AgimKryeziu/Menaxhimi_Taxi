@@ -13,7 +13,6 @@ namespace Taxi.Destinacione
             InitializeComponent();
             destinacionetBLL = new DestinacionetBLL();
         }
-
         private void btnRuaj_Click(object sender, EventArgs e)
         {
             AdresaBO adresaBO = new AdresaBO(txtShteti.Text, txtQyteti.Text, txtLagjja.Text, txtRruga.Text, Base.SaveUsername, DateTime.Now);

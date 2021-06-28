@@ -2,12 +2,13 @@
 using System.Data;
 using System.Windows.Forms;
 using Taxi.BLL;
+using Taxi.BO;
 
 namespace Taxi.Nderrime
 {
     public partial class NderrimetList : Form
     {
-
+        bool albFlag = LogInForms.albFlag;
         NderrimetBLL nderrimetBLL;
         public static int nderrimiId;
         public static DataTable lista;
@@ -57,7 +58,19 @@ namespace Taxi.Nderrime
         private void btnShtoShofer_Click(object sender, EventArgs e)
         {
             ShtoNderrime shtoNderrime = new ShtoNderrime();
-            shtoNderrime.ShowDialog();
+            ShtoNderrime.isShto = true;
+            if (albFlag)
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "sq");
+                shtoNderrime.ShowDialog();
+            }
+            else
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "en");
+                shtoNderrime.ShowDialog();
+            }            
         }
 
         private void dgvNdrrimet_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -65,16 +78,17 @@ namespace Taxi.Nderrime
             nderrimetBLL = new NderrimetBLL();
 
 
-            if (e.ColumnIndex == 7)
+            if (e.ColumnIndex == 0)
             {
                 ShtoNderrime shtoNderrime = new ShtoNderrime();
-                nderrimiId = Convert.ToInt32(dgvNdrrimet.Rows[e.RowIndex].Cells[0].Value.ToString()); ;
+                ShtoNderrime.isShto = false;
+                nderrimiId = Convert.ToInt32(dgvNdrrimet.Rows[e.RowIndex].Cells[2].Value.ToString()); ;
                 shtoNderrime.LoadData(nderrimiId);
                 shtoNderrime.ShowDialog();
             }
-            if (e.ColumnIndex == 8)
+            if (e.ColumnIndex == 1)
             {
-                nderrimiId = Convert.ToInt32(dgvNdrrimet.Rows[e.RowIndex].Cells[0].Value.ToString());
+                nderrimiId = Convert.ToInt32(dgvNdrrimet.Rows[e.RowIndex].Cells[2].Value.ToString());
                 if (DialogResult.OK == MessageBox.Show("A jeni i sigurt qe deshironi te fshini kete item"))
                 {
                     bool deleted = nderrimetBLL.DeleteNderrimin(nderrimiId);

@@ -29,6 +29,7 @@ namespace Taxi.Destinacione
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Destinacioni));
             this.txtLagjja = new System.Windows.Forms.TextBox();
             this.lblLagjja = new System.Windows.Forms.Label();
             this.txtRruga = new System.Windows.Forms.TextBox();
@@ -38,96 +39,71 @@ namespace Taxi.Destinacione
             this.txtQyteti = new System.Windows.Forms.TextBox();
             this.lblQyteti = new System.Windows.Forms.Label();
             this.btnRuaj = new System.Windows.Forms.Button();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtLagjja
             // 
-            this.txtLagjja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLagjja.Location = new System.Drawing.Point(16, 154);
+            resources.ApplyResources(this.txtLagjja, "txtLagjja");
             this.txtLagjja.Name = "txtLagjja";
-            this.txtLagjja.Size = new System.Drawing.Size(213, 22);
-            this.txtLagjja.TabIndex = 17;
             // 
             // lblLagjja
             // 
-            this.lblLagjja.AutoSize = true;
-            this.lblLagjja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLagjja.Location = new System.Drawing.Point(13, 131);
+            resources.ApplyResources(this.lblLagjja, "lblLagjja");
             this.lblLagjja.Name = "lblLagjja";
-            this.lblLagjja.Size = new System.Drawing.Size(45, 16);
-            this.lblLagjja.TabIndex = 11;
-            this.lblLagjja.Text = "Lagjja";
             // 
             // txtRruga
             // 
-            this.txtRruga.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRruga.Location = new System.Drawing.Point(18, 211);
+            resources.ApplyResources(this.txtRruga, "txtRruga");
             this.txtRruga.Name = "txtRruga";
-            this.txtRruga.Size = new System.Drawing.Size(213, 22);
-            this.txtRruga.TabIndex = 18;
             // 
             // lblRruga
             // 
-            this.lblRruga.AutoSize = true;
-            this.lblRruga.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRruga.Location = new System.Drawing.Point(14, 188);
+            resources.ApplyResources(this.lblRruga, "lblRruga");
             this.lblRruga.Name = "lblRruga";
-            this.lblRruga.Size = new System.Drawing.Size(45, 16);
-            this.lblRruga.TabIndex = 12;
-            this.lblRruga.Text = "Rruga";
             // 
             // txtShteti
             // 
-            this.txtShteti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtShteti.Location = new System.Drawing.Point(17, 40);
+            resources.ApplyResources(this.txtShteti, "txtShteti");
             this.txtShteti.Name = "txtShteti";
-            this.txtShteti.Size = new System.Drawing.Size(213, 22);
-            this.txtShteti.TabIndex = 13;
             // 
             // lblShteti
             // 
-            this.lblShteti.AutoSize = true;
-            this.lblShteti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShteti.Location = new System.Drawing.Point(13, 17);
+            resources.ApplyResources(this.lblShteti, "lblShteti");
             this.lblShteti.Name = "lblShteti";
-            this.lblShteti.Size = new System.Drawing.Size(41, 16);
-            this.lblShteti.TabIndex = 14;
-            this.lblShteti.Text = "Shteti";
             // 
             // txtQyteti
             // 
-            this.txtQyteti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQyteti.Location = new System.Drawing.Point(18, 93);
+            resources.ApplyResources(this.txtQyteti, "txtQyteti");
             this.txtQyteti.Name = "txtQyteti";
-            this.txtQyteti.Size = new System.Drawing.Size(213, 22);
-            this.txtQyteti.TabIndex = 16;
             // 
             // lblQyteti
             // 
-            this.lblQyteti.AutoSize = true;
-            this.lblQyteti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQyteti.Location = new System.Drawing.Point(14, 70);
+            resources.ApplyResources(this.lblQyteti, "lblQyteti");
             this.lblQyteti.Name = "lblQyteti";
-            this.lblQyteti.Size = new System.Drawing.Size(42, 16);
-            this.lblQyteti.TabIndex = 15;
-            this.lblQyteti.Text = "Qyteti";
             // 
             // btnRuaj
             // 
-            this.btnRuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRuaj.Location = new System.Drawing.Point(154, 264);
+            resources.ApplyResources(this.btnRuaj, "btnRuaj");
             this.btnRuaj.Name = "btnRuaj";
-            this.btnRuaj.Size = new System.Drawing.Size(75, 28);
-            this.btnRuaj.TabIndex = 38;
-            this.btnRuaj.Text = "Ruaj";
             this.btnRuaj.UseVisualStyleBackColor = true;
             this.btnRuaj.Click += new System.EventHandler(this.btnRuaj_Click);
             // 
+            // bunifuImageButton1
+            // 
+            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            // 
             // Destinacioni
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(246, 304);
+            this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.btnRuaj);
             this.Controls.Add(this.txtLagjja);
             this.Controls.Add(this.lblLagjja);
@@ -138,7 +114,7 @@ namespace Taxi.Destinacione
             this.Controls.Add(this.txtQyteti);
             this.Controls.Add(this.lblQyteti);
             this.Name = "Destinacioni";
-            this.Text = "Destinacionet";
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,5 +130,6 @@ namespace Taxi.Destinacione
         private System.Windows.Forms.TextBox txtQyteti;
         private System.Windows.Forms.Label lblQyteti;
         private System.Windows.Forms.Button btnRuaj;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }
 }

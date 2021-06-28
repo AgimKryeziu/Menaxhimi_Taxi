@@ -3,6 +3,7 @@ using System.Data;
 using System.Windows.Forms;
 using Taxi.Administratori;
 using Taxi.BLL;
+using Taxi.BO;
 
 namespace Taxi.Stafi
 {
@@ -10,6 +11,8 @@ namespace Taxi.Stafi
     {
         PjesemarresiBLL pjesemarresiBLL;
         public static DataTable lista;
+
+        bool albFlag = LogInForms.albFlag;
 
         public Admin()
         {
@@ -27,7 +30,7 @@ namespace Taxi.Stafi
             lista = pjesemarresiBLL.ShowAdmins();
             dgvAdmin.DataSource = lista;
             dgvAdmin.Columns["PmID"].Visible = false;
-
+            
             DataGridViewButtonColumn editButton = new DataGridViewButtonColumn();
 
             editButton.Name = "Edit";
@@ -53,7 +56,22 @@ namespace Taxi.Stafi
         private void btnShto_Click_1(object sender, EventArgs e)
         {
             ShtoAdmin shtoAdmin = new ShtoAdmin();
-            shtoAdmin.ShowDialog();
+            ShtoAdmin.isShto = true;
+
+            if (albFlag)
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "sq");
+
+                shtoAdmin.ShowDialog();
+            }
+            else
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "en");
+
+                shtoAdmin.ShowDialog();
+            }
         }
 
         private void dgvAdmin_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -61,17 +79,19 @@ namespace Taxi.Stafi
             pjesemarresiBLL = new PjesemarresiBLL();
 
 
-            if (e.ColumnIndex == 8)
+            if (e.ColumnIndex == 0)
             {
                 ShtoAdmin shtoAdmin = new ShtoAdmin();
-
-                int adminId = Convert.ToInt32(dgvAdmin.Rows[e.RowIndex].Cells[0].Value.ToString());
+                ShtoAdmin.isShto = false;
+                int adminId = Convert.ToInt32(dgvAdmin.Rows[e.RowIndex].Cells[2].Value.ToString());
                 shtoAdmin.LoadData(adminId);
                 shtoAdmin.ShowDialog();
+                
+
             }
-            if (e.ColumnIndex == 9)
+            if (e.ColumnIndex == 1)
             {
-                int adminId = Convert.ToInt32(dgvAdmin.Rows[e.RowIndex].Cells[0].Value.ToString());
+                int adminId = Convert.ToInt32(dgvAdmin.Rows[e.RowIndex].Cells[2].Value.ToString());
                 if (DialogResult.OK == MessageBox.Show("A jeni i sigurt qe deshironi te fshini kete item"))
                 {
                     bool deleted = pjesemarresiBLL.DeleteAdmin(adminId);

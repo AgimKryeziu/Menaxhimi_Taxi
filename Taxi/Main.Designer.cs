@@ -31,10 +31,10 @@ namespace Taxi
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCloseMainMenu = new Bunifu.Framework.UI.BunifuImageButton();
             this.lblBibloteka = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlContent = new System.Windows.Forms.Panel();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnShkyçu = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SidePanel = new System.Windows.Forms.Panel();
@@ -45,73 +45,53 @@ namespace Taxi
             this.btnShoferet = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAutomjetet = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnHome = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.pnlContent = new System.Windows.Forms.Panel();
+            this.btnCloseMainMenu = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCloseMainMenu)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCloseMainMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.CadetBlue;
             this.panel1.Controls.Add(this.btnCloseMainMenu);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1244, 38);
-            this.panel1.TabIndex = 5;
-            // 
-            // btnCloseMainMenu
-            // 
-            this.btnCloseMainMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCloseMainMenu.BackColor = System.Drawing.Color.Transparent;
-            this.btnCloseMainMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnCloseMainMenu.Image")));
-            this.btnCloseMainMenu.ImageActive = null;
-            this.btnCloseMainMenu.Location = new System.Drawing.Point(1206, 0);
-            this.btnCloseMainMenu.Name = "btnCloseMainMenu";
-            this.btnCloseMainMenu.Size = new System.Drawing.Size(38, 38);
-            this.btnCloseMainMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCloseMainMenu.TabIndex = 4;
-            this.btnCloseMainMenu.TabStop = false;
-            this.btnCloseMainMenu.Zoom = 10;
-            this.btnCloseMainMenu.Click += new System.EventHandler(this.btnCloseMainMenu_Click);
             // 
             // lblBibloteka
             // 
-            this.lblBibloteka.AutoSize = true;
-            this.lblBibloteka.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBibloteka.Location = new System.Drawing.Point(556, 87);
+            resources.ApplyResources(this.lblBibloteka, "lblBibloteka");
             this.lblBibloteka.Name = "lblBibloteka";
-            this.lblBibloteka.Size = new System.Drawing.Size(431, 31);
-            this.lblBibloteka.TabIndex = 7;
-            this.lblBibloteka.Text = "Sistemi për menaxhimin e taksis";
             // 
             // panel2
             // 
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.Color.CadetBlue;
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(345, 28);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(183, 159);
-            this.panel2.TabIndex = 6;
             // 
-            // pictureBox1
+            // pnlContent
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(7, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(169, 135);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            resources.ApplyResources(this.pnlContent, "pnlContent");
+            this.pnlContent.Name = "pnlContent";
+            // 
+            // bunifuImageButton1
+            // 
+            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
             // 
             // bunifuGradientPanel1
             // 
+            resources.ApplyResources(this.bunifuGradientPanel1, "bunifuGradientPanel1");
             this.bunifuGradientPanel1.BackColor = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bunifuGradientPanel1.Controls.Add(this.btnShkyçu);
             this.bunifuGradientPanel1.Controls.Add(this.SidePanel);
@@ -122,26 +102,21 @@ namespace Taxi
             this.bunifuGradientPanel1.Controls.Add(this.btnShoferet);
             this.bunifuGradientPanel1.Controls.Add(this.btnAutomjetet);
             this.bunifuGradientPanel1.Controls.Add(this.btnHome);
-            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.DarkTurquoise;
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.BlueViolet;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Blue;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Black;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 38);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(250, 652);
-            this.bunifuGradientPanel1.TabIndex = 9;
             // 
             // btnShkyçu
             // 
+            resources.ApplyResources(this.btnShkyçu, "btnShkyçu");
             this.btnShkyçu.Active = false;
             this.btnShkyçu.Activecolor = System.Drawing.Color.MediumBlue;
-            this.btnShkyçu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnShkyçu.BackColor = System.Drawing.Color.Transparent;
-            this.btnShkyçu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnShkyçu.BorderRadius = 0;
-            this.btnShkyçu.ButtonText = "                  Shkyçu";
+            this.btnShkyçu.ButtonText = "                  Log Out";
             this.btnShkyçu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnShkyçu.DisabledColor = System.Drawing.Color.Gray;
             this.btnShkyçu.Iconcolor = System.Drawing.Color.Transparent;
@@ -156,16 +131,11 @@ namespace Taxi
             this.btnShkyçu.IconVisible = true;
             this.btnShkyçu.IconZoom = 50D;
             this.btnShkyçu.IsTab = false;
-            this.btnShkyçu.Location = new System.Drawing.Point(5, 581);
-            this.btnShkyçu.Margin = new System.Windows.Forms.Padding(5);
             this.btnShkyçu.Name = "btnShkyçu";
             this.btnShkyçu.Normalcolor = System.Drawing.Color.Transparent;
             this.btnShkyçu.OnHovercolor = System.Drawing.Color.DarkBlue;
             this.btnShkyçu.OnHoverTextColor = System.Drawing.Color.White;
             this.btnShkyçu.selected = false;
-            this.btnShkyçu.Size = new System.Drawing.Size(208, 44);
-            this.btnShkyçu.TabIndex = 8;
-            this.btnShkyçu.Text = "                  Shkyçu";
             this.btnShkyçu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnShkyçu.Textcolor = System.Drawing.Color.White;
             this.btnShkyçu.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -173,19 +143,16 @@ namespace Taxi
             // 
             // SidePanel
             // 
+            resources.ApplyResources(this.SidePanel, "SidePanel");
             this.SidePanel.BackColor = System.Drawing.Color.Cyan;
-            this.SidePanel.Location = new System.Drawing.Point(-1, 41);
             this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(10, 59);
-            this.SidePanel.TabIndex = 3;
             // 
             // btnLogOut
             // 
+            resources.ApplyResources(this.btnLogOut, "btnLogOut");
             this.btnLogOut.Active = false;
             this.btnLogOut.Activecolor = System.Drawing.Color.MediumBlue;
-            this.btnLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnLogOut.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogOut.BorderRadius = 0;
             this.btnLogOut.ButtonText = "                  Shkyçu";
             this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -202,28 +169,23 @@ namespace Taxi
             this.btnLogOut.IconVisible = true;
             this.btnLogOut.IconZoom = 50D;
             this.btnLogOut.IsTab = false;
-            this.btnLogOut.Location = new System.Drawing.Point(5, 786);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(5);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Normalcolor = System.Drawing.Color.Transparent;
             this.btnLogOut.OnHovercolor = System.Drawing.Color.DarkBlue;
             this.btnLogOut.OnHoverTextColor = System.Drawing.Color.White;
             this.btnLogOut.selected = false;
-            this.btnLogOut.Size = new System.Drawing.Size(417, 77);
-            this.btnLogOut.TabIndex = 7;
-            this.btnLogOut.Text = "                  Shkyçu";
             this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogOut.Textcolor = System.Drawing.Color.White;
             this.btnLogOut.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnAdminat
             // 
+            resources.ApplyResources(this.btnAdminat, "btnAdminat");
             this.btnAdminat.Active = false;
             this.btnAdminat.Activecolor = System.Drawing.Color.Transparent;
             this.btnAdminat.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdminat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdminat.BorderRadius = 0;
-            this.btnAdminat.ButtonText = "                  Adminat";
+            this.btnAdminat.ButtonText = "                  Admins";
             this.btnAdminat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdminat.DisabledColor = System.Drawing.Color.Gray;
             this.btnAdminat.Iconcolor = System.Drawing.Color.Transparent;
@@ -238,16 +200,11 @@ namespace Taxi
             this.btnAdminat.IconVisible = true;
             this.btnAdminat.IconZoom = 50D;
             this.btnAdminat.IsTab = false;
-            this.btnAdminat.Location = new System.Drawing.Point(5, 138);
-            this.btnAdminat.Margin = new System.Windows.Forms.Padding(7);
             this.btnAdminat.Name = "btnAdminat";
             this.btnAdminat.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAdminat.OnHovercolor = System.Drawing.Color.DarkBlue;
             this.btnAdminat.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAdminat.selected = false;
-            this.btnAdminat.Size = new System.Drawing.Size(216, 70);
-            this.btnAdminat.TabIndex = 3;
-            this.btnAdminat.Text = "                  Adminat";
             this.btnAdminat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdminat.Textcolor = System.Drawing.Color.White;
             this.btnAdminat.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -255,12 +212,12 @@ namespace Taxi
             // 
             // btnNderrimet
             // 
+            resources.ApplyResources(this.btnNderrimet, "btnNderrimet");
             this.btnNderrimet.Active = false;
             this.btnNderrimet.Activecolor = System.Drawing.Color.Transparent;
             this.btnNderrimet.BackColor = System.Drawing.Color.Transparent;
-            this.btnNderrimet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNderrimet.BorderRadius = 0;
-            this.btnNderrimet.ButtonText = "              Nderrimet";
+            this.btnNderrimet.ButtonText = "              Shifts";
             this.btnNderrimet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNderrimet.DisabledColor = System.Drawing.Color.Gray;
             this.btnNderrimet.Iconcolor = System.Drawing.Color.Transparent;
@@ -275,16 +232,11 @@ namespace Taxi
             this.btnNderrimet.IconVisible = true;
             this.btnNderrimet.IconZoom = 50D;
             this.btnNderrimet.IsTab = false;
-            this.btnNderrimet.Location = new System.Drawing.Point(13, 396);
-            this.btnNderrimet.Margin = new System.Windows.Forms.Padding(5);
             this.btnNderrimet.Name = "btnNderrimet";
             this.btnNderrimet.Normalcolor = System.Drawing.Color.Transparent;
             this.btnNderrimet.OnHovercolor = System.Drawing.Color.DarkBlue;
             this.btnNderrimet.OnHoverTextColor = System.Drawing.Color.White;
             this.btnNderrimet.selected = false;
-            this.btnNderrimet.Size = new System.Drawing.Size(216, 53);
-            this.btnNderrimet.TabIndex = 3;
-            this.btnNderrimet.Text = "              Nderrimet";
             this.btnNderrimet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNderrimet.Textcolor = System.Drawing.Color.White;
             this.btnNderrimet.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -292,12 +244,12 @@ namespace Taxi
             // 
             // btnSherbimet
             // 
+            resources.ApplyResources(this.btnSherbimet, "btnSherbimet");
             this.btnSherbimet.Active = false;
             this.btnSherbimet.Activecolor = System.Drawing.Color.Transparent;
             this.btnSherbimet.BackColor = System.Drawing.Color.Transparent;
-            this.btnSherbimet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSherbimet.BorderRadius = 0;
-            this.btnSherbimet.ButtonText = "               Sherbimet";
+            this.btnSherbimet.ButtonText = "               Services";
             this.btnSherbimet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSherbimet.DisabledColor = System.Drawing.Color.Gray;
             this.btnSherbimet.Iconcolor = System.Drawing.Color.Transparent;
@@ -312,16 +264,11 @@ namespace Taxi
             this.btnSherbimet.IconVisible = true;
             this.btnSherbimet.IconZoom = 50D;
             this.btnSherbimet.IsTab = false;
-            this.btnSherbimet.Location = new System.Drawing.Point(13, 476);
-            this.btnSherbimet.Margin = new System.Windows.Forms.Padding(5);
             this.btnSherbimet.Name = "btnSherbimet";
             this.btnSherbimet.Normalcolor = System.Drawing.Color.Transparent;
             this.btnSherbimet.OnHovercolor = System.Drawing.Color.DarkBlue;
             this.btnSherbimet.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSherbimet.selected = false;
-            this.btnSherbimet.Size = new System.Drawing.Size(216, 53);
-            this.btnSherbimet.TabIndex = 3;
-            this.btnSherbimet.Text = "               Sherbimet";
             this.btnSherbimet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSherbimet.Textcolor = System.Drawing.Color.White;
             this.btnSherbimet.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -329,12 +276,12 @@ namespace Taxi
             // 
             // btnShoferet
             // 
+            resources.ApplyResources(this.btnShoferet, "btnShoferet");
             this.btnShoferet.Active = false;
             this.btnShoferet.Activecolor = System.Drawing.Color.Transparent;
             this.btnShoferet.BackColor = System.Drawing.Color.Transparent;
-            this.btnShoferet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnShoferet.BorderRadius = 0;
-            this.btnShoferet.ButtonText = "                  Shoferet";
+            this.btnShoferet.ButtonText = "                  Driver";
             this.btnShoferet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnShoferet.DisabledColor = System.Drawing.Color.Gray;
             this.btnShoferet.Iconcolor = System.Drawing.Color.Transparent;
@@ -349,16 +296,11 @@ namespace Taxi
             this.btnShoferet.IconVisible = true;
             this.btnShoferet.IconZoom = 50D;
             this.btnShoferet.IsTab = false;
-            this.btnShoferet.Location = new System.Drawing.Point(-1, 220);
-            this.btnShoferet.Margin = new System.Windows.Forms.Padding(5);
             this.btnShoferet.Name = "btnShoferet";
             this.btnShoferet.Normalcolor = System.Drawing.Color.Transparent;
             this.btnShoferet.OnHovercolor = System.Drawing.Color.DarkBlue;
             this.btnShoferet.OnHoverTextColor = System.Drawing.Color.White;
             this.btnShoferet.selected = false;
-            this.btnShoferet.Size = new System.Drawing.Size(222, 70);
-            this.btnShoferet.TabIndex = 2;
-            this.btnShoferet.Text = "                  Shoferet";
             this.btnShoferet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnShoferet.Textcolor = System.Drawing.Color.White;
             this.btnShoferet.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -366,12 +308,12 @@ namespace Taxi
             // 
             // btnAutomjetet
             // 
+            resources.ApplyResources(this.btnAutomjetet, "btnAutomjetet");
             this.btnAutomjetet.Active = false;
             this.btnAutomjetet.Activecolor = System.Drawing.Color.Transparent;
             this.btnAutomjetet.BackColor = System.Drawing.Color.Transparent;
-            this.btnAutomjetet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAutomjetet.BorderRadius = 0;
-            this.btnAutomjetet.ButtonText = "                 Automjetet";
+            this.btnAutomjetet.ButtonText = "                 Car";
             this.btnAutomjetet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAutomjetet.DisabledColor = System.Drawing.Color.Gray;
             this.btnAutomjetet.Iconcolor = System.Drawing.Color.Transparent;
@@ -386,16 +328,11 @@ namespace Taxi
             this.btnAutomjetet.IconVisible = true;
             this.btnAutomjetet.IconZoom = 50D;
             this.btnAutomjetet.IsTab = false;
-            this.btnAutomjetet.Location = new System.Drawing.Point(5, 310);
-            this.btnAutomjetet.Margin = new System.Windows.Forms.Padding(5);
             this.btnAutomjetet.Name = "btnAutomjetet";
             this.btnAutomjetet.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAutomjetet.OnHovercolor = System.Drawing.Color.DarkBlue;
             this.btnAutomjetet.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAutomjetet.selected = false;
-            this.btnAutomjetet.Size = new System.Drawing.Size(238, 64);
-            this.btnAutomjetet.TabIndex = 1;
-            this.btnAutomjetet.Text = "                 Automjetet";
             this.btnAutomjetet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAutomjetet.Textcolor = System.Drawing.Color.White;
             this.btnAutomjetet.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -403,12 +340,12 @@ namespace Taxi
             // 
             // btnHome
             // 
+            resources.ApplyResources(this.btnHome, "btnHome");
             this.btnHome.Active = false;
             this.btnHome.Activecolor = System.Drawing.Color.MediumBlue;
             this.btnHome.BackColor = System.Drawing.Color.Transparent;
-            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHome.BorderRadius = 0;
-            this.btnHome.ButtonText = "              Faqja kryesore       ";
+            this.btnHome.ButtonText = "              Main Page ";
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHome.DisabledColor = System.Drawing.Color.Gray;
             this.btnHome.Iconcolor = System.Drawing.Color.Transparent;
@@ -423,32 +360,37 @@ namespace Taxi
             this.btnHome.IconVisible = true;
             this.btnHome.IconZoom = 50D;
             this.btnHome.IsTab = false;
-            this.btnHome.Location = new System.Drawing.Point(13, 31);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(5);
             this.btnHome.Name = "btnHome";
             this.btnHome.Normalcolor = System.Drawing.Color.Transparent;
             this.btnHome.OnHovercolor = System.Drawing.Color.DarkBlue;
             this.btnHome.OnHoverTextColor = System.Drawing.Color.White;
             this.btnHome.selected = false;
-            this.btnHome.Size = new System.Drawing.Size(200, 77);
-            this.btnHome.TabIndex = 0;
-            this.btnHome.Text = "              Faqja kryesore       ";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.Textcolor = System.Drawing.Color.White;
             this.btnHome.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // pnlContent
+            // btnCloseMainMenu
             // 
-            this.pnlContent.Location = new System.Drawing.Point(269, 215);
-            this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(963, 420);
-            this.pnlContent.TabIndex = 10;
+            resources.ApplyResources(this.btnCloseMainMenu, "btnCloseMainMenu");
+            this.btnCloseMainMenu.BackColor = System.Drawing.Color.Transparent;
+            this.btnCloseMainMenu.ImageActive = null;
+            this.btnCloseMainMenu.Name = "btnCloseMainMenu";
+            this.btnCloseMainMenu.TabStop = false;
+            this.btnCloseMainMenu.Zoom = 10;
+            this.btnCloseMainMenu.Click += new System.EventHandler(this.btnCloseMainMenu_Click);
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1244, 690);
+            this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.panel1);
@@ -456,13 +398,14 @@ namespace Taxi
             this.Controls.Add(this.lblBibloteka);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
-            this.Text = "MainMenu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnCloseMainMenu)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnCloseMainMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -486,5 +429,6 @@ namespace Taxi
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuFlatButton btnNderrimet;
         private System.Windows.Forms.Panel pnlContent;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }
 }

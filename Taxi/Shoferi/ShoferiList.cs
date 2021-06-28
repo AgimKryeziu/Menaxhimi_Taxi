@@ -1,7 +1,10 @@
-﻿using System;
+﻿using DGVPrinterHelper;
+using System;
 using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
 using Taxi.BLL;
+using Taxi.BO;
 
 namespace Taxi.Shoferi
 {
@@ -15,6 +18,7 @@ namespace Taxi.Shoferi
         public static DataTable lista;
         public static int shoferiId;
         ShoferiBLL shoferiBLL;
+        bool albFlag = LogInForms.albFlag;
         private void ShoferiList_Load(object sender, EventArgs e)
         {
             PopulateShoferiList();
@@ -52,16 +56,17 @@ namespace Taxi.Shoferi
         {
             shoferiBLL = new ShoferiBLL();
 
-            if (e.ColumnIndex == 9)
+            if (e.ColumnIndex == 0)
             {
                 ShtoShofer addShofer = new ShtoShofer();
-                shoferiId = Convert.ToInt32(dgvShoferiList.Rows[e.RowIndex].Cells[0].Value.ToString());
+                ShtoShofer.isShto = false;
+                shoferiId = Convert.ToInt32(dgvShoferiList.Rows[e.RowIndex].Cells[2].Value.ToString());
                 addShofer.LoadData(shoferiId);
                 addShofer.ShowDialog();
             }
-            if (e.ColumnIndex == 10)
+            if (e.ColumnIndex == 1)
             {
-                int shoferiId = Convert.ToInt32(dgvShoferiList.Rows[e.RowIndex].Cells[0].Value.ToString());
+                int shoferiId = Convert.ToInt32(dgvShoferiList.Rows[e.RowIndex].Cells[2].Value.ToString());
                 if (DialogResult.OK == MessageBox.Show("A jeni i sigurt qe deshironi te fshini kete item"))
                 {
                     bool deleted = shoferiBLL.DeleteShofer(shoferiId);
@@ -82,8 +87,20 @@ namespace Taxi.Shoferi
         private void btnShtoShofer_Click(object sender, EventArgs e)
         {
             ShtoShofer shtoShofer = new ShtoShofer();
-            shtoShofer.ShowDialog();
-
+            ShtoShofer.isShto = true;
+            if (albFlag)
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "sq");
+                shtoShofer.ShowDialog(); ;
+            }
+            else
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "en");
+                shtoShofer.ShowDialog();
+            }
+            
         }
 
         private void btnEksportoExcel_Click(object sender, EventArgs e)
@@ -147,9 +164,27 @@ namespace Taxi.Shoferi
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
+            //e.Graphics.DrawImage(btm, 0, 0);
+        }
 
+        //Bitmap btm;
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            //Graphics g = this.CreateGraphics();
+            //btm = new Bitmap(this.Size.Width, this.Size.Height, g);
+            //Graphics mg = Graphics.FromImage(btm);
+            //mg.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, this.Size);
+            //printPreviewDialog1.ShowDialog();
+
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Raporti per Shoferin";
+            printer.SubTitle = string.Format("Data: {0}", DateTime.Now.Date + "\n");
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.Footer = "Riinvest";
+            printer.PrintDataGridView(dgvShoferiList);
         }
     }
 }

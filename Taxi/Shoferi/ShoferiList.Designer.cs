@@ -33,70 +33,86 @@ namespace Taxi.Shoferi
             this.dgvShoferiList = new System.Windows.Forms.DataGridView();
             this.btnShtoShofer = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.exportToExcel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShoferiList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvShoferiList
             // 
+            resources.ApplyResources(this.dgvShoferiList, "dgvShoferiList");
             this.dgvShoferiList.AllowUserToAddRows = false;
             this.dgvShoferiList.AllowUserToDeleteRows = false;
             this.dgvShoferiList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvShoferiList.Location = new System.Drawing.Point(12, 106);
             this.dgvShoferiList.Name = "dgvShoferiList";
             this.dgvShoferiList.ReadOnly = true;
-            this.dgvShoferiList.Size = new System.Drawing.Size(929, 340);
-            this.dgvShoferiList.TabIndex = 0;
             this.dgvShoferiList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvShoferiList_CellContentClick);
             // 
             // btnShtoShofer
             // 
-            this.btnShtoShofer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShtoShofer.Location = new System.Drawing.Point(840, 45);
+            resources.ApplyResources(this.btnShtoShofer, "btnShtoShofer");
             this.btnShtoShofer.Name = "btnShtoShofer";
-            this.btnShtoShofer.Size = new System.Drawing.Size(93, 33);
-            this.btnShtoShofer.TabIndex = 37;
-            this.btnShtoShofer.Text = "Shto";
             this.btnShtoShofer.UseVisualStyleBackColor = true;
             this.btnShtoShofer.Click += new System.EventHandler(this.btnShtoShofer_Click);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 81);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 16);
-            this.label1.TabIndex = 39;
-            this.label1.Text = "Eksporto";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.DocumentName = " ";
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            resources.ApplyResources(this.printPreviewDialog1, "printPreviewDialog1");
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            // 
+            // btnPrint
+            // 
+            resources.ApplyResources(this.btnPrint, "btnPrint");
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // bunifuImageButton1
+            // 
+            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
             // 
             // exportToExcel
             // 
-            this.exportToExcel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("exportToExcel.BackgroundImage")));
-            this.exportToExcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.exportToExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exportToExcel.Location = new System.Drawing.Point(17, 12);
+            resources.ApplyResources(this.exportToExcel, "exportToExcel");
             this.exportToExcel.Name = "exportToExcel";
-            this.exportToExcel.Size = new System.Drawing.Size(51, 66);
-            this.exportToExcel.TabIndex = 38;
             this.exportToExcel.UseVisualStyleBackColor = true;
             this.exportToExcel.Click += new System.EventHandler(this.btnEksportoExcel_Click);
             // 
             // ShoferiList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(955, 458);
+            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.exportToExcel);
             this.Controls.Add(this.btnShtoShofer);
             this.Controls.Add(this.dgvShoferiList);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ShoferiList";
-            this.Text = "Shoferet";
             this.Load += new System.EventHandler(this.ShoferiList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvShoferiList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,5 +124,9 @@ namespace Taxi.Shoferi
         private System.Windows.Forms.Button btnShtoShofer;
         private System.Windows.Forms.Button exportToExcel;
         private System.Windows.Forms.Label label1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.Button btnPrint;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }
 }

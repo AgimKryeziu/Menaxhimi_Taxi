@@ -53,5 +53,24 @@ namespace Taxi.DAL
                 throw ex;
             }
         }
+
+        public DataTable DestinacioniReport()
+        {
+            try
+            {
+                using (DatabaseConn.conn = new SqlConnection(DatabaseConn.conString))
+                {
+                    DatabaseConn.da = new SqlDataAdapter("usp_GetDestinacionByCity", DatabaseConn.conn);
+                    DataTable dTable = new DataTable();
+                    DatabaseConn.da.Fill(dTable);
+
+                    return dTable;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

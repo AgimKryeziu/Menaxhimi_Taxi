@@ -29,86 +29,74 @@ namespace Taxi.Automjeti
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Modelet));
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtPershkrimi = new System.Windows.Forms.TextBox();
             this.lblPershkrimi = new System.Windows.Forms.Label();
             this.txtEmri = new System.Windows.Forms.TextBox();
             this.lblEmri = new System.Windows.Forms.Label();
             this.btnRuaj = new System.Windows.Forms.Button();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Controls.Add(this.txtPershkrimi);
             this.panel2.Controls.Add(this.lblPershkrimi);
             this.panel2.Controls.Add(this.txtEmri);
             this.panel2.Controls.Add(this.lblEmri);
-            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(12, 21);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(236, 206);
-            this.panel2.TabIndex = 36;
             // 
             // txtPershkrimi
             // 
-            this.txtPershkrimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPershkrimi.Location = new System.Drawing.Point(18, 105);
-            this.txtPershkrimi.Multiline = true;
+            resources.ApplyResources(this.txtPershkrimi, "txtPershkrimi");
             this.txtPershkrimi.Name = "txtPershkrimi";
-            this.txtPershkrimi.Size = new System.Drawing.Size(179, 82);
-            this.txtPershkrimi.TabIndex = 29;
             // 
             // lblPershkrimi
             // 
-            this.lblPershkrimi.AutoSize = true;
-            this.lblPershkrimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPershkrimi.Location = new System.Drawing.Point(16, 79);
+            resources.ApplyResources(this.lblPershkrimi, "lblPershkrimi");
             this.lblPershkrimi.Name = "lblPershkrimi";
-            this.lblPershkrimi.Size = new System.Drawing.Size(71, 16);
-            this.lblPershkrimi.TabIndex = 25;
-            this.lblPershkrimi.Text = "Pershkrimi";
             // 
             // txtEmri
             // 
-            this.txtEmri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmri.Location = new System.Drawing.Point(18, 43);
+            resources.ApplyResources(this.txtEmri, "txtEmri");
             this.txtEmri.Name = "txtEmri";
-            this.txtEmri.Size = new System.Drawing.Size(179, 22);
-            this.txtEmri.TabIndex = 29;
             // 
             // lblEmri
             // 
-            this.lblEmri.AutoSize = true;
-            this.lblEmri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmri.Location = new System.Drawing.Point(15, 17);
+            resources.ApplyResources(this.lblEmri, "lblEmri");
             this.lblEmri.Name = "lblEmri";
-            this.lblEmri.Size = new System.Drawing.Size(49, 16);
-            this.lblEmri.TabIndex = 25;
-            this.lblEmri.Text = "Modeli";
             // 
             // btnRuaj
             // 
-            this.btnRuaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRuaj.Location = new System.Drawing.Point(171, 247);
+            resources.ApplyResources(this.btnRuaj, "btnRuaj");
             this.btnRuaj.Name = "btnRuaj";
-            this.btnRuaj.Size = new System.Drawing.Size(75, 33);
-            this.btnRuaj.TabIndex = 38;
-            this.btnRuaj.Text = "Ruaj";
             this.btnRuaj.UseVisualStyleBackColor = true;
             this.btnRuaj.Click += new System.EventHandler(this.btnRuaj_Click);
             // 
+            // bunifuImageButton1
+            // 
+            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            // 
             // Modelet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(258, 292);
+            this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.btnRuaj);
             this.Controls.Add(this.panel2);
             this.Name = "Modelet";
-            this.Text = "Modelet";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -121,5 +109,6 @@ namespace Taxi.Automjeti
         private System.Windows.Forms.TextBox txtEmri;
         private System.Windows.Forms.Label lblEmri;
         private System.Windows.Forms.Button btnRuaj;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }
 }

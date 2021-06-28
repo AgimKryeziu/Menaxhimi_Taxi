@@ -14,6 +14,9 @@ namespace Taxi.Nderrime
         ShoferiBO shoferiBO;
         AutomjetiBO automjetiBO;
         ModeletBO modeletBO;
+        bool albFlag = LogInForms.albFlag;
+        public static bool isShto = false;
+
         public ShtoNderrime()
         {
             InitializeComponent();
@@ -62,6 +65,10 @@ namespace Taxi.Nderrime
 
         private void ShtoNderrime_Load_1(object sender, EventArgs e)
         {
+
+            bntRuaj.Enabled = isShto;
+            btnPerditeso.Enabled = !isShto;
+
             DataTable dt = new DataTable();
             dt = ShoferiBLL.SelectDrivers();
             cmbShoferiId.DataSource = dt;

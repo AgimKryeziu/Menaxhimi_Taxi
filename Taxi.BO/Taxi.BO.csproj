@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,6 +45,7 @@
     <Compile Include="AdresaBO.cs" />
     <Compile Include="AutomjetiBO.cs" />
     <Compile Include="Base.cs" />
+    <Compile Include="ChangeLang.cs" />
     <Compile Include="DestinacioniBO.cs" />
     <Compile Include="ModeletBO.cs" />
     <Compile Include="NderrimetBO.cs" />

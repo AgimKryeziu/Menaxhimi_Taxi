@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows.Forms;
 using Taxi.BLL;
+using Taxi.BO;
 
 namespace Taxi.Sherbime
 {
@@ -10,6 +11,7 @@ namespace Taxi.Sherbime
         public static DataTable lista;
         public static int sherbimiId;
         SherbimetBLL sherbimetBLL;
+        bool albFlag = LogInForms.albFlag;
         public Sherbimi()
         {
             InitializeComponent();
@@ -41,10 +43,11 @@ namespace Taxi.Sherbime
         {
             sherbimetBLL = new SherbimetBLL();
 
-            if (e.ColumnIndex == 9)
+            if (e.ColumnIndex == 0)
             {
                 ShtoSherbim addShofer = new ShtoSherbim();
-                sherbimiId = Convert.ToInt32(dgvSherbimet.Rows[e.RowIndex].Cells[0].Value.ToString());
+                ShtoSherbim.isShto = false;
+                sherbimiId = Convert.ToInt32(dgvSherbimet.Rows[e.RowIndex].Cells[1].Value.ToString());
                 addShofer.LoadData(sherbimiId);
                 addShofer.ShowDialog();
             }
@@ -53,7 +56,19 @@ namespace Taxi.Sherbime
         private void bntShto_Click(object sender, EventArgs e)
         {
             Sherbime.ShtoSherbim shtoSherbim = new ShtoSherbim();
-            shtoSherbim.ShowDialog();
+            ShtoSherbim.isShto = true;
+            if (albFlag)
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "sq");
+                shtoSherbim.ShowDialog();
+            }
+            else
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "en");
+                shtoSherbim.ShowDialog();
+            }           
         }
 
     }

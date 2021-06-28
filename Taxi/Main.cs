@@ -1,75 +1,192 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
+using Taxi.BO;
 
 namespace Taxi
 {
     public partial class Main : Form
     {
+        bool albFlag = LogInForms.albFlag;
+
         public Main()
         {
             InitializeComponent();
         }
 
-        Stafi.Admin ad = new Stafi.Admin();
-        Shoferi.ShoferiList sho = new Shoferi.ShoferiList();
-        Automjeti.Automjeti a = new Automjeti.Automjeti();
-        Nderrime.NderrimetList n = new Nderrime.NderrimetList();
-        Sherbime.Sherbimi sh = new Sherbime.Sherbimi();
+        List<Form> format = new List<Form>();
+        Stafi.Admin ad;
+        Shoferi.ShoferiList sho;
+        Automjeti.Automjeti a;
+        Nderrime.NderrimetList n;
+        Sherbime.Sherbimi sh;
+        Destinacione.Statistika q;
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            btnHome_Click(sender, e);
+        }
 
         private void btnAdminat_Click(object sender, EventArgs e)
         {
             SidePanel.Top = btnAdminat.Top;
 
+
+            foreach (var item in format)
+            {
+                if (pnlContent.Contains(item))
+                {
+                    item.Close();
+                }
+            }
+
+            ad = new Stafi.Admin();
+            format.Add(ad);
             ad.TopLevel = false;
             ad.Parent = pnlContent;
             ad.Dock = DockStyle.Fill;
-            ad.Show();
+            
+            if (albFlag)
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "sq");
+                ad.Show();
+            }
+            else
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "en");
+                ad.Show();
+            }
 
-            //  s.ShowDialog();
-            //sho.Hide();
-            //a.Hide();
-            //n.Hide();
-            //sh.Hide();
         }
 
         private void btnShoferet_Click(object sender, EventArgs e)
         {
             SidePanel.Top = btnShoferet.Top;
-            sho.ShowDialog();
-            //s.Hide();
-            //a.Hide();
-            //n.Hide();
-            //sh.Hide();
+            foreach (var item in format)
+            {
+                if (pnlContent.Contains(item))
+                {
+                    item.Close();
+                }
+            }
+
+            sho = new Shoferi.ShoferiList();
+            format.Add(sho);
+            sho.TopLevel = false;
+            sho.Parent = pnlContent;
+            sho.Dock = DockStyle.Fill;
+
+            if (albFlag)
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "sq");
+                sho.Show();
+            }
+            else
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "en");
+                sho.Show();
+
+            }
         }
 
         private void btnAutomjetet_Click(object sender, EventArgs e)
         {
             SidePanel.Top = btnAutomjetet.Top;
-            a.ShowDialog();
-            //s.Hide();
-            //sho.Hide();
-            //n.Hide();
-            //sh.Hide();
+            foreach (var item in format)
+            {
+                if (pnlContent.Contains(item))
+                {
+                    item.Close();
+                }
+            }
+
+            a = new Automjeti.Automjeti();
+            format.Add(a);
+            a.TopLevel = false;
+            a.Parent = pnlContent;
+            a.Dock = DockStyle.Fill;
+            if (albFlag)
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "sq");
+                a.Show();
+            }
+            else
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "en");
+                a.Show();
+            }
+            
         }
 
         private void btnNderrimet_Click(object sender, EventArgs e)
         {
             SidePanel.Top = btnNderrimet.Top;
-            n.ShowDialog();
-            //sho.Hide();
-            //a.Hide();
-            //a.Hide();
-            //sh.Hide();
+            foreach (var item in format)
+            {
+                if (pnlContent.Contains(item))
+                {
+                    item.Close();
+
+                }
+            }
+
+            n = new Nderrime.NderrimetList();
+            format.Add(n);
+            n.TopLevel = false;
+            n.Parent = pnlContent;
+            n.Dock = DockStyle.Fill;
+
+            if (albFlag)
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "sq");
+                n.Show();
+            }
+            else
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "en");
+                n.Show();
+            }
         }
 
         private void btnSherbimet_Click(object sender, EventArgs e)
         {
             SidePanel.Top = btnSherbimet.Top;
-            sh.ShowDialog();
-            //s.Hide();
-            //sho.Hide();
-            //n.Hide();
-            //a.Hide();
+            foreach (var item in format)
+            {
+                if (pnlContent.Contains(item))
+                {
+                    item.Close();
+
+                }
+            }
+
+            sh = new Sherbime.Sherbimi();
+            format.Add(sh);
+            sh.TopLevel = false;
+            sh.Parent = pnlContent;
+            sh.Dock = DockStyle.Fill;
+
+            if (albFlag)
+            {
+
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "sq");
+                sh.Show();
+            }
+            else
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "en");
+                sh.Show();
+            }
         }
 
         private void btnShkyçu_Click(object sender, EventArgs e)
@@ -93,6 +210,42 @@ namespace Taxi
             logInForms.Visible = true;
         }
 
+        private void btnQyteti_Click(object sender, EventArgs e)
+        {
+            Destinacione.Statistika qytetet = new Destinacione.Statistika();
+            qytetet.ShowDialog();
+        }
 
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            SidePanel.Top = btnHome.Top;
+            foreach (var item in format)
+            {
+                if (pnlContent.Contains(item))
+                {
+                    item.Close();
+                }
+            }
+
+            q = new Destinacione.Statistika();
+            format.Add(q);
+            q.TopLevel = false;
+            q.Parent = pnlContent;
+            q.Dock = DockStyle.Fill;
+
+            if (albFlag)
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "sq");
+                q.Show();
+            }
+            else
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "sq");
+                q.Show();
+            }
+            
+        }
     }
 }

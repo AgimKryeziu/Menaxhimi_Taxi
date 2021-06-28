@@ -1,7 +1,9 @@
-﻿using System;
+﻿using DGVPrinterHelper;
+using System;
 using System.Data;
 using System.Windows.Forms;
 using Taxi.BLL;
+using Taxi.BO;
 
 namespace Taxi.Automjeti
 {
@@ -16,6 +18,8 @@ namespace Taxi.Automjeti
         {
             PopulateAutomjetiList();
         }
+
+        bool albFlag = LogInForms.albFlag;
 
         public static DataTable lista;
         AutomjetiBLL automjetiBLL;
@@ -52,24 +56,38 @@ namespace Taxi.Automjeti
         private void btnShtoAutomjet_Click(object sender, EventArgs e)
         {
             Taxi.Automjeti.ShtoAutomjet shtoAutomjet = new ShtoAutomjet();
-            shtoAutomjet.ShowDialog();
+            ShtoAutomjet.isShto = true;
+
+            if (albFlag)
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "sq");
+                shtoAutomjet.ShowDialog();
+            }
+            else
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "en");
+                shtoAutomjet.ShowDialog();
+            }
         }
 
         private void dgvAutomjeti_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             automjetiBLL = new AutomjetiBLL();
 
-            if (e.ColumnIndex == 5)
+            if (e.ColumnIndex == 0)
             {
                 ShtoAutomjet addAutomjet = new ShtoAutomjet();
-
-                automjetiId = Convert.ToInt32(dgvAutomjeti.Rows[e.RowIndex].Cells[0].Value.ToString());
+                ShtoAutomjet.isShto = false;
+                automjetiId = Convert.ToInt32(dgvAutomjeti.Rows[e.RowIndex].Cells[2].Value.ToString());
                 addAutomjet.LoadData(automjetiId);
-                addAutomjet.ShowDialog();
+                addAutomjet.ShowDialog(); 
+
             }
-            if (e.ColumnIndex == 6)
+            if (e.ColumnIndex == 1)
             {
-                int automjetiId = Convert.ToInt32(dgvAutomjeti.Rows[e.RowIndex].Cells[0].Value.ToString());
+                int automjetiId = Convert.ToInt32(dgvAutomjeti.Rows[e.RowIndex].Cells[2].Value.ToString());
                 if (DialogResult.OK == MessageBox.Show("A jeni i sigurt qe deshironi te fshini kete item"))
                 {
                     bool deleted = automjetiBLL.DeleteAutomjet(automjetiId);
@@ -84,6 +102,8 @@ namespace Taxi.Automjeti
                     }
                 }
             }
+           
+
         }
 
         private void exportToExcel_Click(object sender, EventArgs e)
@@ -145,6 +165,17 @@ namespace Taxi.Automjeti
             {
                 MessageBox.Show(ex.Message.ToString());
             }
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Raporti per Automjet";
+            printer.SubTitle = string.Format("Data: {0}", DateTime.Now.Date + "\n");
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.Footer = "Riinvest";
+            printer.PrintDataGridView(dgvAutomjeti);
         }
     }
 }

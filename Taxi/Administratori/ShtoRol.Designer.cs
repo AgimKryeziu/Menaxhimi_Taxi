@@ -29,50 +29,50 @@ namespace Taxi.Administratori
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShtoRol));
             this.lblPershkrimi = new System.Windows.Forms.Label();
             this.txtPershkrimi = new System.Windows.Forms.TextBox();
             this.btnShto = new System.Windows.Forms.Button();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPershkrimi
             // 
-            this.lblPershkrimi.AutoSize = true;
-            this.lblPershkrimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPershkrimi.Location = new System.Drawing.Point(13, 28);
+            resources.ApplyResources(this.lblPershkrimi, "lblPershkrimi");
             this.lblPershkrimi.Name = "lblPershkrimi";
-            this.lblPershkrimi.Size = new System.Drawing.Size(107, 16);
-            this.lblPershkrimi.TabIndex = 0;
-            this.lblPershkrimi.Text = "Pershkrimi i rolit: ";
             // 
             // txtPershkrimi
             // 
-            this.txtPershkrimi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPershkrimi.Location = new System.Drawing.Point(145, 28);
+            resources.ApplyResources(this.txtPershkrimi, "txtPershkrimi");
             this.txtPershkrimi.Name = "txtPershkrimi";
-            this.txtPershkrimi.Size = new System.Drawing.Size(158, 22);
-            this.txtPershkrimi.TabIndex = 1;
             // 
             // btnShto
             // 
-            this.btnShto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShto.Location = new System.Drawing.Point(322, 25);
+            resources.ApplyResources(this.btnShto, "btnShto");
             this.btnShto.Name = "btnShto";
-            this.btnShto.Size = new System.Drawing.Size(92, 32);
-            this.btnShto.TabIndex = 2;
-            this.btnShto.Text = "Shto";
             this.btnShto.UseVisualStyleBackColor = true;
             this.btnShto.Click += new System.EventHandler(this.btnShto_Click_1);
             // 
+            // bunifuImageButton1
+            // 
+            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            // 
             // ShtoRol
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 98);
+            this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.btnShto);
             this.Controls.Add(this.txtPershkrimi);
             this.Controls.Add(this.lblPershkrimi);
             this.Name = "ShtoRol";
-            this.Text = "ShtoRol";
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -83,5 +83,6 @@ namespace Taxi.Administratori
         private System.Windows.Forms.Label lblPershkrimi;
         private System.Windows.Forms.TextBox txtPershkrimi;
         private System.Windows.Forms.Button btnShto;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }
 }

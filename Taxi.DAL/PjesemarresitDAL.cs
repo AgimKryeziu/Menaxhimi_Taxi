@@ -24,7 +24,7 @@ namespace Taxi.DAL
                     for (int i = 0; i < dt.Rows.Count; i++)
                     {
                         IdRecord = dt.Rows[i][0].ToString();
-                        passwordi = dt.Rows[i][0].ToString();
+                        passwordi = dt.Rows[0][1].ToString();
                         if (IdRecord.Equals(username) && passwordi.Equals(password))
                         {
                             gjendja = true;

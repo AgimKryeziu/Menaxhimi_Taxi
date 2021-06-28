@@ -15,7 +15,7 @@ namespace Taxi.Automjeti
             modeletBLL = new ModeletBLL();
         }
 
-
+        bool albFlag = LogInForms.albFlag;
 
         private void btnRuaj_Click(object sender, EventArgs e)
         {

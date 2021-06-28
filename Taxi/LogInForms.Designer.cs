@@ -30,127 +30,161 @@ namespace Taxi
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogInForms));
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.chbShfaq = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnKyçu = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnHelp = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnEngLang = new System.Windows.Forms.Button();
+            this.btnAlbLang = new System.Windows.Forms.Button();
+            this.btnCloseLoginForm = new Bunifu.Framework.UI.BunifuImageButton();
+            this.lblMemberLogin = new System.Windows.Forms.Label();
+            this.pcBoxMainLogin = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHelp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCloseLoginForm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcBoxMainLogin)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnLogin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnLogin.Location = new System.Drawing.Point(180, 157);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 13;
-            this.btnLogin.Text = "&Kyçu1";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnClose.Location = new System.Drawing.Point(302, 157);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 14;
-            this.btnClose.Text = "&Mbylle";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(194, 80);
+            resources.ApplyResources(this.txtPassword, "txtPassword");
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(183, 20);
-            this.txtPassword.TabIndex = 11;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(194, 43);
+            resources.ApplyResources(this.txtUserName, "txtUserName");
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(183, 20);
-            this.txtUserName.TabIndex = 9;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(125, 83);
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Fjalëkalimi:";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(144, 46);
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Nofka:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 23);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(107, 157);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
             // 
             // chbShfaq
             // 
-            this.chbShfaq.AutoSize = true;
-            this.chbShfaq.Location = new System.Drawing.Point(266, 119);
+            resources.ApplyResources(this.chbShfaq, "chbShfaq");
+            this.chbShfaq.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.chbShfaq.Name = "chbShfaq";
-            this.chbShfaq.Size = new System.Drawing.Size(111, 17);
-            this.chbShfaq.TabIndex = 16;
-            this.chbShfaq.Text = "Shfaq Fjalëkalimin";
             this.chbShfaq.UseVisualStyleBackColor = true;
             this.chbShfaq.CheckedChanged += new System.EventHandler(this.chbShfaq_CheckedChanged);
             // 
+            // btnKyçu
+            // 
+            resources.ApplyResources(this.btnKyçu, "btnKyçu");
+            this.btnKyçu.ActiveBorderThickness = 1;
+            this.btnKyçu.ActiveCornerRadius = 20;
+            this.btnKyçu.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btnKyçu.ActiveForecolor = System.Drawing.Color.SeaGreen;
+            this.btnKyçu.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnKyçu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.btnKyçu.ButtonText = "Log In";
+            this.btnKyçu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKyçu.ForeColor = System.Drawing.Color.White;
+            this.btnKyçu.IdleBorderThickness = 1;
+            this.btnKyçu.IdleCornerRadius = 20;
+            this.btnKyçu.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btnKyçu.IdleForecolor = System.Drawing.Color.White;
+            this.btnKyçu.IdleLineColor = System.Drawing.Color.White;
+            this.btnKyçu.Name = "btnKyçu";
+            this.btnKyçu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnKyçu.Click += new System.EventHandler(this.btnKyçu_Click);
+            // 
+            // btnHelp
+            // 
+            resources.ApplyResources(this.btnHelp, "btnHelp");
+            this.btnHelp.BackColor = System.Drawing.Color.DarkGray;
+            this.btnHelp.ImageActive = null;
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.TabStop = false;
+            this.btnHelp.Zoom = 10;
+            // 
+            // btnEngLang
+            // 
+            resources.ApplyResources(this.btnEngLang, "btnEngLang");
+            this.btnEngLang.Name = "btnEngLang";
+            this.btnEngLang.UseVisualStyleBackColor = true;
+            this.btnEngLang.Click += new System.EventHandler(this.btnEngLang_Click);
+            // 
+            // btnAlbLang
+            // 
+            resources.ApplyResources(this.btnAlbLang, "btnAlbLang");
+            this.btnAlbLang.Name = "btnAlbLang";
+            this.btnAlbLang.UseVisualStyleBackColor = true;
+            this.btnAlbLang.Click += new System.EventHandler(this.btnAlbLang_Click);
+            // 
+            // btnCloseLoginForm
+            // 
+            resources.ApplyResources(this.btnCloseLoginForm, "btnCloseLoginForm");
+            this.btnCloseLoginForm.BackColor = System.Drawing.Color.Crimson;
+            this.btnCloseLoginForm.ImageActive = null;
+            this.btnCloseLoginForm.Name = "btnCloseLoginForm";
+            this.btnCloseLoginForm.TabStop = false;
+            this.btnCloseLoginForm.Zoom = 10;
+            this.btnCloseLoginForm.Click += new System.EventHandler(this.btnCloseLoginForm_Click);
+            // 
+            // lblMemberLogin
+            // 
+            resources.ApplyResources(this.lblMemberLogin, "lblMemberLogin");
+            this.lblMemberLogin.ForeColor = System.Drawing.Color.White;
+            this.lblMemberLogin.Name = "lblMemberLogin";
+            // 
+            // pcBoxMainLogin
+            // 
+            resources.ApplyResources(this.pcBoxMainLogin, "pcBoxMainLogin");
+            this.pcBoxMainLogin.BackColor = System.Drawing.Color.GreenYellow;
+            this.pcBoxMainLogin.Name = "pcBoxMainLogin";
+            this.pcBoxMainLogin.TabStop = false;
+            // 
             // LogInForms
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(416, 209);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
+            this.Controls.Add(this.pcBoxMainLogin);
+            this.Controls.Add(this.lblMemberLogin);
+            this.Controls.Add(this.btnKyçu);
+            this.Controls.Add(this.btnHelp);
+            this.Controls.Add(this.btnEngLang);
+            this.Controls.Add(this.btnAlbLang);
+            this.Controls.Add(this.btnCloseLoginForm);
             this.Controls.Add(this.chbShfaq);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LogInForms";
-            this.Text = "LogInForms";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.LogInForms_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.btnHelp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCloseLoginForm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcBoxMainLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox chbShfaq;
+        private Bunifu.Framework.UI.BunifuImageButton btnHelp;
+        private System.Windows.Forms.Button btnEngLang;
+        private System.Windows.Forms.Button btnAlbLang;
+        private Bunifu.Framework.UI.BunifuImageButton btnCloseLoginForm;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnKyçu;
+        private System.Windows.Forms.Label lblMemberLogin;
+        private System.Windows.Forms.PictureBox pcBoxMainLogin;
     }
 }

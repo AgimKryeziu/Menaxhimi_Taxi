@@ -42,5 +42,11 @@ namespace Taxi.BLL
         {
             return ShoferiDAL.SelectDrivers();
         }
+
+        public DataTable TopShoferi()
+        {
+            return shoferiDAL.TopShoferi();
+        }
+        
     }
 }

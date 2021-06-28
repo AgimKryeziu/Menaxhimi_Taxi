@@ -9,6 +9,7 @@ namespace Taxi.Shoferi
     {
         ShoferiBO shoferiBO;
         ShoferiBLL shoferiBLL;
+        public static bool isShto = false;
 
         public ShtoShofer()
         {
@@ -16,8 +17,7 @@ namespace Taxi.Shoferi
             shoferiBLL = new ShoferiBLL();
         }
 
-
-        private void btnRuaj_Click(object sender, EventArgs e)
+        private void btnRuaj_Click_1(object sender, EventArgs e)
         {
             bool inserted = shoferiBLL.CreateShofer(InsertShofer());
             if (inserted)
@@ -65,9 +65,8 @@ namespace Taxi.Shoferi
             }
         }
 
-        private void btnPerditeso_Click(object sender, EventArgs e)
+        private void btnPerditeso_Click_1(object sender, EventArgs e)
         {
-
             bool updated = shoferiBLL.UpdateShofer(UpdateShofer());
 
             if (updated)
@@ -98,6 +97,27 @@ namespace Taxi.Shoferi
             shoferiBO = new ShoferiBO(id, txtEmri.Text, txtMbiemri.Text, datelindja, gender, txtNrTel.Text, txtNrPersonal.Text, txtBiografia.Text, int.Parse(txtViti.Text), Base.SaveUsername, DateTime.Now, 1);
 
             return shoferiBO;
+        }
+
+        private void ShtoShofer1_Load(object sender, EventArgs e)
+        {
+            btnRuaj.Enabled = isShto;
+            btnPerditeso.Enabled = !isShto;
+        }
+
+        private void btnAlbLang_Click(object sender, EventArgs e)
+        {
+            var changeLang = new ChangeLang();
+            changeLang.UpdateConfig("language", "sq");
+            Application.Restart();
+
+        }
+
+        private void btnEngLang_Click(object sender, EventArgs e)
+        {
+            var changeLang = new ChangeLang();
+            changeLang.UpdateConfig("language", "en");
+            Application.Restart();
         }
     }
 }

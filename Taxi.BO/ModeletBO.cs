@@ -12,6 +12,7 @@ namespace Taxi.BO
         {
             ModeliId = modeliID;
         }
+
         public ModeletBO(int modeliID, string emri)
         {
             ModeliId = modeliID;

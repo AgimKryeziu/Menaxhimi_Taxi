@@ -9,14 +9,16 @@ namespace Taxi.Automjeti
     public partial class ShtoAutomjet : Form
     {
         AutomjetiBLL automjetiBLL;
-
+        bool albFlag = LogInForms.albFlag;
         public ShtoAutomjet()
         {
             InitializeComponent();
             automjetiBLL = new AutomjetiBLL();
         }
+
         AutomjetiBO automjetiBO;
         ModeletBO modeletBO;
+        public static bool isShto = false;
 
         private void btnRuaj_Click(object sender, EventArgs e)
         {
@@ -46,7 +48,6 @@ namespace Taxi.Automjeti
 
         private void btnPerditeso_Click(object sender, EventArgs e)
         {
-            btnRuaj.Visible = false;
 
             bool updated = automjetiBLL.UpdateAutomjet(UpdateAutomjet());
 
@@ -80,11 +81,25 @@ namespace Taxi.Automjeti
         private void btnShtoModel_Click(object sender, EventArgs e)
         {
             Modelet modelet = new Modelet();
-            modelet.Show();
+            if (albFlag)
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "sq");
+                modelet.ShowDialog();
+            }
+            else
+            {
+                var changeLang = new ChangeLang();
+                changeLang.UpdateConfig("language", "en");
+                modelet.ShowDialog();
+            }
         }
 
         private void ShtoAutomjet_Load(object sender, EventArgs e)
         {
+            btnRuaj.Enabled = isShto;
+            btnPerditeso.Enabled = !isShto;
+
             DataTable dt = new DataTable();
             dt = ModeletBLL.SelectModels();
             cmbModeliId.DataSource = dt;
