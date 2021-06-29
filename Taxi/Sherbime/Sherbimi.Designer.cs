@@ -32,9 +32,8 @@ namespace Taxi.Sherbime
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sherbimi));
             this.dgvSherbimet = new System.Windows.Forms.DataGridView();
             this.bntShto = new System.Windows.Forms.Button();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnHelpService = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSherbimet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvSherbimet
@@ -54,27 +53,24 @@ namespace Taxi.Sherbime
             this.bntShto.UseVisualStyleBackColor = true;
             this.bntShto.Click += new System.EventHandler(this.bntShto_Click);
             // 
-            // bunifuImageButton1
+            // btnHelpService
             // 
-            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            resources.ApplyResources(this.btnHelpService, "btnHelpService");
+            this.btnHelpService.Name = "btnHelpService";
+            this.btnHelpService.UseVisualStyleBackColor = true;
+            this.btnHelpService.Click += new System.EventHandler(this.btnHelpService_Click);
             // 
             // Sherbimi
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.btnHelpService);
             this.Controls.Add(this.bntShto);
             this.Controls.Add(this.dgvSherbimet);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Sherbimi";
             this.Load += new System.EventHandler(this.Sherbimi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSherbimet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -82,6 +78,6 @@ namespace Taxi.Sherbime
         #endregion
         private System.Windows.Forms.DataGridView dgvSherbimet;
         private System.Windows.Forms.Button bntShto;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Button btnHelpService;
     }
 }

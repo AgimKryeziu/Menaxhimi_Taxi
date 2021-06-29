@@ -119,5 +119,10 @@ namespace Taxi.Shoferi
             changeLang.UpdateConfig("language", "en");
             Application.Restart();
         }
+
+        private void btnHelpAddDriver_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"E:\Agim_Kryeziu\Semestri 4\TI1\Projekti_TI1\Faza 4\Manual\ShtoShofer.htm");
+        }
     }
 }

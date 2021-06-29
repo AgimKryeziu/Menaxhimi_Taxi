@@ -40,16 +40,15 @@ namespace Taxi.Automjeti
             this.rbNo = new System.Windows.Forms.RadioButton();
             this.rbYes = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnShtoModel = new System.Windows.Forms.Button();
             this.cmbModeliId = new System.Windows.Forms.ComboBox();
             this.txtAutomjetiId = new System.Windows.Forms.TextBox();
             this.lblModeli = new System.Windows.Forms.Label();
             this.btnRuaj = new System.Windows.Forms.Button();
             this.btnPerditeso = new System.Windows.Forms.Button();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnShtoModel = new System.Windows.Forms.Button();
+            this.btnHelpAddCab = new System.Windows.Forms.Button();
             this.gbAktiv.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtVitiIProdhimit
@@ -120,6 +119,15 @@ namespace Taxi.Automjeti
             this.panel1.Controls.Add(this.txtTarga);
             this.panel1.Name = "panel1";
             // 
+            // btnShtoModel
+            // 
+            resources.ApplyResources(this.btnShtoModel, "btnShtoModel");
+            this.btnShtoModel.BackColor = System.Drawing.SystemColors.Control;
+            this.btnShtoModel.ForeColor = System.Drawing.Color.Transparent;
+            this.btnShtoModel.Name = "btnShtoModel";
+            this.btnShtoModel.UseVisualStyleBackColor = false;
+            this.btnShtoModel.Click += new System.EventHandler(this.btnShtoModel_Click);
+            // 
             // cmbModeliId
             // 
             resources.ApplyResources(this.cmbModeliId, "cmbModeliId");
@@ -150,29 +158,18 @@ namespace Taxi.Automjeti
             this.btnPerditeso.UseVisualStyleBackColor = true;
             this.btnPerditeso.Click += new System.EventHandler(this.btnPerditeso_Click);
             // 
-            // bunifuImageButton1
+            // btnHelpAddCab
             // 
-            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            // 
-            // btnShtoModel
-            // 
-            resources.ApplyResources(this.btnShtoModel, "btnShtoModel");
-            this.btnShtoModel.BackColor = System.Drawing.SystemColors.Control;
-            this.btnShtoModel.ForeColor = System.Drawing.Color.Transparent;
-            this.btnShtoModel.Name = "btnShtoModel";
-            this.btnShtoModel.UseVisualStyleBackColor = false;
-            this.btnShtoModel.Click += new System.EventHandler(this.btnShtoModel_Click);
+            resources.ApplyResources(this.btnHelpAddCab, "btnHelpAddCab");
+            this.btnHelpAddCab.Name = "btnHelpAddCab";
+            this.btnHelpAddCab.UseVisualStyleBackColor = true;
+            this.btnHelpAddCab.Click += new System.EventHandler(this.btnHelpAddCab_Click);
             // 
             // ShtoAutomjet
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.btnHelpAddCab);
             this.Controls.Add(this.btnPerditeso);
             this.Controls.Add(this.btnRuaj);
             this.Controls.Add(this.panel1);
@@ -182,7 +179,6 @@ namespace Taxi.Automjeti
             this.gbAktiv.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -205,6 +201,6 @@ namespace Taxi.Automjeti
         private System.Windows.Forms.TextBox txtAutomjetiId;
         private System.Windows.Forms.Button btnRuaj;
         private System.Windows.Forms.Button btnPerditeso;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Button btnHelpAddCab;
     }
 }

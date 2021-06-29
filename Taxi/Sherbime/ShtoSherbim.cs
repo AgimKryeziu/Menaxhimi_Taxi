@@ -139,5 +139,10 @@ namespace Taxi.Sherbime
             cmbDestinacioniId.DisplayMember = dt1.Columns[1].ColumnName;
             cmbDestinacioniId.ValueMember = dt1.Columns[0].ColumnName;
         }
+
+        private void btnHelpAddService_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"E:\Agim_Kryeziu\Semestri 4\TI1\Projekti_TI1\Faza 4\Manual\ShtoSherbim.htm");
+        }
     }
 }

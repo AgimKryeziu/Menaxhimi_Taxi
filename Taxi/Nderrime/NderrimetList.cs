@@ -59,15 +59,14 @@ namespace Taxi.Nderrime
         {
             ShtoNderrime shtoNderrime = new ShtoNderrime();
             ShtoNderrime.isShto = true;
+            var changeLang = new ChangeLang();
             if (albFlag)
             {
-                var changeLang = new ChangeLang();
                 changeLang.UpdateConfig("language", "sq");
                 shtoNderrime.ShowDialog();
             }
             else
             {
-                var changeLang = new ChangeLang();
                 changeLang.UpdateConfig("language", "en");
                 shtoNderrime.ShowDialog();
             }            
@@ -106,6 +105,10 @@ namespace Taxi.Nderrime
 
         }
 
+        private void btnHelpShift_Click_1(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"E:\Agim_Kryeziu\Semestri 4\TI1\Projekti_TI1\Faza 4\Manual\Nderrimet.htm");
 
+        }
     }
 }

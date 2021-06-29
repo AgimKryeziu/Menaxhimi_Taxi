@@ -81,15 +81,14 @@ namespace Taxi.Automjeti
         private void btnShtoModel_Click(object sender, EventArgs e)
         {
             Modelet modelet = new Modelet();
+            var changeLang = new ChangeLang();
             if (albFlag)
             {
-                var changeLang = new ChangeLang();
                 changeLang.UpdateConfig("language", "sq");
                 modelet.ShowDialog();
             }
             else
             {
-                var changeLang = new ChangeLang();
                 changeLang.UpdateConfig("language", "en");
                 modelet.ShowDialog();
             }
@@ -126,6 +125,9 @@ namespace Taxi.Automjeti
             return automjetiBO;
         }
 
-
+        private void btnHelpAddCab_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"E:\Agim_Kryeziu\Semestri 4\TI1\Projekti_TI1\Faza 4\Manual\ShtoAutomjet.htm");
+        }
     }
 }

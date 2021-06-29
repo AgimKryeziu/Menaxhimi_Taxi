@@ -28,5 +28,10 @@ namespace Taxi.Destinacione
                 MessageBox.Show("Regjistrimi deshtoi.");
             }
         }
+
+        private void btnHelpDestination_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"E:\Agim_Kryeziu\Semestri 4\TI1\Projekti_TI1\Faza 4\Manual\ShtoDestinacion.htm");
+        }
     }
 }

@@ -12,12 +12,13 @@ namespace Taxi
             InitializeComponent();
         }
 
-        public static bool albFlag { get; set; } = true;
+        public static bool albFlag;
+
         private void btnAlbLang_Click(object sender, EventArgs e)
         {
             var changeLang = new ChangeLang();
             changeLang.UpdateConfig("language", "sq");
-            albFlag = true;
+            albFlag = true; 
             Application.Restart();
         }
 
@@ -34,19 +35,19 @@ namespace Taxi
             if (PjesemarresiBLL.CheckLogin(txtUserName.Text, txtPassword.Text))
             {
                 Main mainMenu = new Main();
-                if (albFlag = true) 
+                var changeLang = new ChangeLang();
+
+                if (!albFlag)
                 {
-                    var changeLang = new ChangeLang();
                     changeLang.UpdateConfig("language", "sq");
                     mainMenu.Show();
                 }
                 else
                 {
-                    var changeLang = new ChangeLang();
                     changeLang.UpdateConfig("language", "en");
                     mainMenu.Show();
                 }
-
+            
                 Base.SaveUsername = txtUserName.Text;
                 this.Visible = false;
             }
@@ -80,11 +81,9 @@ namespace Taxi
             this.Close();
         }
 
-        
-
-        private void LogInForms_Load(object sender, EventArgs e)
+        private void btnHelp_Click(object sender, EventArgs e)
         {
-            albFlag = true;
+            Help.ShowHelp(this, @"E:\Agim_Kryeziu\Semestri 4\TI1\Projekti_TI1\Faza 4\Manual\Log In.htm");
         }
     }
 }

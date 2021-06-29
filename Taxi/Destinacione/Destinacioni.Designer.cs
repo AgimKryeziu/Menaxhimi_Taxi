@@ -39,8 +39,7 @@ namespace Taxi.Destinacione
             this.txtQyteti = new System.Windows.Forms.TextBox();
             this.lblQyteti = new System.Windows.Forms.Label();
             this.btnRuaj = new System.Windows.Forms.Button();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            this.btnHelpDestination = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtLagjja
@@ -90,20 +89,18 @@ namespace Taxi.Destinacione
             this.btnRuaj.UseVisualStyleBackColor = true;
             this.btnRuaj.Click += new System.EventHandler(this.btnRuaj_Click);
             // 
-            // bunifuImageButton1
+            // btnHelpDestination
             // 
-            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            resources.ApplyResources(this.btnHelpDestination, "btnHelpDestination");
+            this.btnHelpDestination.Name = "btnHelpDestination";
+            this.btnHelpDestination.UseVisualStyleBackColor = true;
+            this.btnHelpDestination.Click += new System.EventHandler(this.btnHelpDestination_Click);
             // 
             // Destinacioni
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.btnHelpDestination);
             this.Controls.Add(this.btnRuaj);
             this.Controls.Add(this.txtLagjja);
             this.Controls.Add(this.lblLagjja);
@@ -114,7 +111,6 @@ namespace Taxi.Destinacione
             this.Controls.Add(this.txtQyteti);
             this.Controls.Add(this.lblQyteti);
             this.Name = "Destinacioni";
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,6 +126,6 @@ namespace Taxi.Destinacione
         private System.Windows.Forms.TextBox txtQyteti;
         private System.Windows.Forms.Label lblQyteti;
         private System.Windows.Forms.Button btnRuaj;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Button btnHelpDestination;
     }
 }

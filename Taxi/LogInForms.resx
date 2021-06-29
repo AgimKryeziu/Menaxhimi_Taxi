@@ -145,8 +145,121 @@
   <data name="btnEngLang.Location" type="System.Drawing.Point, System.Drawing">
     <value>55, 8</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>LogInForms</value>
+  <data name="btnAlbLang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 32</value>
+  </data>
+  <data name="&gt;&gt;btnKyçu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblMemberLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 176</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnAlbLang.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;btnCloseLoginForm.Name" xml:space="preserve">
+    <value>btnCloseLoginForm</value>
+  </data>
+  <data name="chbShfaq.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnAlbLang.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtUserName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="btnCloseLoginForm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="txtUserName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 248</value>
+  </data>
+  <data name="btnKyçu.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;lblMemberLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbShfaq.Name" xml:space="preserve">
+    <value>chbShfaq</value>
+  </data>
+  <data name="btnKyçu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 382</value>
+  </data>
+  <data name="&gt;&gt;chbShfaq.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="chbShfaq.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chbShfaq.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 335</value>
+  </data>
+  <data name="&gt;&gt;txtUserName.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnAlbLang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 8</value>
+  </data>
+  <data name="btnCloseLoginForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 29</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;lblMemberLogin.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;btnCloseLoginForm.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="chbShfaq.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 31</value>
+  </data>
+  <data name="btnKyçu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnKyçu.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="txtUserName.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="chbShfaq.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="btnEngLang.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -357,124 +470,8 @@
         e+FBv6/Pf/4XSZIkSVfPxV6SJEm6QS72kiRJ0uX7v//7/7wMcHReuDuAAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="&gt;&gt;btnKyçu.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblMemberLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 176</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnAlbLang.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;btnCloseLoginForm.Name" xml:space="preserve">
-    <value>btnCloseLoginForm</value>
-  </data>
-  <data name="chbShfaq.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;txtUserName.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnCloseLoginForm.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="txtUserName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 248</value>
-  </data>
-  <data name="btnKyçu.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;lblMemberLogin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chbShfaq.Name" xml:space="preserve">
-    <value>chbShfaq</value>
-  </data>
-  <data name="btnKyçu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 382</value>
-  </data>
-  <data name="&gt;&gt;chbShfaq.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="chbShfaq.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblMemberLogin.Text" xml:space="preserve">
-    <value>Kyçja ne sistem</value>
-  </data>
-  <data name="&gt;&gt;txtUserName.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="btnAlbLang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 8</value>
-  </data>
-  <data name="btnCloseLoginForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 29</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;lblMemberLogin.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;txtPassword.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnHelp.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;btnAlbLang.Name" xml:space="preserve">
-    <value>btnAlbLang</value>
-  </data>
-  <data name="&gt;&gt;btnCloseLoginForm.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
-  </data>
-  <data name="chbShfaq.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 31</value>
-  </data>
-  <data name="&gt;&gt;txtPassword.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnKyçu.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtUserName.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="chbShfaq.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
   <data name="btnEngLang.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>LogInForms</value>
   </data>
   <data name="txtUserName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
@@ -493,9 +490,6 @@
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;lblMemberLogin.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -1409,8 +1403,11 @@
   <data name="pcBoxMainLogin.Location" type="System.Drawing.Point, System.Drawing">
     <value>72, 91</value>
   </data>
-  <data name="chbShfaq.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 335</value>
+  <data name="&gt;&gt;lblMemberLogin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnCloseLoginForm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="&gt;&gt;btnHelp.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1418,17 +1415,14 @@
   <data name="btnHelp.Location" type="System.Drawing.Point, System.Drawing">
     <value>184, 11</value>
   </data>
-  <data name="btnAlbLang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 32</value>
+  <data name="pcBoxMainLogin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;btnEngLang.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chbShfaq.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtUserName.Name" xml:space="preserve">
-    <value>txtUserName</value>
   </data>
   <data name="&gt;&gt;btnCloseLoginForm.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -1908,17 +1902,20 @@
   <data name="btnHelp.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;txtUserName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="txtUserName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 22</value>
   </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="btnCloseLoginForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 11</value>
+  </data>
   <data name="btnEngLang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="btnAlbLang.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;txtUserName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblMemberLogin.Name" xml:space="preserve">
     <value>lblMemberLogin</value>
@@ -1928,6 +1925,9 @@
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;btnEngLang.Name" xml:space="preserve">
+    <value>btnEngLang</value>
   </data>
   <data name="&gt;&gt;btnCloseLoginForm.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1941,8 +1941,8 @@
   <data name="btnEngLang.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;btnAlbLang.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Forma per kyçje</value>
   </data>
   <data name="btnEngLang.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -1959,11 +1959,11 @@
   <data name="&gt;&gt;btnHelp.Type" xml:space="preserve">
     <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
   </data>
-  <data name="btnAlbLang.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopLeft</value>
+  <data name="&gt;&gt;txtPassword.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="btnKyçu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="&gt;&gt;txtPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1971,8 +1971,8 @@
   <data name="btnHelp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnCloseLoginForm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="lblMemberLogin.Text" xml:space="preserve">
+    <value>Kyçja në sistem</value>
   </data>
   <data name="&gt;&gt;btnEngLang.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -2101,6 +2101,9 @@
         lGDLd/0f3bQaUuZK3lAAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="btnAlbLang.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopLeft</value>
+  </data>
   <data name="&gt;&gt;btnHelp.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
@@ -2110,8 +2113,8 @@
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 16</value>
   </data>
-  <data name="btnAlbLang.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="&gt;&gt;chbShfaq.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="btnAlbLang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2119,8 +2122,8 @@
   <data name="pcBoxMainLogin.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="pcBoxMainLogin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;btnAlbLang.Name" xml:space="preserve">
+    <value>btnAlbLang</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 229</value>
@@ -2132,10 +2135,10 @@
     <value>149, 25</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Fjalëkalimi:</value>
+    <value>Fjalëkalimi</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 16</value>
+    <value>73, 16</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 288</value>
@@ -2143,11 +2146,71 @@
   <data name="&gt;&gt;btnAlbLang.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="btnKyçu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 39</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;pcBoxMainLogin.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pcBoxMainLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 63</value>
+  </data>
+  <data name="&gt;&gt;pcBoxMainLogin.Name" xml:space="preserve">
+    <value>pcBoxMainLogin</value>
+  </data>
+  <data name="btnAlbLang.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
+    <value>txtPassword</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;txtUserName.Name" xml:space="preserve">
+    <value>txtUserName</value>
+  </data>
+  <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="lblMemberLogin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>265, 457</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LogInForms</value>
+  </data>
+  <data name="btnCloseLoginForm.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="btnHelp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="btnCloseLoginForm.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;btnAlbLang.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Name" xml:space="preserve">
+    <value>btnHelp</value>
+  </data>
   <data name="lblMemberLogin.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <data name="btnKyçu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 39</value>
+  <data name="btnEngLang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 32</value>
   </data>
   <data name="btnAlbLang.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3259,66 +3322,6 @@
         ADDoAQAAAACAQQ8AAAAAAAx6AAAAAABg0AMAAAAAAIMeAAAAAAAY9AAAAAAAwKAHAAAAAAAGPQAAAAAA
         MOgBAAAAAIBBDwAAAAAADHoAAAAAAODb3QMYEqyakClwPwAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;pcBoxMainLogin.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pcBoxMainLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 63</value>
-  </data>
-  <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
-    <value>txtPassword</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;chbShfaq.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtPassword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="lblMemberLogin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15pt</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>265, 457</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnCloseLoginForm.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="btnHelp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="btnCloseLoginForm.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="txtUserName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 22</value>
-  </data>
-  <data name="&gt;&gt;btnEngLang.Name" xml:space="preserve">
-    <value>btnEngLang</value>
-  </data>
-  <data name="&gt;&gt;btnHelp.Name" xml:space="preserve">
-    <value>btnHelp</value>
-  </data>
-  <data name="btnCloseLoginForm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 11</value>
-  </data>
-  <data name="btnEngLang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 32</value>
-  </data>
-  <data name="&gt;&gt;pcBoxMainLogin.Name" xml:space="preserve">
-    <value>pcBoxMainLogin</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

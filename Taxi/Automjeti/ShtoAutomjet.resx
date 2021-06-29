@@ -120,6 +120,9 @@
   <data name="&gt;&gt;txtTarga.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;txtVitiIProdhimit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnShtoModel.Location" type="System.Drawing.Point, System.Drawing">
     <value>207, 114</value>
@@ -137,14 +140,14 @@
   <data name="bunifuImageButton1.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
   </data>
-  <data name="&gt;&gt;txtVitiIProdhimit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnHelp.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
   </data>
   <data name="&gt;&gt;rbYes.Parent" xml:space="preserve">
     <value>gbAktiv</value>
   </data>
-  <data name="&gt;&gt;txtVitiIProdhimit.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;lblVitiIProdhimit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="btnPerditeso.Text" xml:space="preserve">
     <value>Perditeso</value>
@@ -159,6 +162,9 @@
     <value>28</value>
   </data>
   <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;cmbModeliId.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="lblVitiIProdhimit.Location" type="System.Drawing.Point, System.Drawing">
@@ -181,6 +187,9 @@
   </data>
   <data name="lblVitiIProdhimit.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Name" xml:space="preserve">
+    <value>btnHelp</value>
   </data>
   <data name="rbNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 20</value>
@@ -228,17 +237,23 @@
   <data name="cmbModeliId.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
-  <data name="&gt;&gt;cmbModeliId.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="txtAutomjetiId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 22</value>
   </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="rbNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 26</value>
+  </data>
+  <data name="&gt;&gt;btnHelpAddCab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="bunifuImageButton1.Location" type="System.Drawing.Point, System.Drawing">
     <value>331, 11</value>
   </data>
   <data name="gbAktiv.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 50</value>
+  </data>
+  <data name="&gt;&gt;gbAktiv.Name" xml:space="preserve">
+    <value>gbAktiv</value>
   </data>
   <data name="btnRuaj.Text" xml:space="preserve">
     <value>Ruaj</value>
@@ -1161,6 +1176,9 @@
   <data name="&gt;&gt;txtKm.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
+  <data name="btnPerditeso.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
   <data name="&gt;&gt;lblVitiIProdhimit.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
@@ -1188,6 +1206,9 @@
   <data name="&gt;&gt;lblTarga.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="btnShtoModel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="&gt;&gt;rbNo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
@@ -1206,8 +1227,8 @@
   <data name="&gt;&gt;btnPerditeso.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="lblModeli.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="btnHelpAddCab.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
   </data>
   <data name="&gt;&gt;cmbModeliId.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -1266,11 +1287,14 @@
   <data name="panel1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;btnShtoModel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btnPerditeso.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
+  <data name="btnHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>331, 11</value>
   </data>
   <data name="&gt;&gt;rbYes.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -1338,9 +1362,6 @@
   <data name="lblTarga.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 20</value>
   </data>
-  <data name="&gt;&gt;lblTarga.Name" xml:space="preserve">
-    <value>lblTarga</value>
-  </data>
   <data name="btnRuaj.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
@@ -1353,8 +1374,8 @@
   <data name="lblKm.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 224</value>
   </data>
-  <data name="txtAutomjetiId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 22</value>
+  <data name="&gt;&gt;btnHelpAddCab.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;lblTarga.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1364,6 +1385,9 @@
   </data>
   <data name="lblVitiIProdhimit.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnHelpAddCab.Name" xml:space="preserve">
+    <value>btnHelpAddCab</value>
   </data>
   <data name="&gt;&gt;rbNo.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1392,9 +1416,6 @@
   <data name="gbAktiv.Text" xml:space="preserve">
     <value>Aktiv</value>
   </data>
-  <data name="rbNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 26</value>
-  </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1407,8 +1428,14 @@
   <data name="txtKm.Size" type="System.Drawing.Size, System.Drawing">
     <value>183, 22</value>
   </data>
+  <data name="btnHelpAddCab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>323, 15</value>
+  </data>
   <data name="&gt;&gt;rbYes.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblModeli.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;btnShtoModel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1431,17 +1458,14 @@
   <data name="&gt;&gt;btnRuaj.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lblVitiIProdhimit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="lblKm.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="&gt;&gt;txtKm.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;lblModeli.Name" xml:space="preserve">
-    <value>lblModeli</value>
+  <data name="&gt;&gt;btnHelp.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;txtAutomjetiId.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1452,8 +1476,11 @@
   <data name="&gt;&gt;txtAutomjetiId.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="btnShtoModel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="&gt;&gt;lblTarga.Name" xml:space="preserve">
+    <value>lblTarga</value>
+  </data>
+  <data name="&gt;&gt;lblModeli.Name" xml:space="preserve">
+    <value>lblModeli</value>
   </data>
   <data name="&gt;&gt;bunifuImageButton1.Name" xml:space="preserve">
     <value>bunifuImageButton1</value>
@@ -1488,14 +1515,17 @@
   <data name="btnPerditeso.Location" type="System.Drawing.Point, System.Drawing">
     <value>266, 327</value>
   </data>
+  <data name="&gt;&gt;btnHelpAddCab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;rbNo.Parent" xml:space="preserve">
     <value>gbAktiv</value>
   </data>
-  <data name="&gt;&gt;rbYes.Name" xml:space="preserve">
-    <value>rbYes</value>
-  </data>
   <data name="&gt;&gt;btnRuaj.Name" xml:space="preserve">
     <value>btnRuaj</value>
+  </data>
+  <data name="btnHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
   </data>
   <data name="lblKm.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -1505,6 +1535,9 @@
   </data>
   <data name="lblModeli.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="txtKm.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 247</value>
@@ -1521,14 +1554,17 @@
   <data name="lblModeli.Text" xml:space="preserve">
     <value>Modeli</value>
   </data>
-  <data name="&gt;&gt;gbAktiv.Name" xml:space="preserve">
-    <value>gbAktiv</value>
+  <data name="&gt;&gt;rbYes.Name" xml:space="preserve">
+    <value>rbYes</value>
   </data>
   <data name="bunifuImageButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 31</value>
   </data>
   <data name="&gt;&gt;gbAktiv.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtVitiIProdhimit.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

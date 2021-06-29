@@ -31,10 +31,12 @@ namespace Taxi
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblBibloteka = new System.Windows.Forms.Label();
+            this.btnCloseMainMenu = new Bunifu.Framework.UI.BunifuImageButton();
+            this.lblTaxi = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlContent = new System.Windows.Forms.Panel();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnHelpMain = new System.Windows.Forms.Button();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnShkyçu = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SidePanel = new System.Windows.Forms.Panel();
@@ -45,14 +47,11 @@ namespace Taxi
             this.btnShoferet = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAutomjetet = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnHome = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnCloseMainMenu = new Bunifu.Framework.UI.BunifuImageButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseMainMenu)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -62,10 +61,20 @@ namespace Taxi
             this.panel1.Controls.Add(this.btnCloseMainMenu);
             this.panel1.Name = "panel1";
             // 
-            // lblBibloteka
+            // btnCloseMainMenu
             // 
-            resources.ApplyResources(this.lblBibloteka, "lblBibloteka");
-            this.lblBibloteka.Name = "lblBibloteka";
+            resources.ApplyResources(this.btnCloseMainMenu, "btnCloseMainMenu");
+            this.btnCloseMainMenu.BackColor = System.Drawing.Color.Transparent;
+            this.btnCloseMainMenu.ImageActive = null;
+            this.btnCloseMainMenu.Name = "btnCloseMainMenu";
+            this.btnCloseMainMenu.TabStop = false;
+            this.btnCloseMainMenu.Zoom = 10;
+            this.btnCloseMainMenu.Click += new System.EventHandler(this.btnCloseMainMenu_Click);
+            // 
+            // lblTaxi
+            // 
+            resources.ApplyResources(this.lblTaxi, "lblTaxi");
+            this.lblTaxi.Name = "lblTaxi";
             // 
             // panel2
             // 
@@ -74,19 +83,23 @@ namespace Taxi
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Name = "panel2";
             // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // pnlContent
             // 
             resources.ApplyResources(this.pnlContent, "pnlContent");
             this.pnlContent.Name = "pnlContent";
             // 
-            // bunifuImageButton1
+            // btnHelpMain
             // 
-            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            resources.ApplyResources(this.btnHelpMain, "btnHelpMain");
+            this.btnHelpMain.Name = "btnHelpMain";
+            this.btnHelpMain.UseVisualStyleBackColor = true;
+            this.btnHelpMain.Click += new System.EventHandler(this.btnHelpMain_Click_1);
             // 
             // bunifuGradientPanel1
             // 
@@ -185,7 +198,7 @@ namespace Taxi
             this.btnAdminat.Activecolor = System.Drawing.Color.Transparent;
             this.btnAdminat.BackColor = System.Drawing.Color.Transparent;
             this.btnAdminat.BorderRadius = 0;
-            this.btnAdminat.ButtonText = "                  Admins";
+            this.btnAdminat.ButtonText = "                  Admin";
             this.btnAdminat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdminat.DisabledColor = System.Drawing.Color.Gray;
             this.btnAdminat.Iconcolor = System.Drawing.Color.Transparent;
@@ -217,7 +230,7 @@ namespace Taxi
             this.btnNderrimet.Activecolor = System.Drawing.Color.Transparent;
             this.btnNderrimet.BackColor = System.Drawing.Color.Transparent;
             this.btnNderrimet.BorderRadius = 0;
-            this.btnNderrimet.ButtonText = "              Shifts";
+            this.btnNderrimet.ButtonText = "              Shift";
             this.btnNderrimet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNderrimet.DisabledColor = System.Drawing.Color.Gray;
             this.btnNderrimet.Iconcolor = System.Drawing.Color.Transparent;
@@ -249,7 +262,7 @@ namespace Taxi
             this.btnSherbimet.Activecolor = System.Drawing.Color.Transparent;
             this.btnSherbimet.BackColor = System.Drawing.Color.Transparent;
             this.btnSherbimet.BorderRadius = 0;
-            this.btnSherbimet.ButtonText = "               Services";
+            this.btnSherbimet.ButtonText = "               Sercvice";
             this.btnSherbimet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSherbimet.DisabledColor = System.Drawing.Color.Gray;
             this.btnSherbimet.Iconcolor = System.Drawing.Color.Transparent;
@@ -345,7 +358,7 @@ namespace Taxi
             this.btnHome.Activecolor = System.Drawing.Color.MediumBlue;
             this.btnHome.BackColor = System.Drawing.Color.Transparent;
             this.btnHome.BorderRadius = 0;
-            this.btnHome.ButtonText = "              Main Page ";
+            this.btnHome.ButtonText = "             Main Page";
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHome.DisabledColor = System.Drawing.Color.Gray;
             this.btnHome.Iconcolor = System.Drawing.Color.Transparent;
@@ -370,42 +383,25 @@ namespace Taxi
             this.btnHome.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // btnCloseMainMenu
-            // 
-            resources.ApplyResources(this.btnCloseMainMenu, "btnCloseMainMenu");
-            this.btnCloseMainMenu.BackColor = System.Drawing.Color.Transparent;
-            this.btnCloseMainMenu.ImageActive = null;
-            this.btnCloseMainMenu.Name = "btnCloseMainMenu";
-            this.btnCloseMainMenu.TabStop = false;
-            this.btnCloseMainMenu.Zoom = 10;
-            this.btnCloseMainMenu.Click += new System.EventHandler(this.btnCloseMainMenu_Click);
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
             // Main
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.btnHelpMain);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.lblBibloteka);
+            this.Controls.Add(this.lblTaxi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            this.bunifuGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseMainMenu)).EndInit();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.bunifuGradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -415,7 +411,7 @@ namespace Taxi
 
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuImageButton btnCloseMainMenu;
-        private System.Windows.Forms.Label lblBibloteka;
+        private System.Windows.Forms.Label lblTaxi;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuFlatButton btnShkyçu;
         private System.Windows.Forms.Panel SidePanel;
@@ -429,6 +425,6 @@ namespace Taxi
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuFlatButton btnNderrimet;
         private System.Windows.Forms.Panel pnlContent;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Button btnHelpMain;
     }
 }

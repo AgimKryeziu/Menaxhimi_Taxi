@@ -161,8 +161,11 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Emri.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Statistika</value>
+  </data>
+  <data name="&gt;&gt;lblTaxi.Name" xml:space="preserve">
+    <value>lblTaxi</value>
   </data>
   <data name="&gt;&gt;bunifuImageButton1.Name" xml:space="preserve">
     <value>bunifuImageButton1</value>
@@ -1104,11 +1107,17 @@
   <data name="bunifuImageButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 31</value>
   </data>
+  <data name="lblTaxi.TabIndex" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
   <data name="&gt;&gt;Qyteti.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="lblShoferi.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblTaxi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblShoferi.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1120,7 +1129,7 @@
     <value>Zoom</value>
   </data>
   <data name="&gt;&gt;Emri.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="Emri.Text" xml:space="preserve">
     <value>chart1</value>
@@ -1128,8 +1137,11 @@
   <data name="lblQyteti.Text" xml:space="preserve">
     <value>Qyteti me i vizituar</value>
   </data>
-  <data name="Emri.Location" type="System.Drawing.Point, System.Drawing">
-    <value>533, 88</value>
+  <data name="&gt;&gt;Emri.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblTaxi.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;lblQyteti.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1137,17 +1149,23 @@
   <data name="&gt;&gt;lblQyteti.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;lblShoferi.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="lblShoferi.Text" xml:space="preserve">
     <value>Shoferi me me se shumti sherbime</value>
   </data>
-  <data name="&gt;&gt;lblShoferi.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;lblTaxi.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;bunifuImageButton1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bunifuImageButton1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="lblTaxi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>395, 9</value>
   </data>
   <data name="bunifuImageButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1156,7 +1174,7 @@
     <value>212, 16</value>
   </data>
   <data name="&gt;&gt;lblQyteti.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="bunifuImageButton1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1179,8 +1197,8 @@
   <data name="&gt;&gt;lblShoferi.Name" xml:space="preserve">
     <value>lblShoferi</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Statistika</value>
+  <data name="Emri.Location" type="System.Drawing.Point, System.Drawing">
+    <value>533, 88</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

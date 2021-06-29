@@ -34,10 +34,9 @@ namespace Taxi.Automjeti
             this.label1 = new System.Windows.Forms.Label();
             this.btnShtoAutomjet = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnHelpAutomjet = new System.Windows.Forms.Button();
             this.exportToExcel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAutomjeti)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvAutomjeti
@@ -69,14 +68,12 @@ namespace Taxi.Automjeti
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
-            // bunifuImageButton1
+            // btnHelpAutomjet
             // 
-            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            resources.ApplyResources(this.btnHelpAutomjet, "btnHelpAutomjet");
+            this.btnHelpAutomjet.Name = "btnHelpAutomjet";
+            this.btnHelpAutomjet.UseVisualStyleBackColor = true;
+            this.btnHelpAutomjet.Click += new System.EventHandler(this.btnHelpAutomjet_Click);
             // 
             // exportToExcel
             // 
@@ -89,7 +86,7 @@ namespace Taxi.Automjeti
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.btnHelpAutomjet);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnShtoAutomjet);
             this.Controls.Add(this.label1);
@@ -99,7 +96,6 @@ namespace Taxi.Automjeti
             this.Name = "Automjeti";
             this.Load += new System.EventHandler(this.Automjeti_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAutomjeti)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,6 +108,6 @@ namespace Taxi.Automjeti
         private System.Windows.Forms.Button exportToExcel;
         private System.Windows.Forms.Button btnShtoAutomjet;
         private System.Windows.Forms.Button btnPrint;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Button btnHelpAutomjet;
     }
 }

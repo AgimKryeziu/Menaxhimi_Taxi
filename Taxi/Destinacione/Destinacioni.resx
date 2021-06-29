@@ -117,10 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lblLagjja.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 187</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblRruga.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txtRruga.Location" type="System.Drawing.Point, System.Drawing">
     <value>25, 267</value>
   </data>
@@ -129,9 +130,6 @@
   </data>
   <data name="&gt;&gt;txtLagjja.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblQyteti.Name" xml:space="preserve">
-    <value>lblQyteti</value>
   </data>
   <data name="&gt;&gt;txtQyteti.ZOrder" xml:space="preserve">
     <value>8</value>
@@ -148,21 +146,17 @@
   <data name="&gt;&gt;lblLagjja.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnRuaj.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
   <data name="lblShteti.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 16</value>
   </data>
-  <data name="txtLagjja.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="btnEngLang.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Destinacioni</value>
-  </data>
-  <data name="lblLagjja.Text" xml:space="preserve">
-    <value>Lagjja</value>
   </data>
   <data name="&gt;&gt;lblShteti.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -179,6 +173,9 @@
   <data name="&gt;&gt;txtLagjja.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;btnHelp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="lblLagjja.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 16</value>
   </data>
@@ -188,8 +185,8 @@
   <data name="&gt;&gt;bunifuImageButton1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;txtRruga.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblShteti.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="lblShteti.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 73</value>
@@ -200,14 +197,23 @@
   <data name="txtShteti.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
+  <data name="btnHelpDestination.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
   <data name="&gt;&gt;lblLagjja.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtQyteti.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblQyteti.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;btnEngLang.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="lblShteti.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
+  <data name="btnHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="&gt;&gt;txtQyteti.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="lblLagjja.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -218,8 +224,11 @@
   <data name="&gt;&gt;btnAlbLang.Name" xml:space="preserve">
     <value>btnAlbLang</value>
   </data>
-  <data name="&gt;&gt;lblRruga.Name" xml:space="preserve">
-    <value>lblRruga</value>
+  <data name="&gt;&gt;btnHelpDestination.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtRruga.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;lblShteti.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -230,14 +239,20 @@
   <data name="btnRuaj.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 28</value>
   </data>
+  <data name="&gt;&gt;lblRruga.Name" xml:space="preserve">
+    <value>lblRruga</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="txtShteti.Size" type="System.Drawing.Size, System.Drawing">
     <value>213, 22</value>
   </data>
   <data name="bunifuImageButton1.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
   </data>
-  <data name="&gt;&gt;btnRuaj.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;txtQyteti.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="btnEngLang.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -454,6 +469,9 @@
   <data name="&gt;&gt;txtShteti.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;btnHelp.Name" xml:space="preserve">
+    <value>btnHelp</value>
+  </data>
   <data name="&gt;&gt;txtRruga.Name" xml:space="preserve">
     <value>txtRruga</value>
   </data>
@@ -480,6 +498,9 @@
   </data>
   <data name="lblQyteti.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 16</value>
+  </data>
+  <data name="btnHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 17</value>
   </data>
   <data name="btnAlbLang.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 32</value>
@@ -1393,18 +1414,15 @@
         +ucCAADMFKwVAQBAdNl3xe0FbCh71ndojXeLAQDwAvnJ/wNLplodDscOqgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="lblRruga.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="txtShteti.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 96</value>
-  </data>
   <data name="lblQyteti.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="bunifuImageButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;btnHelpDestination.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;lblQyteti.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1418,6 +1436,9 @@
   <data name="lblQyteti.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
+  <data name="&gt;&gt;txtRruga.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;txtLagjja.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1427,17 +1448,20 @@
   <data name="btnAlbLang.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;btnEngLang.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;btnHelpDestination.Name" xml:space="preserve">
+    <value>btnHelpDestination</value>
   </data>
   <data name="&gt;&gt;btnRuaj.Name" xml:space="preserve">
     <value>btnRuaj</value>
   </data>
-  <data name="&gt;&gt;txtQyteti.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="txtShteti.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 96</value>
   </data>
   <data name="bunifuImageButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 31</value>
+  </data>
+  <data name="txtLagjja.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="btnEngLang.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1445,7 +1469,7 @@
   <data name="txtLagjja.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
-  <data name="&gt;&gt;bunifuImageButton1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnRuaj.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblShteti.Name" xml:space="preserve">
@@ -1472,14 +1496,20 @@
   <data name="&gt;&gt;txtQyteti.Name" xml:space="preserve">
     <value>txtQyteti</value>
   </data>
-  <data name="btnRuaj.Text" xml:space="preserve">
-    <value>Ruaj</value>
+  <data name="lblLagjja.Text" xml:space="preserve">
+    <value>Lagjja</value>
   </data>
   <data name="lblRruga.Text" xml:space="preserve">
     <value>Rruga</value>
   </data>
-  <data name="&gt;&gt;lblQyteti.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;btnHelp.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblRruga.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;bunifuImageButton1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="bunifuImageButton1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1496,11 +1526,17 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Destinacionet</value>
   </data>
+  <data name="&gt;&gt;btnHelpDestination.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="lblQyteti.Location" type="System.Drawing.Point, System.Drawing">
     <value>21, 126</value>
   </data>
-  <data name="&gt;&gt;txtRruga.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="lblLagjja.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 187</value>
+  </data>
+  <data name="&gt;&gt;btnEngLang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblQyteti.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1522,6 +1558,72 @@
   </data>
   <data name="&gt;&gt;lblRruga.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnEngLang.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnEngLang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;txtLagjja.Name" xml:space="preserve">
+    <value>txtLagjja</value>
+  </data>
+  <data name="&gt;&gt;txtShteti.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="bunifuImageButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 17</value>
+  </data>
+  <data name="btnRuaj.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="lblRruga.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;lblQyteti.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="bunifuImageButton1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;lblQyteti.Name" xml:space="preserve">
+    <value>lblQyteti</value>
+  </data>
+  <data name="&gt;&gt;lblShteti.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>343, 323</value>
+  </data>
+  <data name="btnRuaj.Text" xml:space="preserve">
+    <value>Ruaj</value>
+  </data>
+  <data name="btnEngLang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 17</value>
+  </data>
+  <data name="btnAlbLang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;btnAlbLang.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="bunifuImageButton1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;btnEngLang.Name" xml:space="preserve">
+    <value>btnEngLang</value>
+  </data>
+  <data name="txtQyteti.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;lblRruga.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnHelpDestination.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 11</value>
   </data>
   <data name="btnAlbLang.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2633,72 +2735,6 @@
         ADDoAQAAAACAQQ8AAAAAAAx6AAAAAABg0AMAAAAAAIMeAAAAAAAY9AAAAAAAwKAHAAAAAAAGPQAAAAAA
         MOgBAAAAAIBBDwAAAAAADHoAAAAAAODb3QMYEqyakClwPwAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="btnEngLang.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="btnEngLang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;txtShteti.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;txtLagjja.Name" xml:space="preserve">
-    <value>txtLagjja</value>
-  </data>
-  <data name="bunifuImageButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>304, 17</value>
-  </data>
-  <data name="btnRuaj.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="lblRruga.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;lblQyteti.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="bunifuImageButton1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="btnEngLang.TabIndex" type="System.Int32, mscorlib">
-    <value>76</value>
-  </data>
-  <data name="&gt;&gt;lblShteti.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>343, 323</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnEngLang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 17</value>
-  </data>
-  <data name="btnAlbLang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;btnAlbLang.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="bunifuImageButton1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;btnEngLang.Name" xml:space="preserve">
-    <value>btnEngLang</value>
-  </data>
-  <data name="txtQyteti.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;lblRruga.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="lblRruga.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;btnEngLang.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

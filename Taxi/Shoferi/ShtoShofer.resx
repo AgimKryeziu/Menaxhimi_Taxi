@@ -117,15 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnEngLang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 32</value>
+  <data name="&gt;&gt;btnAlbLang.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txtBiografia.Size" type="System.Drawing.Size, System.Drawing">
     <value>392, 114</value>
   </data>
-  <data name="lblNrTel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 155</value>
+  <data name="&gt;&gt;lblNrPersonal.Name" xml:space="preserve">
+    <value>lblNrPersonal</value>
+  </data>
+  <data name="txtEmri.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 22</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtEmri.TabIndex" type="System.Int32, mscorlib">
@@ -134,6 +137,9 @@
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblMbiemri.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;lblBiografia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="btnPerditeso.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
@@ -144,11 +150,17 @@
   <data name="rBtnGenderF.Location" type="System.Drawing.Point, System.Drawing">
     <value>66, 28</value>
   </data>
+  <data name="btnHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>723, 21</value>
+  </data>
   <data name="&gt;&gt;txtBiografia.Name" xml:space="preserve">
     <value>txtBiografia</value>
   </data>
-  <data name="&gt;&gt;btnAlbLang.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;btnHelp.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="btnHelpAddDriver.Location" type="System.Drawing.Point, System.Drawing">
+    <value>708, 12</value>
   </data>
   <data name="&gt;&gt;lblDatelindja.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -156,8 +168,8 @@
   <data name="btnPerditeso.Text" xml:space="preserve">
     <value>Perditeso</value>
   </data>
-  <data name="&gt;&gt;rBtnGenderF.Parent" xml:space="preserve">
-    <value>gbGjinia</value>
+  <data name="lblNrTel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 16</value>
   </data>
   <data name="txtBiografia.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 238</value>
@@ -198,14 +210,8 @@
   <data name="lblNrPersonal.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblVitiINisjesPuses.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
   <data name="&gt;&gt;txtEmri.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txtEmri.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 22</value>
   </data>
   <data name="btnEngLang.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -431,6 +437,9 @@
   <data name="lblBiografia.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="rBtnGenderM.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;txtShoferID.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -457,6 +466,9 @@
   </data>
   <data name="&gt;&gt;lblBiografia.ZOrder" xml:space="preserve">
     <value>18</value>
+  </data>
+  <data name="btnAlbLang.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;lblEmri.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -521,8 +533,8 @@
   <data name="&gt;&gt;bunifuImageButton1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="rBtnGenderF.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;rBtnGenderF.Parent" xml:space="preserve">
+    <value>gbGjinia</value>
   </data>
   <data name="dtpDatelindja.Size" type="System.Drawing.Size, System.Drawing">
     <value>267, 22</value>
@@ -532,6 +544,12 @@
   </data>
   <data name="&gt;&gt;rBtnGenderF.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblNrTel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 155</value>
+  </data>
+  <data name="lblBiografia.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblShfaq.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
@@ -563,8 +581,8 @@
   <data name="lblNrPersonal.Location" type="System.Drawing.Point, System.Drawing">
     <value>233, 155</value>
   </data>
-  <data name="txtNrTel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
+  <data name="&gt;&gt;rBtnGenderM.Name" xml:space="preserve">
+    <value>rBtnGenderM</value>
   </data>
   <data name="lblDatelindja.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -604,9 +622,6 @@
   </data>
   <data name="&gt;&gt;lblVitiINisjesPuses.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnRuaj.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
   </data>
   <data name="&gt;&gt;dtpDatelindja.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1547,6 +1562,9 @@
   <data name="&gt;&gt;btnRuaj.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;txtNrPersonal.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="lblNrTel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1562,6 +1580,9 @@
   <data name="&gt;&gt;lblShfaq.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="btnHelpAddDriver.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
   <data name="lblNrTel.Text" xml:space="preserve">
     <value>Numri telefonit</value>
   </data>
@@ -1573,9 +1594,6 @@
   </data>
   <data name="&gt;&gt;lblNrTel.ZOrder" xml:space="preserve">
     <value>11</value>
-  </data>
-  <data name="&gt;&gt;txtViti.Name" xml:space="preserve">
-    <value>txtViti</value>
   </data>
   <data name="txtMbiemri.Size" type="System.Drawing.Size, System.Drawing">
     <value>186, 22</value>
@@ -1619,11 +1637,14 @@
   <data name="lblMbiemri.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
+  <data name="&gt;&gt;btnHelpAddDriver.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="lblShfaq.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <data name="lblNrPersonal.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
+  <data name="&gt;&gt;btnAlbLang.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="lblNrPersonal.Text" xml:space="preserve">
     <value>Numri personal</value>
@@ -1634,11 +1655,11 @@
   <data name="&gt;&gt;txtViti.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="rBtnGenderM.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;txtBiografia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnAlbLang.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="btnRuaj.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
   </data>
   <data name="&gt;&gt;btnRuaj.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -2805,11 +2826,14 @@
   <data name="&gt;&gt;rBtnGenderF.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;btnHelpAddDriver.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="lblDatelindja.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
-  <data name="lblShfaq.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 16</value>
+  <data name="rBtnGenderF.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="txtEmri.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
@@ -2822,9 +2846,6 @@
   </data>
   <data name="lblDatelindja.Text" xml:space="preserve">
     <value>Datelindja</value>
-  </data>
-  <data name="lblEmri.TabIndex" type="System.Int32, mscorlib">
-    <value>56</value>
   </data>
   <data name="&gt;&gt;lblBiografia.Name" xml:space="preserve">
     <value>lblBiografia</value>
@@ -2856,8 +2877,11 @@
   <data name="txtMbiemri.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
-  <data name="&gt;&gt;lblBiografia.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;rBtnGenderF.Name" xml:space="preserve">
+    <value>rBtnGenderF</value>
+  </data>
+  <data name="&gt;&gt;btnHelpAddDriver.Name" xml:space="preserve">
+    <value>btnHelpAddDriver</value>
   </data>
   <data name="lblNrTel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2868,11 +2892,14 @@
   <data name="&gt;&gt;txtMbiemri.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnAlbLang.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="lblVitiINisjesPuses.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
-  <data name="lblVitiINisjesPuses.Text" xml:space="preserve">
-    <value>Viti i nisjes se punes</value>
+  <data name="lblEmri.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 80</value>
+  </data>
+  <data name="lblShfaq.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 16</value>
   </data>
   <data name="lblEmri.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
@@ -2891,6 +2918,9 @@
   </data>
   <data name="lblDatelindja.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 16</value>
+  </data>
+  <data name="&gt;&gt;btnHelpAddDriver.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="btnRuaj.Location" type="System.Drawing.Point, System.Drawing">
     <value>569, 305</value>
@@ -2913,8 +2943,8 @@
   <data name="&gt;&gt;btnRuaj.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lblNrPersonal.Name" xml:space="preserve">
-    <value>lblNrPersonal</value>
+  <data name="&gt;&gt;lblNrPersonal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblDatelindja.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2925,11 +2955,11 @@
   <data name="&gt;&gt;gbGjinia.Name" xml:space="preserve">
     <value>gbGjinia</value>
   </data>
-  <data name="lblEmri.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 80</value>
+  <data name="&gt;&gt;btnHelp.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;txtBiografia.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;txtViti.Name" xml:space="preserve">
+    <value>txtViti</value>
   </data>
   <data name="&gt;&gt;dtpDatelindja.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2942,6 +2972,9 @@
   </data>
   <data name="&gt;&gt;lblVitiINisjesPuses.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="lblVitiINisjesPuses.Text" xml:space="preserve">
+    <value>Viti i nisjes se punes</value>
   </data>
   <data name="txtBiografia.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2961,9 +2994,6 @@
   <data name="lblNrPersonal.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 16</value>
   </data>
-  <data name="&gt;&gt;rBtnGenderM.Name" xml:space="preserve">
-    <value>rBtnGenderM</value>
-  </data>
   <data name="&gt;&gt;txtNrPersonal.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -2973,14 +3003,11 @@
   <data name="lblNrPersonal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lblBiografia.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblEmri.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
   </data>
   <data name="&gt;&gt;rBtnGenderM.Parent" xml:space="preserve">
     <value>gbGjinia</value>
-  </data>
-  <data name="lblShfaq.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="gbGjinia.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 54</value>
@@ -2988,14 +3015,14 @@
   <data name="&gt;&gt;rBtnGenderM.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;rBtnGenderF.Name" xml:space="preserve">
-    <value>rBtnGenderF</value>
+  <data name="lblShfaq.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;lblNrPersonal.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;txtNrPersonal.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="lblNrPersonal.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
   </data>
   <data name="txtViti.Location" type="System.Drawing.Point, System.Drawing">
     <value>446, 174</value>
@@ -3006,17 +3033,26 @@
   <data name="&gt;&gt;btnEngLang.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;btnHelp.Name" xml:space="preserve">
+    <value>btnHelp</value>
+  </data>
+  <data name="btnHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
   <data name="bunifuImageButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;lblNrPersonal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="txtNrTel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 22</value>
   </data>
   <data name="&gt;&gt;btnAlbLang.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;gbGjinia.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="gbGjinia.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
@@ -3066,8 +3102,8 @@
   <data name="btnAlbLang.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopLeft</value>
   </data>
-  <data name="lblNrTel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 16</value>
+  <data name="btnEngLang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 32</value>
   </data>
   <data name="bunifuImageButton1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>

@@ -36,10 +36,9 @@ namespace Taxi.Shoferi
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.btnPrint = new System.Windows.Forms.Button();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnHelpDriver = new System.Windows.Forms.Button();
             this.exportToExcel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShoferiList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvShoferiList
@@ -82,14 +81,12 @@ namespace Taxi.Shoferi
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
-            // bunifuImageButton1
+            // btnHelpDriver
             // 
-            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            resources.ApplyResources(this.btnHelpDriver, "btnHelpDriver");
+            this.btnHelpDriver.Name = "btnHelpDriver";
+            this.btnHelpDriver.UseVisualStyleBackColor = true;
+            this.btnHelpDriver.Click += new System.EventHandler(this.btnHelpDriver_Click_1);
             // 
             // exportToExcel
             // 
@@ -102,7 +99,7 @@ namespace Taxi.Shoferi
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.btnHelpDriver);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.exportToExcel);
@@ -112,7 +109,6 @@ namespace Taxi.Shoferi
             this.Name = "ShoferiList";
             this.Load += new System.EventHandler(this.ShoferiList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvShoferiList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,6 +123,6 @@ namespace Taxi.Shoferi
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.Button btnPrint;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Button btnHelpDriver;
     }
 }

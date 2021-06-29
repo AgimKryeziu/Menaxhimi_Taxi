@@ -36,9 +36,8 @@ namespace Taxi.Automjeti
             this.txtEmri = new System.Windows.Forms.TextBox();
             this.lblEmri = new System.Windows.Forms.Label();
             this.btnRuaj = new System.Windows.Forms.Button();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnHelpModel = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -77,26 +76,23 @@ namespace Taxi.Automjeti
             this.btnRuaj.UseVisualStyleBackColor = true;
             this.btnRuaj.Click += new System.EventHandler(this.btnRuaj_Click);
             // 
-            // bunifuImageButton1
+            // btnHelpModel
             // 
-            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            resources.ApplyResources(this.btnHelpModel, "btnHelpModel");
+            this.btnHelpModel.Name = "btnHelpModel";
+            this.btnHelpModel.UseVisualStyleBackColor = true;
+            this.btnHelpModel.Click += new System.EventHandler(this.btnHelpModel_Click);
             // 
             // Modelet
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.btnHelpModel);
             this.Controls.Add(this.btnRuaj);
             this.Controls.Add(this.panel2);
             this.Name = "Modelet";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -109,6 +105,6 @@ namespace Taxi.Automjeti
         private System.Windows.Forms.TextBox txtEmri;
         private System.Windows.Forms.Label lblEmri;
         private System.Windows.Forms.Button btnRuaj;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Button btnHelpModel;
     }
 }

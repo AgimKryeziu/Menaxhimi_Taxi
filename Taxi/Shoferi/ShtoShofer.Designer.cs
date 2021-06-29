@@ -51,9 +51,8 @@ namespace Taxi.Shoferi
             this.lblMbiemri = new System.Windows.Forms.Label();
             this.lblBiografia = new System.Windows.Forms.Label();
             this.lblEmri = new System.Windows.Forms.Label();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnHelpAddDriver = new System.Windows.Forms.Button();
             this.gbGjinia.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtShoferID
@@ -173,20 +172,18 @@ namespace Taxi.Shoferi
             resources.ApplyResources(this.lblEmri, "lblEmri");
             this.lblEmri.Name = "lblEmri";
             // 
-            // bunifuImageButton1
+            // btnHelpAddDriver
             // 
-            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            resources.ApplyResources(this.btnHelpAddDriver, "btnHelpAddDriver");
+            this.btnHelpAddDriver.Name = "btnHelpAddDriver";
+            this.btnHelpAddDriver.UseVisualStyleBackColor = true;
+            this.btnHelpAddDriver.Click += new System.EventHandler(this.btnHelpAddDriver_Click);
             // 
             // ShtoShofer
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.btnHelpAddDriver);
             this.Controls.Add(this.txtShoferID);
             this.Controls.Add(this.btnPerditeso);
             this.Controls.Add(this.gbGjinia);
@@ -210,7 +207,6 @@ namespace Taxi.Shoferi
             this.Load += new System.EventHandler(this.ShtoShofer1_Load);
             this.gbGjinia.ResumeLayout(false);
             this.gbGjinia.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,6 +235,6 @@ namespace Taxi.Shoferi
         private System.Windows.Forms.Label lblMbiemri;
         private System.Windows.Forms.Label lblBiografia;
         private System.Windows.Forms.Label lblEmri;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Button btnHelpAddDriver;
     }
 }

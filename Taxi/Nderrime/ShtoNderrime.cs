@@ -113,5 +113,10 @@ namespace Taxi.Nderrime
 
             return nderrimetBO;
         }
+
+        private void btnHelpAddShift_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"E:\Agim_Kryeziu\Semestri 4\TI1\Projekti_TI1\Faza 4\Manual\ShtoNderrim.htm");
+        }
     }
 }

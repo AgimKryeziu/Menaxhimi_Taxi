@@ -161,11 +161,20 @@
   <data name="bunifuImageButton1.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
   </data>
+  <data name="&gt;&gt;btnHelp.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
   <data name="btnPerditeso.Text" xml:space="preserve">
     <value>Perditeso</value>
   </data>
   <data name="btnShtoDestimacion.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;btnHelpAddService.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnHelpAddService.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
   </data>
   <data name="rBtnJo.Text" xml:space="preserve">
     <value>Jo</value>
@@ -182,6 +191,9 @@
   <data name="&gt;&gt;btnShtoDestimacion.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="dtpKohaENisjes.CustomFormat" xml:space="preserve">
+    <value>MMMMdd, yyyy  |  hh:mm</value>
+  </data>
   <data name="&gt;&gt;rBtnJo.Parent" xml:space="preserve">
     <value>gbAnulohet</value>
   </data>
@@ -194,6 +206,12 @@
   <data name="&gt;&gt;btnShtoDestimacion.Name" xml:space="preserve">
     <value>btnShtoDestimacion</value>
   </data>
+  <data name="&gt;&gt;btnHelp.Name" xml:space="preserve">
+    <value>btnHelp</value>
+  </data>
+  <data name="lblDistanca.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="btnRuaj.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
@@ -203,9 +221,6 @@
   </data>
   <data name="bunifuImageButton1.InitialImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
-  </data>
-  <data name="&gt;&gt;lblDestinacionet.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;lblKohaEMberritjes.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -231,8 +246,8 @@
   <data name="lblDestinacionet.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 16</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="rBtnPo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="gbAnulohet.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 163</value>
@@ -249,9 +264,6 @@
   <data name="&gt;&gt;gbAnulohet.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;dtpKohaEMberritjes.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="lblKohaEMberritjes.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
@@ -267,11 +279,11 @@
   <data name="btnPerditeso.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 29</value>
   </data>
+  <data name="&gt;&gt;lblKohaENisjes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;gbAnulohet.Name" xml:space="preserve">
     <value>gbAnulohet</value>
-  </data>
-  <data name="&gt;&gt;txtDistanca.Name" xml:space="preserve">
-    <value>txtDistanca</value>
   </data>
   <data name="btnPerditeso.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
@@ -281,6 +293,9 @@
   </data>
   <data name="btnPerditeso.Location" type="System.Drawing.Point, System.Drawing">
     <value>531, 183</value>
+  </data>
+  <data name="&gt;&gt;txtVendTakimi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bunifuImageButton1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -293,6 +308,12 @@
   </data>
   <data name="&gt;&gt;lblDestinacionet.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbNdrrimiId.Name" xml:space="preserve">
+    <value>cmbNdrrimiId</value>
+  </data>
+  <data name="btnRuaj.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 29</value>
   </data>
   <data name="&gt;&gt;lblVendTakimi.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -327,6 +348,9 @@
   <data name="txtDistanca.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
+  <data name="&gt;&gt;gbAnulohet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;btnPerditeso.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
@@ -342,27 +366,6 @@
   <data name="&gt;&gt;gbAnulohet.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="btnShtoDestimacion.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAudJREFUaEPtmbluFEEQhldcARlXBDwFwoLIGbKYMd0j7Yor5xWwSDbzEmNLxvAE
-        xpoejA0pz4CBB+BKsE0MJPDXuozEumpdvXOApfmkX1p5q6v+Pna6p91paWkpT+9Z7+hsnl1JCvcgLVye
-        BP8+Df4bPv8cCp/xt3fD7xBDsf1+/wg3/3e4wl2EuYcw9yUt/K8oBf+Z2s7k2QVO1xzpi/QsRvMJRvOH
-        aC5ClANaopycvl5g/A60I5kpI8ziFuXmMtWDdX4CRZ5KxasUajy+tHzvOJetBkzvSUzzK6lgLQr+JdXk
-        8uUYjnyT5vcU/FolM9HEstFEy4ltTEaSZ3elxM3K3WQ7ccysdM9h6WzLSZsTPZ188GfYlh2aPimhRRpS
-        rEUYyEW2ZYN2WDSaeJPSkGItIi/JenKe7R0MbfFSIqs0pFir0IkB2xsPHbKG5xQhiVUaUqxVWNIfTQdA
-        mL8qJYiRhhQbI3Riim3qYKpwJJYTWKUhxUYp+Dm2qYOgIDaOkIYUG6XgV9mmDqYJLx5C4xFVjVRjv9xb
-        tqmDXuJNSmr8t6pGqjEqLO9ttqljff5XjVRjVOSNbeoc+g4c+iVEPxSp8aiqRqqxT8Fvsk0ddCAXG0dI
-        Q4qNkukx+h9vZNcLd59t6tClk9Q4RhpSbJTy7DLb1Bke5gr3SUxglIYUa5X5MEdgGQ2kJFZpSLF2uXm2
-        dzB03WfdDyRpSLEmBf896oWGQAeWxGQGaUixNrkFtmWHXqRp45ATNin39dpK9zTbimM2+Nty0uaUhKzH
-        diYjDW5ZStyIgn/ENiaHrhaRaE0sUKdQk/5xwjbKQRetWIsbYqEahN/eemWXu3vQRWuZyy673ML06+lj
-        XLZ6kjy7hY5sycUnF+VMnt/ocpl64UfsYpnN7o+wSdGoJxvJKU7fHLxjDzB6H0RzY7Tbxs1H77B1QIcs
-        GJrCaM5Bq9AmzO3QDO3OEj4H/4a+oyMxnSrNB7OWlpYxdDq/AcBv7P/pl9kCAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="&gt;&gt;lblKohaENisjes.Name" xml:space="preserve">
-    <value>lblKohaENisjes</value>
-  </data>
   <data name="lblKohaENisjes.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
   </data>
@@ -371,9 +374,6 @@
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 18</value>
-  </data>
-  <data name="txtDistanca.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 22</value>
   </data>
   <data name="&gt;&gt;bunifuImageButton1.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -390,236 +390,8 @@
   <data name="&gt;&gt;lblVendTakimi.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="rBtnPo.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;bunifuImageButton1.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
-  </data>
-  <data name="dtpKohaENisjes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 39</value>
-  </data>
-  <data name="rBtnPo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 20</value>
-  </data>
-  <data name="lblKohaENisjes.Text" xml:space="preserve">
-    <value>Koha e nisjes</value>
-  </data>
-  <data name="lblVendTakimi.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="&gt;&gt;txtDistanca.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="txtDistanca.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="bunifuImageButton1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="rBtnJo.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cmbDestinacioniId.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;lblKohaEMberritjes.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="txtVendTakimi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 22</value>
-  </data>
-  <data name="&gt;&gt;lblDistanca.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;txtDistanca.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="rBtnPo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;cmbDestinacioniId.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cmbNdrrimiId.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;txtVendTakimi.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="rBtnJo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 20</value>
-  </data>
-  <data name="lblKohaEMberritjes.Text" xml:space="preserve">
-    <value>Koha e mberritjes</value>
-  </data>
-  <data name="lblDestinacionet.Text" xml:space="preserve">
-    <value>Destinacionet</value>
-  </data>
-  <data name="lblKohaEMberritjes.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="dtpKohaEMberritjes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 22</value>
-  </data>
-  <data name="dtpKohaENisjes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 22</value>
-  </data>
-  <data name="bunifuImageButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="&gt;&gt;btnPerditeso.Name" xml:space="preserve">
-    <value>btnPerditeso</value>
-  </data>
-  <data name="&gt;&gt;txtVendTakimi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDistanca.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblVendTakimi.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;rBtnJo.Name" xml:space="preserve">
-    <value>rBtnJo</value>
-  </data>
-  <data name="&gt;&gt;lblVendTakimi.Name" xml:space="preserve">
-    <value>lblVendTakimi</value>
-  </data>
-  <data name="&gt;&gt;txtVendTakimi.Name" xml:space="preserve">
-    <value>txtVendTakimi</value>
-  </data>
-  <data name="&gt;&gt;txtDistanca.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dtpKohaEMberritjes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="rBtnPo.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;rBtnJo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblDistanca.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
-  </data>
-  <data name="btnRuaj.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="lblKohaEMberritjes.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="txtDistanca.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 119</value>
-  </data>
-  <data name="lblKohaENisjes.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>57</value>
-  </data>
-  <data name="lblDestinacionet.TabIndex" type="System.Int32, mscorlib">
-    <value>57</value>
-  </data>
-  <data name="rBtnJo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 28</value>
-  </data>
-  <data name="rBtnJo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;btnPerditeso.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnPerditeso.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="txtVendTakimi.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;lblKohaEMberritjes.Name" xml:space="preserve">
-    <value>lblKohaEMberritjes</value>
-  </data>
-  <data name="lblKohaEMberritjes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 16</value>
-  </data>
-  <data name="&gt;&gt;lblDistanca.Name" xml:space="preserve">
-    <value>lblDistanca</value>
-  </data>
-  <data name="&gt;&gt;lblDestinacionet.Name" xml:space="preserve">
-    <value>lblDestinacionet</value>
-  </data>
-  <data name="gbAnulohet.TabIndex" type="System.Int32, mscorlib">
-    <value>66</value>
-  </data>
-  <data name="&gt;&gt;gbAnulohet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnRuaj.Name" xml:space="preserve">
-    <value>btnRuaj</value>
-  </data>
-  <data name="&gt;&gt;cmbDestinacioniId.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblDestinacionet.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblVendTakimi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>468, 18</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblDistanca.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtSherbimiId.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="dtpKohaENisjes.CustomFormat" xml:space="preserve">
-    <value>MMMMdd, yyyy  |  hh:mm</value>
-  </data>
-  <data name="&gt;&gt;dtpKohaEMberritjes.Name" xml:space="preserve">
-    <value>dtpKohaEMberritjes</value>
-  </data>
-  <data name="dtpKohaENisjes.TabIndex" type="System.Int32, mscorlib">
-    <value>70</value>
-  </data>
-  <data name="cmbDestinacioniId.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 24</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 16</value>
-  </data>
-  <data name="lblDistanca.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 16</value>
-  </data>
-  <data name="btnRuaj.Location" type="System.Drawing.Point, System.Drawing">
-    <value>427, 183</value>
-  </data>
-  <data name="lblKohaEMberritjes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>468, 100</value>
-  </data>
-  <data name="lblVendTakimi.Text" xml:space="preserve">
-    <value>Vendtakimi</value>
-  </data>
-  <data name="&gt;&gt;btnShtoDestimacion.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Nderrimi</value>
-  </data>
-  <data name="txtSherbimiId.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;btnRuaj.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="cmbNdrrimiId.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 41</value>
+  <data name="btnHelpAddService.Location" type="System.Drawing.Point, System.Drawing">
+    <value>684, 10</value>
   </data>
   <data name="bunifuImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1527,17 +1299,257 @@
         +ucCAADMFKwVAQBAdNl3xe0FbCh71ndojXeLAQDwAvnJ/wNLplodDscOqgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="&gt;&gt;bunifuImageButton1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="dtpKohaENisjes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>243, 39</value>
+  </data>
+  <data name="rBtnPo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="lblKohaENisjes.Text" xml:space="preserve">
+    <value>Koha e nisjes</value>
+  </data>
+  <data name="lblVendTakimi.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;txtDistanca.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txtDistanca.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="bunifuImageButton1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="rBtnJo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cmbDestinacioniId.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lblKohaEMberritjes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtVendTakimi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="&gt;&gt;lblDistanca.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;txtDistanca.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>685, 11</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;cmbNdrrimiId.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txtVendTakimi.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblKohaEMberritjes.Text" xml:space="preserve">
+    <value>Koha e mberritjes</value>
+  </data>
+  <data name="lblDestinacionet.Text" xml:space="preserve">
+    <value>Destinacionet</value>
+  </data>
+  <data name="lblKohaEMberritjes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dtpKohaEMberritjes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="btnHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="bunifuImageButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;btnPerditeso.Name" xml:space="preserve">
+    <value>btnPerditeso</value>
+  </data>
+  <data name="&gt;&gt;dtpKohaENisjes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnHelpAddService.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblVendTakimi.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;rBtnJo.Name" xml:space="preserve">
+    <value>rBtnJo</value>
+  </data>
+  <data name="&gt;&gt;lblVendTakimi.Name" xml:space="preserve">
+    <value>lblVendTakimi</value>
+  </data>
+  <data name="&gt;&gt;txtVendTakimi.Name" xml:space="preserve">
+    <value>txtVendTakimi</value>
+  </data>
+  <data name="&gt;&gt;txtDistanca.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dtpKohaEMberritjes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rBtnPo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rBtnJo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblDistanca.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="btnRuaj.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;dtpKohaEMberritjes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtDistanca.Location" type="System.Drawing.Point, System.Drawing">
+    <value>243, 119</value>
+  </data>
+  <data name="lblKohaENisjes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="lblDestinacionet.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="rBtnJo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 28</value>
+  </data>
+  <data name="rBtnJo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;btnPerditeso.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPerditeso.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtVendTakimi.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;lblKohaEMberritjes.Name" xml:space="preserve">
+    <value>lblKohaEMberritjes</value>
+  </data>
+  <data name="lblKohaEMberritjes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 16</value>
+  </data>
+  <data name="&gt;&gt;lblDistanca.Name" xml:space="preserve">
+    <value>lblDistanca</value>
+  </data>
+  <data name="gbAnulohet.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="lblKohaEMberritjes.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;btnRuaj.Name" xml:space="preserve">
+    <value>btnRuaj</value>
+  </data>
+  <data name="&gt;&gt;cmbDestinacioniId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblVendTakimi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>468, 18</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rBtnPo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnHelpAddService.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtSherbimiId.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cmbDestinacioniId.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="rBtnPo.Text" xml:space="preserve">
+    <value>Po</value>
+  </data>
+  <data name="&gt;&gt;dtpKohaEMberritjes.Name" xml:space="preserve">
+    <value>dtpKohaEMberritjes</value>
+  </data>
+  <data name="dtpKohaENisjes.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="lblDistanca.Text" xml:space="preserve">
+    <value>Distanca</value>
+  </data>
+  <data name="cmbDestinacioniId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 24</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 16</value>
+  </data>
+  <data name="lblDistanca.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 16</value>
+  </data>
+  <data name="btnRuaj.Location" type="System.Drawing.Point, System.Drawing">
+    <value>427, 183</value>
+  </data>
+  <data name="lblKohaEMberritjes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>468, 100</value>
+  </data>
+  <data name="lblVendTakimi.Text" xml:space="preserve">
+    <value>Vendtakimi</value>
+  </data>
+  <data name="&gt;&gt;btnShtoDestimacion.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Nderrimi</value>
+  </data>
+  <data name="txtSherbimiId.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;btnRuaj.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cmbNdrrimiId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 41</value>
+  </data>
+  <data name="dtpKohaENisjes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
   <data name="&gt;&gt;txtSherbimiId.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;dtpKohaEMberritjes.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="bunifuImageButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 31</value>
+  </data>
   <data name="&gt;&gt;dtpKohaENisjes.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;cmbNdrrimiId.Name" xml:space="preserve">
-    <value>cmbNdrrimiId</value>
+  <data name="txtDistanca.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 22</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;lblDestinacionet.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -1545,8 +1557,8 @@
   <data name="&gt;&gt;bunifuImageButton1.Name" xml:space="preserve">
     <value>bunifuImageButton1</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;lblKohaENisjes.Name" xml:space="preserve">
+    <value>lblKohaENisjes</value>
   </data>
   <data name="&gt;&gt;rBtnJo.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1557,6 +1569,9 @@
   <data name="gbAnulohet.Text" xml:space="preserve">
     <value>Anulohet</value>
   </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
   <data name="lblDistanca.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
@@ -1566,11 +1581,14 @@
   <data name="&gt;&gt;cmbNdrrimiId.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="btnRuaj.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 29</value>
+  <data name="rBtnJo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
+  <data name="&gt;&gt;btnHelpAddService.Name" xml:space="preserve">
+    <value>btnHelpAddService</value>
+  </data>
+  <data name="&gt;&gt;lblDestinacionet.Name" xml:space="preserve">
+    <value>lblDestinacionet</value>
   </data>
   <data name="cmbNdrrimiId.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1578,28 +1596,31 @@
   <data name="btnShtoDestimacion.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
   </data>
+  <data name="lblDestinacionet.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;lblDistanca.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="rBtnPo.Text" xml:space="preserve">
-    <value>Po</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;lblDistanca.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="btnShtoDestimacion.Location" type="System.Drawing.Point, System.Drawing">
     <value>205, 119</value>
   </data>
+  <data name="&gt;&gt;btnHelp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ShtoSherbim</value>
   </data>
-  <data name="&gt;&gt;lblKohaENisjes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;txtDistanca.Name" xml:space="preserve">
+    <value>txtDistanca</value>
   </data>
   <data name="&gt;&gt;btnRuaj.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dtpKohaENisjes.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblDestinacionet.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="cmbDestinacioniId.Font" type="System.Drawing.Font, System.Drawing">
@@ -1608,11 +1629,26 @@
   <data name="&gt;&gt;lblKohaENisjes.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="lblDistanca.Text" xml:space="preserve">
-    <value>Distanca</value>
+  <data name="btnShtoDestimacion.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAudJREFUaEPtmbluFEEQhldcARlXBDwFwoLIGbKYMd0j7Yor5xWwSDbzEmNLxvAE
+        xpoejA0pz4CBB+BKsE0MJPDXuozEumpdvXOApfmkX1p5q6v+Pna6p91paWkpT+9Z7+hsnl1JCvcgLVye
+        BP8+Df4bPv8cCp/xt3fD7xBDsf1+/wg3/3e4wl2EuYcw9yUt/K8oBf+Z2s7k2QVO1xzpi/QsRvMJRvOH
+        aC5ClANaopycvl5g/A60I5kpI8ziFuXmMtWDdX4CRZ5KxasUajy+tHzvOJetBkzvSUzzK6lgLQr+JdXk
+        8uUYjnyT5vcU/FolM9HEstFEy4ltTEaSZ3elxM3K3WQ7ccysdM9h6WzLSZsTPZ188GfYlh2aPimhRRpS
+        rEUYyEW2ZYN2WDSaeJPSkGItIi/JenKe7R0MbfFSIqs0pFir0IkB2xsPHbKG5xQhiVUaUqxVWNIfTQdA
+        mL8qJYiRhhQbI3Riim3qYKpwJJYTWKUhxUYp+Dm2qYOgIDaOkIYUG6XgV9mmDqYJLx5C4xFVjVRjv9xb
+        tqmDXuJNSmr8t6pGqjEqLO9ttqljff5XjVRjVOSNbeoc+g4c+iVEPxSp8aiqRqqxT8Fvsk0ddCAXG0dI
+        Q4qNkukx+h9vZNcLd59t6tClk9Q4RhpSbJTy7DLb1Bke5gr3SUxglIYUa5X5MEdgGQ2kJFZpSLF2uXm2
+        dzB03WfdDyRpSLEmBf896oWGQAeWxGQGaUixNrkFtmWHXqRp45ATNin39dpK9zTbimM2+Nty0uaUhKzH
+        diYjDW5ZStyIgn/ENiaHrhaRaE0sUKdQk/5xwjbKQRetWIsbYqEahN/eemWXu3vQRWuZyy673ML06+lj
+        XLZ6kjy7hY5sycUnF+VMnt/ocpl64UfsYpnN7o+wSdGoJxvJKU7fHLxjDzB6H0RzY7Tbxs1H77B1QIcs
+        GJrCaM5Bq9AmzO3QDO3OEj4H/4a+oyMxnSrNB7OWlpYxdDq/AcBv7P/pl9kCAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="bunifuImageButton1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 31</value>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="txtVendTakimi.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>

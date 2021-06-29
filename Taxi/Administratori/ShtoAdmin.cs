@@ -94,21 +94,30 @@ namespace Taxi.Administratori
         private void btnShtoRol_Click(object sender, EventArgs e)
         {
             ShtoRol shtoRol = new ShtoRol();
+
+            var changeLang = new ChangeLang();
             if (albFlag)
             {
-                var changeLang = new ChangeLang();
                 changeLang.UpdateConfig("language", "sq");
-
-                shtoRol.Show();
+                shtoRol.ShowDialog();
             }
             else
             {
-                var changeLang = new ChangeLang();
                 changeLang.UpdateConfig("language", "en");
-
-                shtoRol.Show();
+                shtoRol.ShowDialog();
             }
-            
+
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "E:\\Agim_Kryeziu\\Semestri 4\\TI1\\Projekti_TI1\\Faza 4\\Helper Manual.chm", HelpNavigator.Topic, "ShtoAdmin.htm");
+
+        }
+
+        private void btnHelpAddAdmin_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"E:\Agim_Kryeziu\Semestri 4\TI1\Projekti_TI1\Faza 4\Manual\ShtoAdmin.htm");
         }
     }
 }

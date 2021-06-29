@@ -88,15 +88,15 @@ namespace Taxi.Shoferi
         {
             ShtoShofer shtoShofer = new ShtoShofer();
             ShtoShofer.isShto = true;
+
+            var changeLang = new ChangeLang();
             if (albFlag)
             {
-                var changeLang = new ChangeLang();
                 changeLang.UpdateConfig("language", "sq");
                 shtoShofer.ShowDialog(); ;
             }
             else
             {
-                var changeLang = new ChangeLang();
                 changeLang.UpdateConfig("language", "en");
                 shtoShofer.ShowDialog();
             }
@@ -185,6 +185,11 @@ namespace Taxi.Shoferi
             printer.PageNumberInHeader = false;
             printer.Footer = "Riinvest";
             printer.PrintDataGridView(dgvShoferiList);
+        }
+        private void btnHelpDriver_Click_1(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"E:\Agim_Kryeziu\Semestri 4\TI1\Projekti_TI1\Faza 4\Manual\Shoferet.htm");
+
         }
     }
 }

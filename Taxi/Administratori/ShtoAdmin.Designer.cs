@@ -49,9 +49,8 @@ namespace Taxi.Administratori
             this.btnShto = new System.Windows.Forms.Button();
             this.btnPerditeso = new System.Windows.Forms.Button();
             this.txtAdminId = new System.Windows.Forms.TextBox();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnHelpAddAdmin = new System.Windows.Forms.Button();
             this.btnShtoRol = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbPershkrimiId
@@ -155,14 +154,12 @@ namespace Taxi.Administratori
             resources.ApplyResources(this.txtAdminId, "txtAdminId");
             this.txtAdminId.Name = "txtAdminId";
             // 
-            // bunifuImageButton1
+            // btnHelpAddAdmin
             // 
-            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            resources.ApplyResources(this.btnHelpAddAdmin, "btnHelpAddAdmin");
+            this.btnHelpAddAdmin.Name = "btnHelpAddAdmin";
+            this.btnHelpAddAdmin.UseVisualStyleBackColor = true;
+            this.btnHelpAddAdmin.Click += new System.EventHandler(this.btnHelpAddAdmin_Click);
             // 
             // btnShtoRol
             // 
@@ -177,7 +174,7 @@ namespace Taxi.Administratori
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.btnHelpAddAdmin);
             this.Controls.Add(this.btnShtoRol);
             this.Controls.Add(this.txtAdminId);
             this.Controls.Add(this.btnPerditeso);
@@ -200,7 +197,6 @@ namespace Taxi.Administratori
             this.Controls.Add(this.lblEmri);
             this.Name = "ShtoAdmin";
             this.Load += new System.EventHandler(this.ShtoAdmin_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,6 +224,6 @@ namespace Taxi.Administratori
         private System.Windows.Forms.Button btnPerditeso;
         private System.Windows.Forms.TextBox txtAdminId;
         private System.Windows.Forms.Button btnShtoRol;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Button btnHelpAddAdmin;
     }
 }

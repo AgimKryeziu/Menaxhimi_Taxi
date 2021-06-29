@@ -41,8 +41,7 @@ namespace Taxi.Nderrime
             this.dtpFillimiINderrimit = new System.Windows.Forms.DateTimePicker();
             this.dtpMbarimiINderrimir = new System.Windows.Forms.DateTimePicker();
             this.txtNderrimiId = new System.Windows.Forms.TextBox();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            this.btnHelpAddShift = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblShoferi
@@ -111,20 +110,18 @@ namespace Taxi.Nderrime
             resources.ApplyResources(this.txtNderrimiId, "txtNderrimiId");
             this.txtNderrimiId.Name = "txtNderrimiId";
             // 
-            // bunifuImageButton1
+            // btnHelpAddShift
             // 
-            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            resources.ApplyResources(this.btnHelpAddShift, "btnHelpAddShift");
+            this.btnHelpAddShift.Name = "btnHelpAddShift";
+            this.btnHelpAddShift.UseVisualStyleBackColor = true;
+            this.btnHelpAddShift.Click += new System.EventHandler(this.btnHelpAddShift_Click);
             // 
             // ShtoNderrime
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.btnHelpAddShift);
             this.Controls.Add(this.txtNderrimiId);
             this.Controls.Add(this.dtpMbarimiINderrimir);
             this.Controls.Add(this.dtpFillimiINderrimit);
@@ -138,7 +135,6 @@ namespace Taxi.Nderrime
             this.Controls.Add(this.lblShoferi);
             this.Name = "ShtoNderrime";
             this.Load += new System.EventHandler(this.ShtoNderrime_Load_1);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,6 +153,6 @@ namespace Taxi.Nderrime
         private System.Windows.Forms.DateTimePicker dtpFillimiINderrimit;
         private System.Windows.Forms.DateTimePicker dtpMbarimiINderrimir;
         private System.Windows.Forms.TextBox txtNderrimiId;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Button btnHelpAddShift;
     }
 }

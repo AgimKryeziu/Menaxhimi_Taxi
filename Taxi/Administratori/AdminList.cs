@@ -58,16 +58,14 @@ namespace Taxi.Stafi
             ShtoAdmin shtoAdmin = new ShtoAdmin();
             ShtoAdmin.isShto = true;
 
+            var changeLang = new ChangeLang();
             if (albFlag)
             {
-                var changeLang = new ChangeLang();
                 changeLang.UpdateConfig("language", "sq");
-
                 shtoAdmin.ShowDialog();
             }
             else
             {
-                var changeLang = new ChangeLang();
                 changeLang.UpdateConfig("language", "en");
 
                 shtoAdmin.ShowDialog();
@@ -107,6 +105,17 @@ namespace Taxi.Stafi
                 }
             }
 
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "E:\\Agim_Kryeziu\\Semestri 4\\TI1\\Projekti_TI1\\Faza 4\\Helper Manual.chm", HelpNavigator.Topic, "Admins.htm");
+
+        }
+
+        private void btnHelpAdmin_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"E:\Agim_Kryeziu\Semestri 4\TI1\Projekti_TI1\Faza 4\Manual\Admins.htm");
         }
     }
 }

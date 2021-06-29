@@ -35,16 +35,16 @@ namespace Taxi
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.chbShfaq = new System.Windows.Forms.CheckBox();
+            this.lblMemberLogin = new System.Windows.Forms.Label();
+            this.pcBoxMainLogin = new System.Windows.Forms.PictureBox();
             this.btnKyçu = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnHelp = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnEngLang = new System.Windows.Forms.Button();
             this.btnAlbLang = new System.Windows.Forms.Button();
             this.btnCloseLoginForm = new Bunifu.Framework.UI.BunifuImageButton();
-            this.lblMemberLogin = new System.Windows.Forms.Label();
-            this.pcBoxMainLogin = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pcBoxMainLogin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHelp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseLoginForm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcBoxMainLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPassword
@@ -78,6 +78,19 @@ namespace Taxi
             this.chbShfaq.UseVisualStyleBackColor = true;
             this.chbShfaq.CheckedChanged += new System.EventHandler(this.chbShfaq_CheckedChanged);
             // 
+            // lblMemberLogin
+            // 
+            resources.ApplyResources(this.lblMemberLogin, "lblMemberLogin");
+            this.lblMemberLogin.ForeColor = System.Drawing.Color.White;
+            this.lblMemberLogin.Name = "lblMemberLogin";
+            // 
+            // pcBoxMainLogin
+            // 
+            resources.ApplyResources(this.pcBoxMainLogin, "pcBoxMainLogin");
+            this.pcBoxMainLogin.BackColor = System.Drawing.Color.GreenYellow;
+            this.pcBoxMainLogin.Name = "pcBoxMainLogin";
+            this.pcBoxMainLogin.TabStop = false;
+            // 
             // btnKyçu
             // 
             resources.ApplyResources(this.btnKyçu, "btnKyçu");
@@ -87,7 +100,7 @@ namespace Taxi
             this.btnKyçu.ActiveForecolor = System.Drawing.Color.SeaGreen;
             this.btnKyçu.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.btnKyçu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.btnKyçu.ButtonText = "Log In";
+            this.btnKyçu.ButtonText = "LogIn";
             this.btnKyçu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnKyçu.ForeColor = System.Drawing.Color.White;
             this.btnKyçu.IdleBorderThickness = 1;
@@ -107,6 +120,7 @@ namespace Taxi
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.TabStop = false;
             this.btnHelp.Zoom = 10;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // btnEngLang
             // 
@@ -132,19 +146,6 @@ namespace Taxi
             this.btnCloseLoginForm.Zoom = 10;
             this.btnCloseLoginForm.Click += new System.EventHandler(this.btnCloseLoginForm_Click);
             // 
-            // lblMemberLogin
-            // 
-            resources.ApplyResources(this.lblMemberLogin, "lblMemberLogin");
-            this.lblMemberLogin.ForeColor = System.Drawing.Color.White;
-            this.lblMemberLogin.Name = "lblMemberLogin";
-            // 
-            // pcBoxMainLogin
-            // 
-            resources.ApplyResources(this.pcBoxMainLogin, "pcBoxMainLogin");
-            this.pcBoxMainLogin.BackColor = System.Drawing.Color.GreenYellow;
-            this.pcBoxMainLogin.Name = "pcBoxMainLogin";
-            this.pcBoxMainLogin.TabStop = false;
-            // 
             // LogInForms
             // 
             resources.ApplyResources(this, "$this");
@@ -164,10 +165,9 @@ namespace Taxi
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LogInForms";
-            this.Load += new System.EventHandler(this.LogInForms_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pcBoxMainLogin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHelp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseLoginForm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcBoxMainLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

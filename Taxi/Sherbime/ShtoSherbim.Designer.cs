@@ -48,10 +48,9 @@ namespace Taxi.Sherbime
             this.txtSherbimiId = new System.Windows.Forms.TextBox();
             this.dtpKohaEMberritjes = new System.Windows.Forms.DateTimePicker();
             this.dtpKohaENisjes = new System.Windows.Forms.DateTimePicker();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnShtoDestimacion = new System.Windows.Forms.Button();
+            this.btnHelpAddService = new System.Windows.Forms.Button();
             this.gbAnulohet.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDestinacionet
@@ -163,15 +162,6 @@ namespace Taxi.Sherbime
             this.dtpKohaENisjes.ShowUpDown = true;
             this.dtpKohaENisjes.Value = new System.DateTime(2021, 6, 19, 19, 51, 0, 0);
             // 
-            // bunifuImageButton1
-            // 
-            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            // 
             // btnShtoDestimacion
             // 
             resources.ApplyResources(this.btnShtoDestimacion, "btnShtoDestimacion");
@@ -181,11 +171,18 @@ namespace Taxi.Sherbime
             this.btnShtoDestimacion.UseVisualStyleBackColor = false;
             this.btnShtoDestimacion.Click += new System.EventHandler(this.btnShtoDestimacion_Click);
             // 
+            // btnHelpAddService
+            // 
+            resources.ApplyResources(this.btnHelpAddService, "btnHelpAddService");
+            this.btnHelpAddService.Name = "btnHelpAddService";
+            this.btnHelpAddService.UseVisualStyleBackColor = true;
+            this.btnHelpAddService.Click += new System.EventHandler(this.btnHelpAddService_Click);
+            // 
             // ShtoSherbim
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.btnHelpAddService);
             this.Controls.Add(this.dtpKohaEMberritjes);
             this.Controls.Add(this.dtpKohaENisjes);
             this.Controls.Add(this.btnShtoDestimacion);
@@ -207,7 +204,6 @@ namespace Taxi.Sherbime
             this.Load += new System.EventHandler(this.ShtoSherbim_Load);
             this.gbAnulohet.ResumeLayout(false);
             this.gbAnulohet.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,6 +230,6 @@ namespace Taxi.Sherbime
         private System.Windows.Forms.TextBox txtSherbimiId;
         private System.Windows.Forms.DateTimePicker dtpKohaEMberritjes;
         private System.Windows.Forms.DateTimePicker dtpKohaENisjes;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Button btnHelpAddService;
     }
 }

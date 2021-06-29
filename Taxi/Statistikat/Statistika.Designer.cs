@@ -40,10 +40,8 @@ namespace Taxi.Destinacione
             this.lblQyteti = new System.Windows.Forms.Label();
             this.Emri = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.lblShoferi = new System.Windows.Forms.Label();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.Qyteti)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Emri)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // Qyteti
@@ -85,20 +83,10 @@ namespace Taxi.Destinacione
             resources.ApplyResources(this.lblShoferi, "lblShoferi");
             this.lblShoferi.Name = "lblShoferi";
             // 
-            // bunifuImageButton1
-            // 
-            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            // 
             // Statistika
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.lblShoferi);
             this.Controls.Add(this.lblQyteti);
             this.Controls.Add(this.Emri);
@@ -108,7 +96,6 @@ namespace Taxi.Destinacione
             this.Load += new System.EventHandler(this.Statistika_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Qyteti)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Emri)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,6 +107,5 @@ namespace Taxi.Destinacione
         private System.Windows.Forms.Label lblQyteti;
         private System.Windows.Forms.DataVisualization.Charting.Chart Emri;
         private System.Windows.Forms.Label lblShoferi;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }
 }

@@ -57,16 +57,14 @@ namespace Taxi.Automjeti
         {
             Taxi.Automjeti.ShtoAutomjet shtoAutomjet = new ShtoAutomjet();
             ShtoAutomjet.isShto = true;
-
+                        var changeLang = new ChangeLang();
             if (albFlag)
             {
-                var changeLang = new ChangeLang();
                 changeLang.UpdateConfig("language", "sq");
                 shtoAutomjet.ShowDialog();
             }
             else
             {
-                var changeLang = new ChangeLang();
                 changeLang.UpdateConfig("language", "en");
                 shtoAutomjet.ShowDialog();
             }
@@ -176,6 +174,11 @@ namespace Taxi.Automjeti
             printer.PageNumberInHeader = false;
             printer.Footer = "Riinvest";
             printer.PrintDataGridView(dgvAutomjeti);
+        }
+
+        private void btnHelpAutomjet_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"E:\Agim_Kryeziu\Semestri 4\TI1\Projekti_TI1\Faza 4\Manual\Automjetet.htm");
         }
     }
 }

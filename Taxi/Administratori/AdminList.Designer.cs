@@ -32,9 +32,8 @@ namespace Taxi.Stafi
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.dgvAdmin = new System.Windows.Forms.DataGridView();
             this.btnShto = new System.Windows.Forms.Button();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnHelpAdmin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAdmin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvAdmin
@@ -55,28 +54,25 @@ namespace Taxi.Stafi
             this.btnShto.UseVisualStyleBackColor = true;
             this.btnShto.Click += new System.EventHandler(this.btnShto_Click_1);
             // 
-            // bunifuImageButton1
+            // btnHelpAdmin
             // 
-            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            resources.ApplyResources(this.btnHelpAdmin, "btnHelpAdmin");
+            this.btnHelpAdmin.Name = "btnHelpAdmin";
+            this.btnHelpAdmin.UseVisualStyleBackColor = true;
+            this.btnHelpAdmin.Click += new System.EventHandler(this.btnHelpAdmin_Click);
             // 
             // Admin
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ControlBox = false;
-            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.btnHelpAdmin);
             this.Controls.Add(this.btnShto);
             this.Controls.Add(this.dgvAdmin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin";
             this.Load += new System.EventHandler(this.Admin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAdmin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -84,6 +80,6 @@ namespace Taxi.Stafi
         #endregion
         private System.Windows.Forms.DataGridView dgvAdmin;
         private System.Windows.Forms.Button btnShto;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Button btnHelpAdmin;
     }
 }

@@ -31,7 +31,6 @@ namespace Taxi
         {
             SidePanel.Top = btnAdminat.Top;
 
-
             foreach (var item in format)
             {
                 if (pnlContent.Contains(item))
@@ -193,12 +192,8 @@ namespace Taxi
         {
             SidePanel.Top = btnShkyçu.Top;
 
-            this.Hide();
-            ad.Close();
-            sh.Close();
-            a.Close();
-            n.Hide();
-            sho.Close();
+            this.Close();
+
             LogInForms logInForms = new LogInForms();
             logInForms.Visible = true;
         }
@@ -246,6 +241,22 @@ namespace Taxi
                 q.Show();
             }
             
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"E:\Agim_Kryeziu\Semestri 4\TI1\Projekti_TI1\Faza 4\Manual\Main Menu.htm");
+        }
+
+        private void btnHelp_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("1234567");
+        }
+
+        private void btnHelpMain_Click_1(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"E:\Agim_Kryeziu\Semestri 4\TI1\Projekti_TI1\Faza 4\Manual\Main Menu.htm");
+
         }
     }
 }

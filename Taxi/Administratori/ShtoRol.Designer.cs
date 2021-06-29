@@ -33,8 +33,7 @@ namespace Taxi.Administratori
             this.lblPershkrimi = new System.Windows.Forms.Label();
             this.txtPershkrimi = new System.Windows.Forms.TextBox();
             this.btnShto = new System.Windows.Forms.Button();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            this.btnHelpAddRole = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPershkrimi
@@ -54,25 +53,22 @@ namespace Taxi.Administratori
             this.btnShto.UseVisualStyleBackColor = true;
             this.btnShto.Click += new System.EventHandler(this.btnShto_Click_1);
             // 
-            // bunifuImageButton1
+            // btnHelpAddRole
             // 
-            resources.ApplyResources(this.bunifuImageButton1, "bunifuImageButton1");
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            resources.ApplyResources(this.btnHelpAddRole, "btnHelpAddRole");
+            this.btnHelpAddRole.Name = "btnHelpAddRole";
+            this.btnHelpAddRole.UseVisualStyleBackColor = true;
+            this.btnHelpAddRole.Click += new System.EventHandler(this.btnHelpAddRole_Click);
             // 
             // ShtoRol
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.btnHelpAddRole);
             this.Controls.Add(this.btnShto);
             this.Controls.Add(this.txtPershkrimi);
             this.Controls.Add(this.lblPershkrimi);
             this.Name = "ShtoRol";
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -83,6 +79,6 @@ namespace Taxi.Administratori
         private System.Windows.Forms.Label lblPershkrimi;
         private System.Windows.Forms.TextBox txtPershkrimi;
         private System.Windows.Forms.Button btnShto;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Button btnHelpAddRole;
     }
 }

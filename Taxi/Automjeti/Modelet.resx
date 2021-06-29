@@ -124,6 +124,9 @@
   <data name="btnRuaj.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;txtPershkrimi.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
@@ -146,6 +149,9 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Modelet</value>
   </data>
+  <data name="txtEmri.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
   <data name="&gt;&gt;btnRuaj.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -155,8 +161,8 @@
   <data name="lblPershkrimi.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;bunifuImageButton1.Type" xml:space="preserve">
-    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  <data name="lblPershkrimi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 16</value>
   </data>
   <data name="&gt;&gt;bunifuImageButton1.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -1076,6 +1082,9 @@
   <data name="lblEmri.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 17</value>
   </data>
+  <data name="btnHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
   <data name="btnRuaj.Location" type="System.Drawing.Point, System.Drawing">
     <value>171, 247</value>
   </data>
@@ -1091,6 +1100,9 @@
   <data name="&gt;&gt;txtEmri.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
+  <data name="&gt;&gt;bunifuImageButton1.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
   <data name="bunifuImageButton1.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
   </data>
@@ -1103,8 +1115,8 @@
   <data name="&gt;&gt;txtPershkrimi.Name" xml:space="preserve">
     <value>txtPershkrimi</value>
   </data>
-  <data name="lblPershkrimi.Text" xml:space="preserve">
-    <value>Pershkrimi</value>
+  <data name="&gt;&gt;btnHelp.Name" xml:space="preserve">
+    <value>btnHelp</value>
   </data>
   <data name="txtPershkrimi.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -1117,6 +1129,12 @@
   </data>
   <data name="&gt;&gt;lblPershkrimi.Name" xml:space="preserve">
     <value>lblPershkrimi</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>273, 21</value>
   </data>
   <data name="&gt;&gt;btnRuaj.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1133,6 +1151,9 @@
   </data>
   <data name="&gt;&gt;txtPershkrimi.Parent" xml:space="preserve">
     <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnHelpModel.Name" xml:space="preserve">
+    <value>btnHelpModel</value>
   </data>
   <data name="&gt;&gt;btnRuaj.Name" xml:space="preserve">
     <value>btnRuaj</value>
@@ -1155,6 +1176,12 @@
   <data name="lblEmri.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 16</value>
   </data>
+  <data name="btnHelpModel.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;btnHelp.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuImageButton, Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
   <data name="&gt;&gt;lblEmri.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
@@ -1173,8 +1200,11 @@
   <data name="btnRuaj.Text" xml:space="preserve">
     <value>Ruaj</value>
   </data>
-  <data name="lblPershkrimi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 16</value>
+  <data name="&gt;&gt;btnHelp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblPershkrimi.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -1185,8 +1215,8 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Modelet</value>
   </data>
-  <data name="txtEmri.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
+  <data name="&gt;&gt;btnHelpModel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="lblPershkrimi.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 79</value>
@@ -1194,14 +1224,20 @@
   <data name="lblEmri.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
-  <data name="&gt;&gt;txtEmri.Name" xml:space="preserve">
-    <value>txtEmri</value>
+  <data name="&gt;&gt;btnHelpModel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnHelpModel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 12</value>
   </data>
   <data name="txtEmri.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
   <data name="panel2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;btnHelpModel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="bunifuImageButton1.Location" type="System.Drawing.Point, System.Drawing">
     <value>273, 21</value>
@@ -1221,8 +1257,8 @@
   <data name="lblEmri.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;txtEmri.Name" xml:space="preserve">
+    <value>txtEmri</value>
   </data>
   <data name="&gt;&gt;lblEmri.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1233,8 +1269,8 @@
   <data name="bunifuImageButton1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="lblPershkrimi.Text" xml:space="preserve">
+    <value>Pershkrimi</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
